@@ -13,13 +13,13 @@ const Customers: React.FC = () => {
   const scrollItems = [...PARTNERS, ...PARTNERS, ...PARTNERS];
 
   return (
-    <section className="relative overflow-hidden border-y border-white/5  py-24 max-[599px]:py-16">
+    <section className="relative overflow-hidden border-y border-white/5  py-24 max-[599px]:py-10">
       {/* Header */}
-      <div className="container mx-auto mb-14 px-6 text-center">
-        <span className="mb-4 block text-lg font-bold uppercase tracking-widest text-blue-500">
+      <div className="container mx-auto mb-14 max-[599px]:px-4 px-6 text-center">
+        <span className="mb-4 max-[599px]:mb-0 block text-lg font-bold uppercase tracking-widest text-blue-500">
           Trusted by Leaders
         </span>
-        <h2 className="text-lg md:text-4xl text-black font-mono font-bold uppercase tracking-tight">
+        <h2 className="text-4xl max-[599px]:text-xl text-black font-mono font-bold uppercase tracking-tight">
           Global Partnership Network
         </h2>
       </div>
@@ -34,7 +34,7 @@ const Customers: React.FC = () => {
           {scrollItems.map((partner, i) => (
             <div
               key={i}
-              className="inline-flex min-w-[220px] flex-col items-center justify-center px-12 transition-all duration-300 hover:bg-white/5 hover:border-white/10 border border-transparent"
+              className="inline-flex min-w-[220px] flex-col items-center justify-center px-12 max-[599px]:px-0 transition-all duration-300 hover:bg-white/5 hover:border-white/10 border border-transparent"
             >
               {/* Logo container */}
               <div className="mb-6 flex h-32 w-32 items-center justify-center overflow-hidden md:h-44 md:w-44">

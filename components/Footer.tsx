@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-[#0A0A0A] text-white pt-24 max-[599px]:pt-12 pb-12 border-t border-white/5">
+    <footer className="glass-dark text-white pt-24 max-[599px]:pt-12 pb-12 border-t border-white/5">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           {/* Brand */}
