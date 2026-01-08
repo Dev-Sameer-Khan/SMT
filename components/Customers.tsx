@@ -9,46 +9,47 @@ const PARTNERS = [
   { name: 'PERKINS', region: 'Global', logo: '/perk.png' },
 ];
 
-
 const Customers: React.FC = () => {
   const scrollItems = [...PARTNERS, ...PARTNERS, ...PARTNERS];
 
   return (
-    <section className="py-24 max-[599px]:py-16 bg-[#0A0A0A] relative border-y border-white/5 overflow-hidden">
-      <div className="container mx-auto px-6 mb-12">
-        <div className="text-center md:text-left">
-          <span className="text-blue-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-2 block">TRUSTED BY LEADERS</span>
-          <h2 className="text-xs font-mono text-gray-400 uppercase tracking-widest">Global Partnership Network</h2>
-        </div>
+    <section className="relative overflow-hidden border-y border-white/5  py-24 max-[599px]:py-16">
+      {/* Header */}
+      <div className="container mx-auto mb-14 px-6 text-center">
+        <span className="mb-4 block text-lg font-bold uppercase tracking-widest text-blue-500">
+          Trusted by Leaders
+        </span>
+        <h2 className="text-lg md:text-4xl text-black font-mono font-bold uppercase tracking-tight">
+          Global Partnership Network
+        </h2>
       </div>
 
+      {/* Scroller */}
       <div className="relative flex items-center overflow-hidden">
-        {/* Subtle & Long Vignettes */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-[30%] bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/40 to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-[30%] bg-gradient-to-l from-[#0A0A0A] via-[#0A0A0A]/40 to-transparent z-10" />
+        {/* Gradient edges */}
+        {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-[30%] bg-gradient-to-r from-white via-white/70 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-[30%] bg-gradient-to-l from-white via-white/70 to-transparent z-10" /> */}
 
-        <div className="flex animate-scroll whitespace-nowrap">
+        <div className="animate-scroll flex whitespace-nowrap">
           {scrollItems.map((partner, i) => (
-            <div 
-              key={i} 
-              className="inline-flex flex-col items-center justify-center px-12  transition-all duration-300 border border-transparent hover:border-white/10 hover:bg-white/5 min-w-[220px]"
+            <div
+              key={i}
+              className="inline-flex min-w-[220px] flex-col items-center justify-center px-12 transition-all duration-300 hover:bg-white/5 hover:border-white/10 border border-transparent"
             >
-              {/* Identical Aspect Ratio Container */}
-              <div className="w-32 h-32 md:w-44 md:h-44 flex items-center justify-center mb-6 overflow-hidden">
-                <img 
-                  src={partner.logo} 
-                  alt={`${partner.name} logo`} 
-                  /* Specifically shrinking Cummins to roughly 70% of the others */
-                  className={`max-w-full max-h-full object-contain aspect-square ${
-                    partner.name === 'CUMMINS' ? 'scale-75' : 'scale-100'
-                  }`}
+              {/* Logo container */}
+              <div className="mb-6 flex h-32 w-32 items-center justify-center overflow-hidden md:h-44 md:w-44">
+                <img
+                  src={partner.logo}
+                  alt={`${partner.name} logo`}
+                  className={`aspect-square max-h-full max-w-full object-contain 
+                    invert opacity-75 hover:opacity-100 transition
+                    ${partner.name === 'CUMMINS' ? 'scale-75' : 'scale-100'}
+                  `}
                 />
               </div>
-              
-              {/* <span className="text-lg md:text-xl font-bold text-white tracking-tighter mb-1">
-                {partner.name}
-              </span> */}
-              <span className="text-[9px] font-mono text-gray-500 uppercase tracking-[0.2em]">
+
+              {/* Region */}
+              <span className="text-sm font-mono font-bold uppercase tracking-widest text-black">
                 {partner.region}
               </span>
             </div>
@@ -56,13 +57,17 @@ const Customers: React.FC = () => {
         </div>
       </div>
 
+      {/* Animation */}
       <style jsx>{`
         @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-100% / 3)); }
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(calc(-100% / 3));
+          }
         }
         .animate-scroll {
-          display: flex;
           width: max-content;
           animation: scroll 45s linear infinite;
         }
