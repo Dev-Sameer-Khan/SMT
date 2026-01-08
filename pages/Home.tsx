@@ -208,14 +208,6 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-12 left-6 md:left-12 flex items-center gap-6 opacity-30">
-          <div className="h-24 w-[1px] bg-white relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full bg-blue-500 h-1/2 animate-infinite-scroll"></div>
-          </div>
-          <span className="text-white text-[10px] font-bold tracking-[0.3em] uppercase vertical-text transform -rotate-90 origin-left">
-            SCROLL
-          </span>
-        </div>
       </section>
 
       <Customers />
