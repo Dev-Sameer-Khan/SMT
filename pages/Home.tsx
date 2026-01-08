@@ -263,7 +263,7 @@ const Home: React.FC = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white/10 backdrop-blur-sm p-12 hover:bg-white/[0.02] border border-white/50 transition-colors group"
+                className="bg-white/10 backdrop-blur-md p-12 hover:bg-white/[0.02] border border-white/50 transition-colors group"
               >
                 <ThreeDIcon>
                   <item.icon className="w-10 h-10 group-hover:scale-110 transition-transform duration-500" />
