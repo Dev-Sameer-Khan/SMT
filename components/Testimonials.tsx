@@ -10,7 +10,7 @@ const Testimonials: React.FC = () => {
   return (
     <section className="py-32 max-[599px]:py-10 relative overflow-hidden border-t border-white/5">
       {/* Subtle industrial background accent */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-500/10 -skew-x-12 translate-x-20 pointer-events-none"></div>
+      {/* <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-500/10 -skew-x-12 translate-x-20 pointer-events-none"></div> */}
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="mb-20 max-[599px]:mb-6">

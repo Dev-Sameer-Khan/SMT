@@ -163,8 +163,8 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-5xl animate-reveal">
             <div className="flex items-center gap-4 mb-4">
-              <span className="h-[1px] w-12 bg-blue-500"></span>
-              <span className="text-blue-500 text-sm font-medium tracking-widest uppercase">
+              <span className="h-[1px] w-12 bg-white"></span>
+              <span className="text-white text-sm font-medium tracking-widest uppercase">
                 Quality You Can Trust Since 2014
               </span>
             </div>
@@ -272,7 +272,7 @@ const Home: React.FC = () => {
             </div>
             <div className="w-full lg:w-1/2 h-64 sm:h-96 lg:h-full mt-8 lg:mt-0 flex items-center justify-center">
               <Link to="/products" className="w-full">
-                <div className="relative w-full h-72 sm:h-96 lg:h-[700px] lg:w-[900px] rounded-md overflow-hidden group hover:shadow-xl transition-all duration-500 mx-auto">
+                <div className="relative w-full h-72 sm:h-96 lg:h-[700px] lg:w-[700px] rounded-md overflow-hidden group hover:shadow-xl transition-all duration-500 mx-auto">
                   <img
                     className="w-full h-full object-cover"
                     src="https://www.heavyequipments.in//uploads/equipment/thumbs/used-greaves-transit-mixer-in--1722507079.webp"
@@ -477,7 +477,7 @@ const Home: React.FC = () => {
               </div>
               {/* Show quote card below image on mobile/tablet, overlay on desktop */}
               <div
-                className="absolute bottom-5 md:-bottom-10 md:-left-10 glass-dark rounded p-6 sm:p-8 md:p-10 max-w-xs border border-white/5 mt-6 md:mt-0 w-[90%] md:w-auto
+                className="absolute bottom-5 md:-bottom-0 md:-left-0 glass rounded p-6 sm:p-8 md:p-10 max-w-xs border border-white/5 mt-6 md:mt-0 w-[90%] md:w-auto
                   block"
               >
                 <p className=" text-[10px] sm:text-xs leading-relaxed uppercase tracking-widest">
