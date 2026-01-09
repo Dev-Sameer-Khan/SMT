@@ -63,7 +63,7 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center gap-6">
             <button
               onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
-              className={`flex items-center gap-2 ${scrolled ? 'text-black hover:text-black/60' : 'text-white/80  hover:text-white'} text-xs font-mono uppercase tracking-widest`}
+              className={`flex items-center gap-2 text-black hover:text-black/60 text-xs font-mono uppercase tracking-widest`}
             >
               <Globe className="w-4 h-4" />
               {lang === 'en' ? 'AR' : 'EN'}
