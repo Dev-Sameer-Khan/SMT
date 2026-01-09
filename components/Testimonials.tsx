@@ -26,7 +26,7 @@ const Testimonials: React.FC = () => {
           {TESTIMONIALS.map((item) => (
             <div 
               key={item.id} 
-              className=" p-10 max-[599px]:p-6 bg-black/5 border hover:border-blue-500/50 hover:shadow-2xl rounded-md transition-all duration-500 group flex flex-col justify-between"
+              className=" p-10 max-[599px]:p-6 bg-black/5 shadow-sm border hover:border-blue-500/50 hover:shadow-2xl rounded-md transition-all duration-500 group flex flex-col justify-between"
             >
               <div>
                 <Quote className="w-10 h-10 text-blue-500/50 group-hover:text-blue-500 transition-colors duration-500 mb-8" />

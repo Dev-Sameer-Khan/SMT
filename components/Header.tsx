@@ -34,9 +34,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-[60] transition-all duration-500 will-change-[background,padding] ${
-          scrolled ? 'py-0 glass-dark' : 'py-2 bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 w-full z-[60] transition-all duration-500 will-change-[background,padding] py-0 glass bg-white shadow-md`}
       >
         <div className="container mx-auto lg:pr-6 lg:pl-0 pl-3 pr-6 flex items-center justify-between">
           {/* Logo */}
@@ -53,7 +51,7 @@ const Header: React.FC = () => {
                 className={`text-sm font-medium uppercase tracking-widest transition-colors ${
                   location.pathname === item.path
                     ? 'text-blue-500'
-                    : 'text-white/80 hover:text-white'
+                    : 'text-black hover:text-black/60'
                 }`}
               >
                 {item.name}
@@ -65,7 +63,7 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center gap-6">
             <button
               onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
-              className="flex items-center gap-2 text-white/80 hover:text-white text-xs font-mono uppercase tracking-widest"
+              className={`flex items-center gap-2 ${scrolled ? 'text-black hover:text-black/60' : 'text-white/80  hover:text-white'} text-xs font-mono uppercase tracking-widest`}
             >
               <Globe className="w-4 h-4" />
               {lang === 'en' ? 'AR' : 'EN'}

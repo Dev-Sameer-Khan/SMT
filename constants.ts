@@ -16,19 +16,19 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     statsProducts: "Inventory Units",
     statsProjects: "Global Deliveries",
     statsClients: "Key Partners",
-    launchTitle: "Pioneering Air Power",
-    launchBadge: "SYSTEM MODULE",
+    launchTitle: "Air Compressor",
+    launchBadge: "NEW LAUNCH",
     aboutTitle: "RELIABILITY ENGINEERED",
     aboutSubtitle: "A Legacy of Industrial Trust",
     aboutText:
       "Focused on high-performance engine components and heavy-duty filtration. Our supply chain ensures zero downtime for global fleet owners and industrial projects.",
-    productCategories: "CORE CAPABILITIES",
+    productCategories: "OUR PRODUCTS",
     faqTitle: "TECHNICAL SPECIFICATIONS & FAQ",
     contactTitle: "ESTABLISH PARTNERSHIP",
     footerTagline:
       "SMT is a Saudi Arabia–based company providing genuine engine spare parts and reliable maintenance and repair services, delivering quality you can trust since 2014.",
     whatsappTooltip: "Chat with us on WhatsApp",
-    testimonialTitle: "OPERATIONAL VERDICTS",
+    testimonialTitle: "What Clients Say",
   },
   ar: {
     navHome: "الرئيسية",

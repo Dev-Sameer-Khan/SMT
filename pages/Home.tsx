@@ -93,10 +93,10 @@ function StatCard({
   return (
     <div
       ref={ref}
-      className="shadow-md bg-black/5 hover:shadow-xl p-8 rounded-sm flex flex-col items-center text-center group hover:border hover:border-blue-500/50 transition-all duration-500"
+      className="shadow-md bg-black/5 hover:shadow-xl p-8 rounded-sm flex border-white/5 flex-col items-center text-center group border hover:border-blue-500/50 transition-all duration-500"
     >
       <Icon className="w-8 h-8 text-blue-500 mb-4 group-hover:scale-110 transition-transform duration-500" />
-      <h3 className="text-4xl font-bold text-black mb-2 font-mono tracking-tighter">
+      <h3 className="text-4xl font-bold text-black mb-2  tracking-tighter">
         {/* If number, count up with + if original had +, else just value */}
         {isNumber
           ? value.toString().endsWith("+")
@@ -104,7 +104,7 @@ function StatCard({
             : count.toLocaleString()
           : value}
       </h3>
-      <p className="text-black/40 text-[10px] font-bold uppercase tracking-[0.2em]">
+      <p className="text-black/60 text-[10px] font-bold uppercase tracking-[0.2em]">
         {label}
       </p>
     </div>
@@ -152,17 +152,17 @@ const Home: React.FC = () => {
           className="absolute inset-0 z-0 bg-cover bg-center will-change-transform transition-transform duration-100 ease-out scale-110"
           style={{
             // backgroundImage: `url('/bg.jpeg')`,
-            backgroundImage: `url('https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1583126162406-643011b3f69f?q=80&w=1403&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
             transform: `translateY(${scrollY * 0.25}px)`,
           }}
         >
-          <div className="absolute inset-0 bg-black/70"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]/80"></div>
+          <div className="absolute inset-0 backdrop-blur-sm"></div>
+          {/* <div className="absolute inset-0 bg-blue-500"></div> */}
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-5xl animate-reveal">
-            <div className="flex items-center gap-4 mb-8">
+            <div className="flex items-center gap-4 mb-4">
               <span className="h-[1px] w-12 bg-blue-500"></span>
               <span className="text-blue-500 text-sm font-medium tracking-widest uppercase">
                 Quality You Can Trust Since 2014
@@ -186,14 +186,15 @@ const Home: React.FC = () => {
                   </Link>
                   <Link
                     to="/contact"
-                    className="px-10 py-5 glass text-white font-bold uppercase text-[10px] tracking-[0.2em] hover:bg-white/10 transition-all duration-500 flex items-center justify-center"
+                    className="px-10 py-5 glass bg-white text-black font-bold uppercase text-[10px] tracking-[0.2em] hover:bg-blue-500 hover:text-white transition-all duration-500 flex items-center justify-center flex items-center justify-center gap-3 group"
                   >
                     {t.heroBtnInquiry}
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
-              <div className="hidden md:block text-right">
-                <p className="text-white/50 text-[10px] font-mono uppercase tracking-[0.3em] leading-loose">
+              <div className="hidden md:block text-left">
+                <p className="text-white/80 text-[13px]  uppercase tracking-[0.3em] leading-tighter">
                   Global Distribution Hubs
                   <br />
                   Abu Dhabi / Dubai / Qatar / Bahrain / Kuwait / Oman / Sharjah
@@ -224,7 +225,7 @@ const Home: React.FC = () => {
                     {t.launchTitle}
                   </h2>
                 </div>
-                <p className="text-black/40 text-base sm:text-lg md:text-xl pt-4 sm:pt-6">
+                <p className="text-black/80 text-base sm:text-lg md:text-xl pt-4 sm:pt-6">
                   Introducing the next generation of air compression. SMT
                   Enterprises delivers reliable solutions engineered for 24/7
                   industrial operations with uncompromising performance and
@@ -262,7 +263,7 @@ const Home: React.FC = () => {
                     <h4 className="text-black font-bold uppercase tracking-widest text-xs mb-1 sm:mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-black/40 text-xs sm:text-sm font-mono">
+                    <p className="text-black/80 text-xs sm:text-sm ">
                       {item.desc}
                     </p>
                   </div>
@@ -274,10 +275,10 @@ const Home: React.FC = () => {
                 <div className="relative w-full h-72 sm:h-96 lg:h-[700px] lg:w-[900px] rounded-md overflow-hidden group hover:shadow-xl transition-all duration-500 mx-auto">
                   <img
                     className="w-full h-full object-cover"
-                    src="/comp.jpeg"
+                    src="https://www.heavyequipments.in//uploads/equipment/thumbs/used-greaves-transit-mixer-in--1722507079.webp"
                     alt=""
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
                     <Link
                       to="/products"
                       className="px-8 sm:px-12 py-4 sm:py-5 rounded shadow-md font-bold uppercase text-[10px] tracking-[0.2em] bg-blue-500 backdrop-blur-md border border-white/20"
@@ -366,7 +367,7 @@ const Home: React.FC = () => {
             <div className="space-y-12 max-[599px]:space-y-6">
               <div className="space-y-4 ">
                 <span className="text-lg font-bold uppercase tracking-widest text-blue-500">
-                  CORPORATE IDENTITY
+                ENGINEERING EXPERTISE
                 </span>
                 <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter leading-[0.95]">
                   Reliability isn’t accidental.
@@ -374,17 +375,17 @@ const Home: React.FC = () => {
                   It is engineered.
                 </h2>
               </div>
-              <p className="text-gray-600 text-xl leading-relaxed">
+              <p className="text-black/80 text-xl leading-relaxed">
                 We eliminate industrial volatility through a proprietary
                 12-point quality protocol, verifying every component from the
                 smallest gasket to the largest compressor.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-[599px]:gap-6 pt-12 max-[599px]:pt-6 border-t border-black">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-[599px]:gap-6 pt-12 max-[599px]:pt-6 border-t border-black/50">
                 <div>
                   <h4 className="text-xl font-bold uppercase tracking-widest text-blue-500">
                     Our Mission
                   </h4>
-                  <p className="text-gray-500 text-lg">
+                  <p className="text-black/50 text-lg">
                     To sustain global industrial productivity through the
                     relentless pursuit of part integrity and supply chain
                     velocity.
@@ -394,7 +395,7 @@ const Home: React.FC = () => {
                   <h4 className="text-xl font-bold uppercase tracking-widest text-blue-500">
                     Our Vision
                   </h4>
-                  <p className="text-gray-500 text-lg">
+                  <p className="text-black/50 text-lg">
                     To become the singular technical benchmark for heavy-duty
                     engine and air power solutions across the MENA region.
                   </p>
@@ -425,12 +426,12 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-0 md:gap-16 items-center">
             <div className="w-full md:w-1/2 space-y-8 max-[599px]:space-y-2">
               <span className="text-lg font-bold uppercase tracking-widest text-blue-500 block">
-                ENGINEERING EXPERTISE
+               ABOUT US
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-black tracking-tighter leading-none">
                 Clinical Precision in Supply.
               </h2>
-              <div className="space-y-6 max-[599px]:space-y-3 text-gray-600 text-base sm:text-lg leading-relaxed">
+              <div className="space-y-6 max-[599px]:space-y-3 text-black/80 text-base sm:text-lg leading-relaxed">
                 <p>
                   Industrial Precision operates at the intersection of
                   mechanical legacy and digital logistics. We maintain an
@@ -452,7 +453,7 @@ const Home: React.FC = () => {
                 ].map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm font-bold uppercase tracking-widest text-black/70"
+                    className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm font-bold uppercase tracking-widest text-black/80"
                   >
                     <div className="w-2 h-2 bg-blue-500"></div>
                     {item}
@@ -469,15 +470,17 @@ const Home: React.FC = () => {
             <div className="w-full md:w-1/2 relative mt-10 md:mt-0 flex justify-center">
               <div className="aspect-[4/5] rounded-md overflow-hidden shadow-2xl w-full max-w-lg sm:max-w-sm md:max-w-full mx-auto">
                 <img
-                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80"
+                  src="/bg.jpeg"
                   alt="Industrial Engineering"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                  className="w-full h-full object-cover "
                 />
               </div>
               {/* Show quote card below image on mobile/tablet, overlay on desktop */}
-              <div className="absolute bottom-5 md:-bottom-10 md:-left-10 glass-dark rounded p-6 sm:p-8 md:p-10 max-w-xs border border-white/5 mt-6 md:mt-0 w-[90%] md:w-auto
-                  block">
-                <p className="font-mono text-[10px] sm:text-xs leading-relaxed uppercase tracking-widest">
+              <div
+                className="absolute bottom-5 md:-bottom-10 md:-left-10 glass-dark rounded p-6 sm:p-8 md:p-10 max-w-xs border border-white/5 mt-6 md:mt-0 w-[90%] md:w-auto
+                  block"
+              >
+                <p className=" text-[10px] sm:text-xs leading-relaxed uppercase tracking-widest">
                   "We don't just supply parts; we supply the peace of mind that
                   your operations will never grind to a halt."
                 </p>
@@ -499,7 +502,7 @@ const Home: React.FC = () => {
                 PORTFOLIO
               </span>
               <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter">
-                Core Capabilities
+                {t.productCategories}
               </h2>
             </div>
             <Link
@@ -541,23 +544,23 @@ const Home: React.FC = () => {
               <Link
                 key={i}
                 to="/products"
-                className="group block relative aspect-[16/10] rounded-md overflow-hidden bg-gray-100"
+                className="group block relative aspect-[16/10] rounded-md shadow-md overflow-hidden bg-gray-100"
               >
                 <img
                   src={cat.img}
                   alt={cat.title}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-black/50"></div>
                 <div className="absolute bottom-0 left-0 p-10 max-[599px]:p-6 w-full flex justify-between items-end">
                   <div className="space-y-4">
-                    <span className="text-blue-500 font-mono text-xs uppercase tracking-widest">
+                    <span className="text-blue-500  text-xs uppercase tracking-widest">
                       {cat.count}
                     </span>
                     <h3 className="text-3xl font-bold text-white uppercase tracking-tight">
                       {cat.title}
                     </h3>
-                    <p className="text-white/50 text-sm max-w-xs group-hover:text-white transition-colors">
+                    <p className="text-white/80 text-sm max-w-xs group-hover:text-white transition-colors">
                       {cat.desc}
                     </p>
                   </div>
@@ -595,7 +598,7 @@ const Home: React.FC = () => {
                   <p className="text-black/40 text-sm">
                     Al Eid Complex Car Exhi Al Jawhara(Jeddah) - Saudi Arabia
                   </p>
-                  <p className="text-blue-500 text-[10px] font-mono mt-4">
+                  <p className="text-blue-500 text-[10px]  mt-4">
                     COORD: 21.43512° N, 39.26288° E
                   </p>
                 </div>
@@ -627,7 +630,7 @@ const Home: React.FC = () => {
               {t.faqTitle}
             </h2>
           </div>
-          <div className="divide-y divide-gray-100">
+          <div className="divide-y divide-black/50">
             {[
               {
                 q: "What are your delivery timelines for critical engine parts?",
@@ -642,9 +645,13 @@ const Home: React.FC = () => {
                 a: "Yes. Our engineering team can modify screw compressor outputs and filtration stages to meet specific industrial environments, including high-salinity or desert conditions.",
               },
             ].map((faq, i) => (
-              <details key={i} className="group py-8 max-[599px]:py-2" open={openFaq === i}>
+              <details
+                key={i}
+                className="group py-8 max-[599px]:py-2"
+                open={openFaq === i}
+              >
                 <summary
-                  className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-sm group-hover:text-blue-500 transition-all"
+                  className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-md group-hover:text-blue-500 transition-all"
                   onClick={(e) => {
                     e.preventDefault();
                     setOpenFaq(openFaq === i ? null : i);
@@ -652,13 +659,13 @@ const Home: React.FC = () => {
                 >
                   {faq.q}
                   <ChevronDown
-                    className={`w-5 h-5 text-gray-400 transition-all duration-300 ${
+                    className={`w-5 h-5 text-black/80 transition-all duration-300 ${
                       openFaq === i ? "rotate-180" : ""
                     }`}
                   />
                 </summary>
                 {openFaq === i && (
-                  <div className="mt-6 max-[599px]:mt-3 text-gray-500 text-sm leading-relaxed max-w-2xl">
+                  <div className="mt-6 max-[599px]:mt-3 text-black/80 text-md font-bold leading-wide max-w-2xl">
                     {faq.a}
                   </div>
                 )}
@@ -685,7 +692,7 @@ const Home: React.FC = () => {
                     Connect with Engineering.
                   </h2>
                 </div>
-                <p className="text-black/40 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg pt-4 max-[599px]:pt-2 sm:pt-6">
+                <p className="text-black/80 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg pt-4 max-[599px]:pt-2 sm:pt-6">
                   Direct access to our technical desk and logistics hubs
                   worldwide. We respond to industrial emergencies 24/7.
                 </p>
@@ -741,7 +748,7 @@ const Home: React.FC = () => {
                     <h4 className="text-black font-bold uppercase tracking-widest text-xs mb-1 sm:mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-black/40 text-xs sm:text-sm font-mono break-words">
+                    <p className="text-black/60 text-xs sm:text-sm  break-words">
                       {item.desc}
                     </p>
                   </a>
