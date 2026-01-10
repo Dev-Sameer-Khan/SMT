@@ -22,6 +22,12 @@ import {
 import { Link } from "react-router-dom";
 import Testimonials from "@/components/Testimonials";
 import Customers from "@/components/Customers";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import Swipers from "@/components/Swiper";
+import CustomImageSlider from "@/components/CustomImageSlider";
 
 function StatCard({
   label,
@@ -147,63 +153,16 @@ const Home: React.FC = () => {
   return (
     <div className="bg-white">
       {/* 2. Hero Section */}
+      {/* Swiper JS Hero Section */}
+      {/* Install swiper: npm install swiper */}
+      {/* At the top of the file add: 
+          import { Swiper, SwiperSlide } from 'swiper/react';
+          import { Autoplay, EffectFade } from 'swiper/modules';
+          import 'swiper/css';
+          import 'swiper/css/effect-fade';
+      */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center will-change-transform transition-transform duration-100 ease-out scale-110"
-          style={{
-            // backgroundImage: `url('/bg.jpeg')`,
-            backgroundImage: `url('https://images.unsplash.com/photo-1583126162406-643011b3f69f?q=80&w=1403&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
-            transform: `translateY(${scrollY * 0.25}px)`,
-          }}
-        >
-          <div className="absolute inset-0 backdrop-blur-sm"></div>
-          {/* <div className="absolute inset-0 bg-blue-500"></div> */}
-        </div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-5xl animate-reveal">
-            <div className="flex items-center gap-4 mb-4">
-              <span className="h-[1px] w-12 bg-white"></span>
-              <span className="text-white text-sm font-medium tracking-widest uppercase">
-                Quality You Can Trust Since 2014
-              </span>
-            </div>
-            <h1 className="text-6xl md:text-9xl font-black text-white mb-8 leading-[0.9] text-reveal">
-              {t.heroTitle}
-            </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
-              <div>
-                <p className="text-xl md:text-2xl text-white/80 font-medium mb-8 leading-relaxed">
-                  {t.heroDesc}
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                    to="/products"
-                    className="px-10 py-5 bg-blue-500 text-white font-bold uppercase text-[10px] tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-500 flex items-center justify-center gap-3 group"
-                  >
-                    {t.heroBtnProducts}
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                  <Link
-                    to="/contact"
-                    className="px-10 py-5 glass bg-white text-black font-bold uppercase text-[10px] tracking-[0.2em] hover:bg-blue-500 hover:text-white transition-all duration-500 flex items-center justify-center flex items-center justify-center gap-3 group"
-                  >
-                    {t.heroBtnInquiry}
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
-              </div>
-              <div className="hidden md:block text-left">
-                <p className="text-white/80 text-[13px]  uppercase tracking-[0.3em] leading-tighter">
-                  Global Distribution Hubs
-                  <br />
-                  Abu Dhabi / Dubai / Qatar / Bahrain / Kuwait / Oman / Sharjah
-                  / Turkey / Germany / Asia Pacific
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Swipers />
       </section>
 
       <Customers />
@@ -218,7 +177,7 @@ const Home: React.FC = () => {
             <div className="w-full lg:w-1/2 flex flex-col gap-6 max-[599px]:gap-0">
               <div className="text-left">
                 <div>
-                  <span className="text-blue-500 text-lg font-bold uppercase tracking-widest mb-4 block">
+                  <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
                     {t.launchBadge}
                   </span>
                   <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
@@ -260,34 +219,27 @@ const Home: React.FC = () => {
                     className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
                   >
                     <item.icon className="w-6 h-6 text-blue-500 mb-4 sm:mb-6 group-hover:scale-110 transition-transform" />
-                    <h4 className="text-black font-bold uppercase tracking-widest text-xs mb-1 sm:mb-2">
+                    <h4 className="text-black font-bold uppercase tracking-widest text-sm mb-1 sm:mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-black/80 text-xs sm:text-sm ">
-                      {item.desc}
-                    </p>
+                    <p className="text-black/80 text-sm ">{item.desc}</p>
                   </div>
                 ))}
               </div>
             </div>
             <div className="w-full lg:w-1/2 h-64 sm:h-96 lg:h-full mt-8 lg:mt-0 flex items-center justify-center">
-              <Link to="/products" className="w-full">
-                <div className="relative w-full h-72 sm:h-96 lg:h-[700px] lg:w-[700px] rounded-md overflow-hidden group hover:shadow-xl transition-all duration-500 mx-auto">
-                  <img
-                    className="w-full h-full object-cover"
-                    src="https://www.heavyequipments.in//uploads/equipment/thumbs/used-greaves-transit-mixer-in--1722507079.webp"
-                    alt=""
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
-                    <Link
-                      to="/products"
-                      className="px-8 sm:px-12 py-4 sm:py-5 rounded shadow-md font-bold uppercase text-[10px] tracking-[0.2em] bg-blue-500 backdrop-blur-md border border-white/20"
-                    >
-                      EXPLORE FULL INVENTORY
-                    </Link>
-                  </div>
+              <div className="relative w-full h-72 sm:h-96 lg:h-[700px] lg:w-[700px] rounded-md overflow-hidden group hover:shadow-xl transition-all duration-500 mx-auto flex items-center">
+                {/* Custom Swiper */}
+                <CustomImageSlider />
+                <div className="absolute h-[30%] w-full bottom-0 left-0 flex items-center justify-center bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white z-10">
+                  <Link
+                    to="/products?category=compressor"
+                    className="px-8 sm:px-12 py-4 sm:py-5 rounded shadow-md font-bold uppercase text-sm tracking-widest bg-blue-500 backdrop-blur-md border border-white/20"
+                  >
+                    EXPLORE FULL INVENTORY
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -360,62 +312,101 @@ const Home: React.FC = () => {
         </div>
       </section> */}
 
-      {/* 5. Mission, Vision & Impact Stats */}
-      <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50 relative">
+      {/* 7. Products & Capabilities (Awwwards-style showcase) */}
+      <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 max-[599px]:gap-6 items-center">
-            <div className="space-y-12 max-[599px]:space-y-6">
-              <div className="space-y-4 ">
-                <span className="text-lg font-bold uppercase tracking-widest text-blue-500">
-                ENGINEERING EXPERTISE
-                </span>
-                <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter leading-[0.95]">
-                  Reliability isn’t accidental.
-                  <br />
-                  It is engineered.
-                </h2>
-              </div>
-              <p className="text-black/80 text-xl leading-relaxed">
-                We eliminate industrial volatility through a proprietary
-                12-point quality protocol, verifying every component from the
-                smallest gasket to the largest compressor.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-[599px]:gap-6 pt-12 max-[599px]:pt-6 border-t border-black/50">
-                <div>
-                  <h4 className="text-xl font-bold uppercase tracking-widest text-blue-500">
-                    Our Mission
-                  </h4>
-                  <p className="text-black/50 text-lg">
-                    To sustain global industrial productivity through the
-                    relentless pursuit of part integrity and supply chain
-                    velocity.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold uppercase tracking-widest text-blue-500">
-                    Our Vision
-                  </h4>
-                  <p className="text-black/50 text-lg">
-                    To become the singular technical benchmark for heavy-duty
-                    engine and air power solutions across the MENA region.
-                  </p>
-                </div>
-              </div>
+          <div className="flex flex-col md:flex-row justify-between items-end mb-24 max-[599px]:mb-6 gap-8">
+            <div className="max-w-2xl">
+              <span className="text-blue-500 text-4xl font-bold uppercase mb-4 max-[599px]:mb-0 block">
+                PORTFOLIO
+              </span>
+              <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter">
+                {t.productCategories}
+              </h2>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <StatCard
-                label={t.statsProducts}
-                value="12.5k+"
-                icon={Warehouse}
-              />
-              <StatCard
-                label={t.statsExperience}
-                value="11+"
-                icon={ShieldCheck}
-              />
-              <StatCard label={t.statsProjects} value="1200+" icon={Globe} />
-              <StatCard label={t.statsClients} value="45+" icon={CheckCircle} />
-            </div>
+            <Link
+              to="/products"
+              className="px-10 max-[599px]:w-full py-5 bg-blue-500 rounded text-white font-bold uppercase text-sm tracking-widest hover:bg-blue-600 hover:shadow-xl transition-all duration-500 flex items-center justify-center gap-3 group"
+            >
+              Explore Full Invetory{" "}
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-[599px]:gap-4">
+            {[
+              {
+                title: "Engine Spares",
+                count: "4,500+ SKUs",
+                img: "https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&q=80",
+                desc: "Pistons, liners, valves, and crankshafts for CAT, Cummins, and Komatsu units.",
+                link : "/products?category=engine"
+              },
+              {
+                title: "Compressors Spares",
+                count: "32 Models",
+                img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80",
+                desc: "Industrial air power solutions from 5.5kW to 350kW with integrated drying.",
+                link : "/products?category=compressor"
+              },
+              {
+                title: "Filters",
+                count: "2,800+ SKUs",
+                img: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80",
+                desc: "Gasket kits, sealing solutions, and wear parts for earthmoving machinery.",
+                link : "/products?category=filter"
+              },
+              {
+                title: "Electric Items",
+                count: "1,200+ SKUs",
+                img: "https://images.unsplash.com/photo-1730201127761-15888d9ddf98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
+                link : "/products?category=electric"
+              },
+              {
+                title: "Rubber & Coupling",
+                count: "1,200+ SKUs",
+                img: "https://images.unsplash.com/photo-1730201127761-15888d9ddf98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
+                link : "/products?category=rubber"
+              },
+              {
+                title: "JCB Spares",
+                count: "1,200+ SKUs",
+                img: "https://images.unsplash.com/photo-1730201127761-15888d9ddf98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
+                link : "/products?category=jcb"
+              },
+            ].map((cat, i) => (
+              <Link
+                key={i}
+                to={cat.link}
+                className="group block relative aspect-[16/10] rounded-md shadow-md overflow-hidden bg-gray-100"
+              >
+                <img
+                  src={cat.img}
+                  alt={cat.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="absolute bottom-0 left-0 p-10 max-[599px]:p-6 w-full flex justify-between items-end">
+                  <div className="space-y-4">
+                    <span className="text-blue-500  text-xs uppercase tracking-widest">
+                      {cat.count}
+                    </span>
+                    <h3 className="text-3xl font-bold text-white uppercase tracking-tight">
+                      {cat.title}
+                    </h3>
+                    <p className="text-white/80 text-sm max-w-xs group-hover:text-white transition-colors">
+                      {cat.desc}
+                    </p>
+                  </div>
+                  <div className="w-14 h-14 rounded bg-white/10 flex items-center justify-center text-white backdrop-blur-md border border-white/20 group-hover:bg-blue-500 group-hover:border-blue-500 transition-all">
+                    <ArrowRight className="w-6 h-6" />
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -425,8 +416,8 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-0 md:gap-16 items-center">
             <div className="w-full md:w-1/2 space-y-8 max-[599px]:space-y-2">
-              <span className="text-lg font-bold uppercase tracking-widest text-blue-500 block">
-               ABOUT US
+              <span className="text-4xl -mb-4 font-bold uppercase  text-blue-500 block">
+                ABOUT US
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-black tracking-tighter leading-none">
                 Clinical Precision in Supply.
@@ -493,83 +484,62 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 7. Products & Capabilities (Awwwards-style showcase) */}
-      <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
+      {/* 5. Mission, Vision & Impact Stats */}
+      <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50 relative">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-24 max-[599px]:mb-6 gap-8">
-            <div className="max-w-2xl">
-              <span className="text-blue-500 text-lg font-bold uppercase tracking-widest mb-4 max-[599px]:mb-0 block">
-                PORTFOLIO
-              </span>
-              <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter">
-                {t.productCategories}
-              </h2>
-            </div>
-            <Link
-              to="/products"
-              className="px-10 max-[599px]:w-full py-5 bg-blue-500 rounded text-white font-bold uppercase text-sm tracking-widest hover:bg-blue-600 hover:shadow-xl transition-all duration-500 flex items-center justify-center gap-3 group"
-            >
-              Explore Full Invetory{" "}
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-[599px]:gap-4">
-            {[
-              {
-                title: "Engine Components",
-                count: "4,500+ SKUs",
-                img: "https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&q=80",
-                desc: "Pistons, liners, valves, and crankshafts for CAT, Cummins, and Komatsu units.",
-              },
-              {
-                title: "Screw Compressors",
-                count: "32 Models",
-                img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80",
-                desc: "Industrial air power solutions from 5.5kW to 350kW with integrated drying.",
-              },
-              {
-                title: "Heavy Spares",
-                count: "2,800+ SKUs",
-                img: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80",
-                desc: "Gasket kits, sealing solutions, and wear parts for earthmoving machinery.",
-              },
-              {
-                title: "Filtration Systems",
-                count: "1,200+ SKUs",
-                img: "https://images.unsplash.com/photo-1730201127761-15888d9ddf98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
-              },
-            ].map((cat, i) => (
-              <Link
-                key={i}
-                to="/products"
-                className="group block relative aspect-[16/10] rounded-md shadow-md overflow-hidden bg-gray-100"
-              >
-                <img
-                  src={cat.img}
-                  alt={cat.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
-                />
-                <div className="absolute inset-0 bg-black/50"></div>
-                <div className="absolute bottom-0 left-0 p-10 max-[599px]:p-6 w-full flex justify-between items-end">
-                  <div className="space-y-4">
-                    <span className="text-blue-500  text-xs uppercase tracking-widest">
-                      {cat.count}
-                    </span>
-                    <h3 className="text-3xl font-bold text-white uppercase tracking-tight">
-                      {cat.title}
-                    </h3>
-                    <p className="text-white/80 text-sm max-w-xs group-hover:text-white transition-colors">
-                      {cat.desc}
-                    </p>
-                  </div>
-                  <div className="w-14 h-14 rounded bg-white/10 flex items-center justify-center text-white backdrop-blur-md border border-white/20 group-hover:bg-blue-500 group-hover:border-blue-500 transition-all">
-                    <ArrowRight className="w-6 h-6" />
-                  </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 max-[599px]:gap-6 items-center">
+            <div className="space-y-12 max-[599px]:space-y-6">
+              <div className="space-y-4 ">
+                <span className="text-4xl font-bold uppercase  text-blue-500">
+                  ENGINEERING EXPERTISE
+                </span>
+                <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter leading-[0.95]">
+                  Reliability isn’t accidental.
+                  <br />
+                  It is engineered.
+                </h2>
+              </div>
+              <p className="text-black/80 text-xl leading-relaxed">
+                We eliminate industrial volatility through a proprietary
+                12-point quality protocol, verifying every component from the
+                smallest gasket to the largest compressor.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-[599px]:gap-6 pt-12 max-[599px]:pt-6 border-t border-black/50">
+                <div>
+                  <h4 className="text-xl font-bold uppercase tracking-widest text-blue-500">
+                    Our Mission
+                  </h4>
+                  <p className="text-black/50 text-lg">
+                    To sustain global industrial productivity through the
+                    relentless pursuit of part integrity and supply chain
+                    velocity.
+                  </p>
                 </div>
-              </Link>
-            ))}
+                <div>
+                  <h4 className="text-xl font-bold uppercase tracking-widest text-blue-500">
+                    Our Vision
+                  </h4>
+                  <p className="text-black/50 text-lg">
+                    To become the singular technical benchmark for heavy-duty
+                    engine and air power solutions across the MENA region.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <StatCard
+                label={t.statsProducts}
+                value="12.5k+"
+                icon={Warehouse}
+              />
+              <StatCard
+                label={t.statsExperience}
+                value="11+"
+                icon={ShieldCheck}
+              />
+              <StatCard label={t.statsProjects} value="1200+" icon={Globe} />
+              <StatCard label={t.statsClients} value="45+" icon={CheckCircle} />
+            </div>
           </div>
         </div>
       </section>
@@ -619,61 +589,6 @@ const Home: React.FC = () => {
         </div>
       </section> */}
 
-      {/* 10. FAQs */}
-      <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <div className="text-center mb-16 max-[599px]:mb-6">
-            <span className="text-blue-500 text-lg font-bold uppercase tracking-widest mb-4 max-[599px]:mb-0 block">
-              KNOWLEDGE BASE
-            </span>
-            <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter">
-              {t.faqTitle}
-            </h2>
-          </div>
-          <div className="divide-y divide-black/50">
-            {[
-              {
-                q: "What are your delivery timelines for critical engine parts?",
-                a: "Stocked items are dispatched within 6 hours. International freight usually takes 3-5 business days via our premium logistics partners.",
-              },
-              {
-                q: "Do you offer warranty on aftermarket components?",
-                a: "All premium aftermarket parts supplied by Industrial Precision carry a standard 12-month operational warranty, matching OEM standards.",
-              },
-              {
-                q: "Can you provide customized compressor configurations?",
-                a: "Yes. Our engineering team can modify screw compressor outputs and filtration stages to meet specific industrial environments, including high-salinity or desert conditions.",
-              },
-            ].map((faq, i) => (
-              <details
-                key={i}
-                className="group py-8 max-[599px]:py-2"
-                open={openFaq === i}
-              >
-                <summary
-                  className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-md group-hover:text-blue-500 transition-all"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setOpenFaq(openFaq === i ? null : i);
-                  }}
-                >
-                  {faq.q}
-                  <ChevronDown
-                    className={`w-5 h-5 text-black/80 transition-all duration-300 ${
-                      openFaq === i ? "rotate-180" : ""
-                    }`}
-                  />
-                </summary>
-                {openFaq === i && (
-                  <div className="mt-6 max-[599px]:mt-3 text-black/80 text-md font-bold leading-wide max-w-2xl">
-                    {faq.a}
-                  </div>
-                )}
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
       {/* 11. Quick Contact Section (New) */}
       <section className="py-10 md:py-24 lg:py-32 bg-white border-t border-black/50 relative overflow-hidden">
         {/* Decorative Grid Line */}
@@ -685,7 +600,7 @@ const Home: React.FC = () => {
             <div className="w-full lg:w-1/2 flex flex-col gap-6">
               <div className="text-left space-t-8">
                 <div>
-                  <span className="text-blue-500 text-lg font-bold uppercase tracking-widest mb-4 max-[599px]:mb-1 block">
+                  <span className="text-blue-500 text-4xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
                     GET IN TOUCH
                   </span>
                   <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
@@ -769,6 +684,62 @@ const Home: React.FC = () => {
                 ></iframe>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 10. FAQs */}
+      <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="text-center mb-16 max-[599px]:mb-6">
+            <span className="text-blue-500 text-4xl font-bold uppercaset mb-4 max-[599px]:mb-0 block">
+              KNOWLEDGE BASE
+            </span>
+            <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter">
+              {t.faqTitle}
+            </h2>
+          </div>
+          <div className="divide-y divide-black/50">
+            {[
+              {
+                q: "What are your delivery timelines for critical engine parts?",
+                a: "Stocked items are dispatched within 6 hours. International freight usually takes 3-5 business days via our premium logistics partners.",
+              },
+              {
+                q: "Do you offer warranty on aftermarket components?",
+                a: "All premium aftermarket parts supplied by Industrial Precision carry a standard 12-month operational warranty, matching OEM standards.",
+              },
+              {
+                q: "Can you provide customized compressor configurations?",
+                a: "Yes. Our engineering team can modify screw compressor outputs and filtration stages to meet specific industrial environments, including high-salinity or desert conditions.",
+              },
+            ].map((faq, i) => (
+              <details
+                key={i}
+                className="group py-8 max-[599px]:py-2"
+                open={openFaq === i}
+              >
+                <summary
+                  className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-md group-hover:text-blue-500 transition-all"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenFaq(openFaq === i ? null : i);
+                  }}
+                >
+                  {faq.q}
+                  <ChevronDown
+                    className={`w-5 h-5 text-black/80 transition-all duration-300 ${
+                      openFaq === i ? "rotate-180" : ""
+                    }`}
+                  />
+                </summary>
+                {openFaq === i && (
+                  <div className="mt-6 max-[599px]:mt-3 text-black/80 text-md font-bold leading-wide max-w-2xl">
+                    {faq.a}
+                  </div>
+                )}
+              </details>
+            ))}
           </div>
         </div>
       </section>

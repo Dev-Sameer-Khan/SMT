@@ -11,13 +11,13 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     heroTagline: "Engineering Excellence at Scale",
     heroDesc:
       "Elite global supplier of high-performance engine components, filtration systems, and industrial compressors.",
-    heroBtnProducts: "View Brochure",
-    heroBtnInquiry: "Technical Inquiry",
+    heroBtnProducts: "Your Products",
+    heroBtnInquiry: "Contact Us",
     statsProducts: "Inventory Units",
     statsProjects: "Global Deliveries",
     statsClients: "Key Partners",
     launchTitle: "Air Compressor",
-    launchBadge: "NEW LAUNCH",
+    launchBadge: "Main Product",
     aboutTitle: "RELIABILITY ENGINEERED",
     aboutSubtitle: "A Legacy of Industrial Trust",
     aboutText:

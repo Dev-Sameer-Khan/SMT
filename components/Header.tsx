@@ -77,7 +77,7 @@ const Header: React.FC = () => {
                     
                     {/* Dropdown Menu */}
                     <div
-                      className={`absolute top-full left-0 mt-2 bg-white shadow-xl rounded-sm border border-gray-100 min-w-[220px] py-2 transition-all duration-300 ${
+                      className={`absolute top-full left-0 bg-white shadow-xl rounded-sm border border-gray-100 min-w-[220px] py-2 transition-all duration-300 ${
                         productsMenuOpen
                           ? 'opacity-100 visible translate-y-0'
                           : 'opacity-0 invisible -translate-y-2 pointer-events-none'
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center gap-6">
             <button
               onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
-              className={`flex items-center gap-2 text-black hover:text-black/60 text-xs font-mono uppercase tracking-widest`}
+              className={`flex items-center gap-2 text-black hover:text-black/60 text-sm  uppercase tracking-widest`}
             >
               <Globe className="w-4 h-4" />
               {lang === 'en' ? 'AR' : 'EN'}
@@ -124,7 +124,7 @@ const Header: React.FC = () => {
             
             <Link
               to="/contact"
-              className="hidden sm:block px-6 py-1 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold uppercase tracking-widest rounded-sm transition-all shadow-xl hover:shadow-blue-500/40"
+              className="hidden sm:block px-6 py-2.5 bg-blue-500 hover:bg-blue-600 text-white text-sm font-bold uppercase tracking-widest rounded-sm transition-all shadow-xl hover:shadow-blue-500/40"
             >
               {t.ctaInquiry}
             </Link>
@@ -134,7 +134,7 @@ const Header: React.FC = () => {
           <div className="flex md:hidden items-center gap-4 z-50">
             <button
               onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
-              className="flex items-center gap-2 text-white/80 hover:text-white text-xs font-mono uppercase tracking-widest"
+              className="flex items-center gap-2 text-black/80 hover:text-black text-xs  uppercase tracking-widest"
             >
               <Globe className="w-4 h-4" />
               {lang === 'en' ? 'AR' : 'EN'}
@@ -142,7 +142,7 @@ const Header: React.FC = () => {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-white hover:bg-white/10 rounded-lg transition-colors"
+              className="text-black hover:bg-white/10 rounded-lg transition-colors"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

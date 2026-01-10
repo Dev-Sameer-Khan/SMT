@@ -14,7 +14,7 @@ const Testimonials: React.FC = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="mb-20 max-[599px]:mb-6">
-          <span className="text-blue-500 text-lg font-bold uppercase tracking-widest mb-4 max-[599px]:mb-2 block">
+          <span className="text-blue-500 text-4xl font-bold uppercase mb-4 max-[599px]:mb-2 block">
             {t.testimonialTitle}
           </span>
           <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter  leading-none">
