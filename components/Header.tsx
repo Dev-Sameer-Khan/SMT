@@ -112,7 +112,7 @@ const Header: React.FC = () => {
             })}
           </nav>
 
-          {/* Actions */}
+          {/* Actionsss */}
           <div className="hidden md:flex items-center gap-6">
             <button
               onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
