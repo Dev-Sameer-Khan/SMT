@@ -1,12 +1,20 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../App';
 import { PRODUCTS } from '../constants';
 import { Search, Filter, ArrowRight } from 'lucide-react';
+import { useSearchParams } from 'react-router-dom';
 
 const ProductsPage: React.FC = () => {
   const { t } = useLanguage();
-  const [activeCategory, setActiveCategory] = useState<string>('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const categoryParam = searchParams.get('category') || 'all';
+  const [activeCategory, setActiveCategory] = useState<string>(categoryParam);
+
+  useEffect(() => {
+    const category = searchParams.get('category') || 'all';
+    setActiveCategory(category);
+  }, [searchParams]);
 
   const categories = [
     { id: 'all', label: 'ALL COMPONENTS' },
@@ -43,7 +51,14 @@ const ProductsPage: React.FC = () => {
                 {categories.map((cat) => (
                   <button
                     key={cat.id}
-                    onClick={() => setActiveCategory(cat.id)}
+                    onClick={() => {
+                      setActiveCategory(cat.id);
+                      if (cat.id === 'all') {
+                        setSearchParams({});
+                      } else {
+                        setSearchParams({ category: cat.id });
+                      }
+                    }}
                     className={`w-full text-left px-4 py-3 text-xs font-bold uppercase tracking-widest transition-all ${
                       activeCategory === cat.id 
                       ? 'bg-blue-500 text-white shadow-lg' 
