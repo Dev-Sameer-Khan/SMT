@@ -112,7 +112,7 @@ const Header: React.FC = () => {
             })}
           </nav>
 
-          {/* Actionsss */}
+          {/* Actionssssss*/}
           <div className="hidden md:flex items-center gap-6">
             <button
               onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
@@ -142,7 +142,7 @@ const Header: React.FC = () => {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-black hover:bg-white/10 rounded-lg transition-colors"
+              className="text-black hover:bg-black/10 rounded-lg transition-colors"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
