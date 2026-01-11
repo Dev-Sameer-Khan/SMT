@@ -1,4 +1,4 @@
-#Structure of Content
+# Structure of Contents
 
 ```
 SMT Photos/
