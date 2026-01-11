@@ -143,13 +143,23 @@ const ProductsPage: React.FC = () => {
                     <p className="text-md text-gray-500 mb-8 line-clamp-2 leading-relaxed">
                       {product.desc}
                     </p>
+                    <div className="flex flex-col gap-4 justify-center items-center">
+                      <Link className="w-full" to={`/product-details/${product.title}`}>
+                    <button
+                      className="w-full py-4 bg-white text-blue-500 border border-blue-500 text-md font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn"
+                      >
+                      View Product{" "}
+                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                      </button>
+                      </Link>
                     <button
                       onClick={() => handleWhatsAppQuery(product)}
                       className="w-full py-4 bg-blue-500 text-white text-md font-bold uppercase flex items-center justify-center gap-2 hover:bg-blue-600 rounded-md transition-all group/btn"
                     >
-                      Buy This{" "}
+                      Inquire Now{" "}
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                     </button>
+                    </div>
                   </div>
                 </div>
               ))}

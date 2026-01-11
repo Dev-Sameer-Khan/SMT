@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TernsOfService";
 import ErrorPage from "./pages/ErorrPage";
+import ProductDetails from "./pages/ProductDetails";
 
 interface LanguageContextType {
   lang: Language;
@@ -103,6 +104,7 @@ const App: React.FC = () => {
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/product-details/:id" element={<ProductDetails />} />
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </main>

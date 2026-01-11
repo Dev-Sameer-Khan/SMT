@@ -89,7 +89,7 @@ const Customers: React.FC = () => {
           Trusted by Leaders
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
-          Global Partnership Network
+          Global Brands
         </h2>
       </div>
 
