@@ -1,5 +1,6 @@
 #Structure of Content
 
+```
 SMT Photos/
 ├── engine parts/
 │   ├── caterpiller/
@@ -85,3 +86,4 @@ SMT Photos/
         └── 2485C557.webp (Rubber Part 2485C557)
 
 
+```
