@@ -7,18 +7,18 @@ const Swipers = () => {
     <Swiper
       slidesPerView={1}
       loop={true}
-      pagination={{
-        clickable: true,
-      }}
+      // pagination={{
+      //   clickable: true,
+      // }}
       grabCursor={true}
-      navigation={true}
-      modules={[Pagination, Autoplay, EffectFade]}
+      // navigation={true}
+      modules={[Autoplay]}
       centeredSlides={true}
       autoplay={{
         delay: 2000,
         disableOnInteraction: false,
       }}
-      className="mySwiper mt-40"
+      className="mt-40"
     >
       <SwiperSlide>
         <div class="w-full h-screen relative overflow-hidden">

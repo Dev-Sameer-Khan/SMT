@@ -338,42 +338,42 @@ const Home: React.FC = () => {
               {
                 title: "Engine Spares",
                 count: "4,500+ SKUs",
-                img: "https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&q=80",
+                img: "https://t4.ftcdn.net/jpg/02/58/95/41/360_F_258954135_TAjOL99tceCUQ4of5nAFACAY4u8fiRE1.jpg",
                 desc: "Pistons, liners, valves, and crankshafts for CAT, Cummins, and Komatsu units.",
                 link : "/products?category=engine"
               },
               {
                 title: "Compressors Spares",
                 count: "32 Models",
-                img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80",
+                img: "https://3.imimg.com/data3/TE/YU/MY-14849337/rotary-tablet-machine-spare-parts.jpg",
                 desc: "Industrial air power solutions from 5.5kW to 350kW with integrated drying.",
                 link : "/products?category=compressor"
               },
               {
                 title: "Filters",
                 count: "2,800+ SKUs",
-                img: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUsrxDf6j-LIlLhS00Vd1evRfMxp4W4lMrw&s",
                 desc: "Gasket kits, sealing solutions, and wear parts for earthmoving machinery.",
                 link : "/products?category=filter"
               },
               {
                 title: "Electric Items",
                 count: "1,200+ SKUs",
-                img: "https://images.unsplash.com/photo-1730201127761-15888d9ddf98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                img: "https://unifiedsolution.sa/wp-content/uploads/2025/05/details-of-the-electric-motor-in-the-wooden-case-i-2025-01-07-23-23-02-utc-scaled.jpg",
                 desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
                 link : "/products?category=electric"
               },
               {
                 title: "Rubber & Coupling",
                 count: "1,200+ SKUs",
-                img: "https://images.unsplash.com/photo-1730201127761-15888d9ddf98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                img: "https://1.imimg.com/data/U/V/MY-75347/006_500x500.JPG",
                 desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
                 link : "/products?category=rubber"
               },
               {
                 title: "JCB Spares",
                 count: "1,200+ SKUs",
-                img: "https://images.unsplash.com/photo-1730201127761-15888d9ddf98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                img: "https://cpimg.tistatic.com/7094941/b/4/jcb-cabin-body-spare-parts.jpg",
                 desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
                 link : "/products?category=jcb"
               },
@@ -388,10 +388,10 @@ const Home: React.FC = () => {
                   alt={cat.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent h-[50%] w-full"></div>
                 <div className="absolute bottom-0 left-0 p-10 max-[599px]:p-6 w-full flex justify-between items-end">
                   <div className="space-y-4">
-                    <span className="text-blue-500  text-xs uppercase tracking-widest">
+                    <span className="text-blue-500  text-sm font-bold uppercase tracking-widest">
                       {cat.count}
                     </span>
                     <h3 className="text-3xl font-bold text-white uppercase tracking-tight">
