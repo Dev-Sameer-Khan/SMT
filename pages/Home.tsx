@@ -99,10 +99,10 @@ function StatCard({
   return (
     <div
       ref={ref}
-      className="shadow-md bg-black/5 hover:shadow-xl p-8 rounded-sm flex border-white/5 flex-col items-center text-center group border hover:border-blue-500/50 transition-all duration-500"
+      className="shadow-md bg-black/5 hover:shadow-xl p-8 max-[599px]:p-4 rounded-sm flex border-white/5 flex-col items-center text-center group border hover:border-blue-500/50 transition-all duration-500"
     >
       <Icon className="w-8 h-8 text-blue-500 mb-4 group-hover:scale-110 transition-transform duration-500" />
-      <h3 className="text-4xl font-bold text-black mb-2  tracking-tighter">
+      <h3 className="text-4xl max-[599px]:text-2xl font-bold text-black mb-2  tracking-tighter">
         {/* If number, count up with + if original had +, else just value */}
         {isNumber
           ? value.toString().endsWith("+")
@@ -161,9 +161,7 @@ const Home: React.FC = () => {
           import 'swiper/css';
           import 'swiper/css/effect-fade';
       */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <Swipers />
-      </section>
 
       <Customers />
 
@@ -172,15 +170,15 @@ const Home: React.FC = () => {
         {/* Decorative Grid Line */}
         {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-white/5 hidden md:block"></div> */}
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          <div className="w-full flex flex-col lg:flex-row items-stretch gap-12 max-[599px]:gap-6 lg:gap-20">
+        <div className="container mx-auto px-6 max-[599px]:px-6 sm:px-6 relative z-10">
+          <div className="w-full flex flex-col lg:flex-row max-[599px]:flex-col-reverse items-stretch gap-12 max-[599px]:gap-6 lg:gap-20">
             <div className="w-full lg:w-1/2 flex flex-col gap-6 max-[599px]:gap-0">
               <div className="text-left">
                 <div>
-                  <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
+                  <span className="text-blue-500 max-[599px]:text-2xl text-4xl font-bold uppercase mb-4 max-[599px]:mb-0 block">
                     {t.launchBadge}
                   </span>
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
+                  <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
                     {t.launchTitle}
                   </h2>
                 </div>
@@ -216,7 +214,7 @@ const Home: React.FC = () => {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
+                    className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 max-[599px]:p-4 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
                   >
                     <item.icon className="w-6 h-6 text-blue-500 mb-4 sm:mb-6 group-hover:scale-110 transition-transform" />
                     <h4 className="text-black font-bold uppercase tracking-widest text-sm mb-1 sm:mb-2">
@@ -227,20 +225,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
             </div>
-            <div className="w-full lg:w-1/2 h-64 sm:h-96 lg:h-full mt-8 lg:mt-0 flex items-center justify-center">
-              <div className="relative w-full h-72 sm:h-96 lg:h-[700px] lg:w-[700px] rounded-md overflow-hidden group hover:shadow-xl transition-all duration-500 mx-auto flex items-center">
-                {/* Custom Swiper */}
                 <CustomImageSlider />
-                <div className="absolute h-[30%] w-full bottom-0 left-0 flex items-center justify-center bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white z-10">
-                  <Link
-                    to="/products?category=compressor"
-                    className="px-8 sm:px-12 py-4 sm:py-5 rounded shadow-md font-bold uppercase text-sm tracking-widest bg-blue-500 backdrop-blur-md border border-white/20"
-                  >
-                    EXPLORE FULL INVENTORY
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -315,12 +300,12 @@ const Home: React.FC = () => {
       {/* 7. Products & Capabilities (Awwwards-style showcase) */}
       <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-24 max-[599px]:mb-6 gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-end max-[599px]:items-start mb-24 max-[599px]:mb-6 gap-8">
             <div className="max-w-2xl">
-              <span className="text-blue-500 text-4xl font-bold uppercase mb-4 max-[599px]:mb-0 block">
+              <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 max-[599px]:mb-0 block">
                 PORTFOLIO
               </span>
-              <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter">
+              <h2 className="text-5xl max-[599px]:text-4xl md:text-7xl font-black text-black tracking-tighter">
                 {t.productCategories}
               </h2>
             </div>
@@ -388,9 +373,9 @@ const Home: React.FC = () => {
                   alt={cat.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                 />
-                <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent h-[50%] w-full"></div>
-                <div className="absolute bottom-0 left-0 p-10 max-[599px]:p-6 w-full flex justify-between items-end">
-                  <div className="space-y-4">
+                <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent h-[50%] max-[599px]:h-full w-full"></div>
+                <div className="absolute bottom-0 left-0 p-10 max-[599px]:p-4 w-full flex justify-between items-end">
+                  <div className="space-y-4 max-[599px]:space-y-0">
                     <span className="text-blue-500  text-sm font-bold uppercase tracking-widest">
                       {cat.count}
                     </span>
@@ -413,16 +398,16 @@ const Home: React.FC = () => {
 
       {/* 6. About the Company (Editorial Showcase) */}
       <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50 overflow-hidden">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 ">
           <div className="flex flex-col md:flex-row gap-0 md:gap-16 items-center">
             <div className="w-full md:w-1/2 space-y-8 max-[599px]:space-y-2">
-              <span className="text-4xl -mb-4 font-bold uppercase  text-blue-500 block">
+              <span className="text-4xl max-[599px]:text-2xl max-[599px]:-mb-0 -mb-4 font-bold uppercase  text-blue-500 block">
                 ABOUT US
               </span>
-              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-black tracking-tighter leading-none">
+              <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-6xl font-black text-black tracking-tighter leading-none ">
                 Clinical Precision in Supply.
               </h2>
-              <div className="space-y-6 max-[599px]:space-y-3 text-black/80 text-base sm:text-lg leading-relaxed">
+              <div className="space-y-6 max-[599px]:space-y-2 text-black/80 text-base sm:text-lg leading-relaxed max-[599px]:leading-tight">
                 <p>
                   Industrial Precision operates at the intersection of
                   mechanical legacy and digital logistics. We maintain an
@@ -489,17 +474,17 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 max-[599px]:gap-6 items-center">
             <div className="space-y-12 max-[599px]:space-y-6">
-              <div className="space-y-4 ">
-                <span className="text-4xl font-bold uppercase  text-blue-500">
+              <div className="space-y-4 max-[599px]:space-y-1">
+                <span className="text-4xl max-[599px]:text-2xl font-bold uppercase  text-blue-500">
                   ENGINEERING EXPERTISE
                 </span>
-                <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter leading-[0.95]">
+                <h2 className="text-5xl max-[599px]:text-4xl md:text-7xl font-black text-black tracking-tighter leading-[0.95] max-[599px]:leading-tight">
                   Reliability isn’t accidental.
                   <br />
                   It is engineered.
                 </h2>
               </div>
-              <p className="text-black/80 text-xl leading-relaxed">
+              <p className="text-black/80 text-xl leading-relaxed max-[599px]:leading-tight">
                 We eliminate industrial volatility through a proprietary
                 12-point quality protocol, verifying every component from the
                 smallest gasket to the largest compressor.
@@ -600,10 +585,10 @@ const Home: React.FC = () => {
             <div className="w-full lg:w-1/2 flex flex-col gap-6">
               <div className="text-left space-t-8">
                 <div>
-                  <span className="text-blue-500 text-4xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
+                  <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
                     GET IN TOUCH
                   </span>
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
+                  <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
                     Connect with Engineering.
                   </h2>
                 </div>
@@ -657,7 +642,7 @@ const Home: React.FC = () => {
                         ? item.action
                         : undefined
                     }
-                    className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
+                    className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 max-[599px]:p-4 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
                   >
                     <item.icon className="w-6 h-6 text-blue-500 mb-4 sm:mb-6 group-hover:scale-110 transition-transform" />
                     <h4 className="text-black font-bold uppercase tracking-widest text-xs mb-1 sm:mb-2">
@@ -692,10 +677,10 @@ const Home: React.FC = () => {
       <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-16 max-[599px]:mb-6">
-            <span className="text-blue-500 text-4xl font-bold uppercaset mb-4 max-[599px]:mb-0 block">
+            <span className="text-blue-500 max-[599px]:text-2xl text-4xl font-bold uppercaset mb-4 max-[599px]:mb-0 block">
               KNOWLEDGE BASE
             </span>
-            <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter">
+            <h2 className="text-4xl max-[599px]:text-4xl md:text-6xl font-black text-black tracking-tighter">
               {t.faqTitle}
             </h2>
           </div>
@@ -720,7 +705,7 @@ const Home: React.FC = () => {
                 open={openFaq === i}
               >
                 <summary
-                  className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-md group-hover:text-blue-500 transition-all"
+                  className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-md max-[599px]:text-sm group-hover:text-blue-500 transition-all"
                   onClick={(e) => {
                     e.preventDefault();
                     setOpenFaq(openFaq === i ? null : i);
@@ -734,7 +719,7 @@ const Home: React.FC = () => {
                   />
                 </summary>
                 {openFaq === i && (
-                  <div className="mt-6 max-[599px]:mt-3 text-black/80 text-md font-bold leading-wide max-w-2xl">
+                  <div className="mt-6 max-[599px]:mt-3 text-black/80 text-md max-[599px]:text-sm font-bold leading-wide max-w-2xl">
                     {faq.a}
                   </div>
                 )}
