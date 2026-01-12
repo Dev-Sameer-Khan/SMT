@@ -1,12 +1,19 @@
 import React from "react";
 
 const PARTNERS = [
-  { name: "CATERPILLAR", region: "Global", logo: "/cat.png" },
-  { name: "CUMMINS", region: "Americas", logo: "/cum.png" },
-  { name: "KOMATSU", region: "Asia-Pacific", logo: "/komatsu.png" },
-  { name: "VOLVO PENTA", region: "Europe", logo: "/vv.png" },
-  { name: "HYUNDAI HEAVY", region: "Middle East", logo: "/hh.png" },
   { name: "PERKINS", region: "Global", logo: "/perk.png" },
+  { name: "VOLVO", region: "Americas", logo: "/Volvo.png" },
+  { name: "CUMMINS", region: "Asia-Pacific", logo: "/cum.png" },
+  { name: "BETICO", region: "Europe", logo: "/betico.png" },
+  { name: "ATLAS COPRO", region: "Middle East", logo: "/Atlas.png" },
+  { name: "HATZ DIESEL", region: "Global", logo: "/Hatz.png" },
+  { name: "BOMAG", region: "Global", logo: "/BOMAG.png" },
+  { name: "JCB", region: "Global", logo: "/jcb.png" },
+  { name: "MILLER", region: "Global", logo: "/miller.png" },
+  { name: "KUBOTA", region: "Global", logo: "/kubota.png" },
+  { name: "BOBCAT", region: "Global", logo: "/bobcat.png" },
+  { name: "DYNAPAC", region: "Global", logo: "/dynapac.png" },
+  
 ];
 
 const Team = [
@@ -30,7 +37,7 @@ const Customers: React.FC = () => {
       </div>
 
       {/* Scroller */}
-      <div className="relative w-full flex items-center justify-center overflow-hidden max-[599px]:mb-6">
+      <div className="relative w-full flex items-center justify-center overflow-hidden max-[599px]:mb-10">
         {/* Gradient edges */}
         {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-[30%] bg-gradient-to-r from-white via-white/70 to-transparent z-10" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-[30%] bg-gradient-to-l from-white via-white/70 to-transparent z-10" /> */}
@@ -38,17 +45,17 @@ const Customers: React.FC = () => {
         <div className="flex items-center justify-center whitespace-nowrap">
           <div className="flex min-w-[220px] flex-col items-center justify-center px-12 max-[599px]:px-0 transition-all duration-300 hover:bg-white/5 hover:border-white/10 border border-transparent">
             {/* Logo container */}
-            <div className="mb-6 flex h-32 w-32 items-center justify-center overflow-hidden md:h-44 md:w-44">
+            <div className="mb-6 flex h-32 aspect-square w-32  items-center justify-center overflow-hidden md:h-44 md:w-44">
               <img
                 src={"/sumou.png"}
                 alt={`sumou logo`}
-                className={`max-h-full max-w-full object-cover
+                className={`max-h-full max-w-full object-contain
                   `}
               />
             </div>
 
             {/* Region */}
-            <span className="text-sm  font-bold uppercase tracking-widest text-black">
+            <span className="text-2xl max-[599px]:text-xs font-bold uppercase text-black">
                 {"Sumou Al Ebdaa Est."}
               </span>
           </div>
@@ -57,17 +64,17 @@ const Customers: React.FC = () => {
         <div className="flex items-center justify-center whitespace-nowrap">
           <div className="inline-flex min-w-[220px] flex-col items-center justify-center px-12 max-[599px]:px-0 transition-all duration-300 hover:bg-white/5 hover:border-white/10 border border-transparent">
             {/* Logo container */}
-            <div className="mb-6 flex h-32 w-32 items-center justify-center overflow-hidden md:h-44 md:w-44">
+            <div className="mb-6 flex h-32 aspect-square w-32  items-center justify-center overflow-hidden md:h-44 md:w-44">
               <img
                 src={"/ramz.png"}
                 alt={`ramz logo`}
-                className={`max-h-full max-w-full object-cover
+                className={`max-h-full max-w-full object-contain
                   `}
               />
             </div>
 
             {/* Region */}
-            <span className="text-sm  font-bold uppercase tracking-widest text-black">
+            <span className="text-2xl max-[599px]:text-xs font-bold uppercase text-black">
                 {"Ramz Al Tameer Est."}
               </span>
           </div>
@@ -101,9 +108,7 @@ const Customers: React.FC = () => {
                 <img
                   src={partner.logo}
                   alt={`${partner.name} logo`}
-                  className={`aspect-square max-h-full max-w-full object-contain 
-                    invert opacity-75 hover:opacity-100 transition
-                    ${partner.name === "CUMMINS" ? "scale-75" : "scale-100"}
+                  className={`aspect-square max-h-full max-w-full object-contain
                   `}
                 />
               </div>

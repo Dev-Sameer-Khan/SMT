@@ -60,26 +60,26 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="pt-32 bg-white min-h-screen text-black pb-32">
+    <div className="pt-32 max-[599px]:py-16 bg-white min-h-screen text-black pb-32">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 max-[599px]:gap-0">
           {/* Info Side */}
-          <div className="space-y-20">
+          <div className="space-y-20 max-[599px]:space-y-10">
             <div>
-              <span className="text-blue-500 text-4xl font-bold uppercase mb-2 mt-10 block">
+              <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-2 max-[599px]:mb-1 mt-10 block">
                 ESTABLISH CONNECTION
               </span>
-              <h1 className="text-6xl text-black md:text-8xl font-black text-black tracking-tighter mb-6 leading-[0.85]">
+              <h1 className="text-6xl max-[599px]:text-4xl text-black md:text-8xl font-black text-black tracking-tighter mb-6 max-[599px]:mb-3 leading-[0.85]">
                 {t.contactTitle}
               </h1>
-              <p className="text-black/80 text-2xl leading-relaxed max-w-2xl font-light">
+              <p className="text-black/80 text-2xl leading-relaxed max-[599px]:leading-tight max-w-2xl font-light">
                 Direct channel for high-volume procurement, technical
                 specifications, and global logistics coordination.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
-              <div className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-[599px]:gap-6">
+              <div className="space-y-3 max-[599px]:space-y-2">
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-blue-500" />
                   <h4 className="text-md font-bold uppercase tracking-widest text-black">
@@ -106,8 +106,8 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            <div className="space-y-6 border-t border-white/10">
-              <div className="flex gap-8 items-start">
+            <div className="space-y-6 max-[599px]:space-y-4 border-t border-white/10">
+              <div className="flex gap-8 max-[599px]:gap-2 -ml-3 items-start">
                 <div className="w-12 h-12 bg-white/5 flex items-center justify-center text-blue-500 shrink-0">
                   <MapPin className="w-6 h-6" />
                 </div>
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-8 items-start">
+              <div className="flex gap-8 max-[599px]:gap-2 -ml-3 items-start">
                 <div className="w-12 h-12 bg-white/5 flex items-center justify-center text-blue-500 shrink-0">
                   <Phone className="w-6 h-6" />
                 </div>
@@ -134,7 +134,7 @@ const Contact: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-8 items-start">
+              <div className="flex gap-8 max-[599px]:gap-2 -ml-3 items-start">
                 <div className="w-12 h-12 bg-white/5 flex items-center justify-center text-blue-500 shrink-0">
                   <Mail className="w-6 h-6" />
                 </div>
@@ -153,13 +153,13 @@ const Contact: React.FC = () => {
           {/* Form Side */}
           <div className="relative pt-16">
             <div className="absolute -top-10 -right-10 w-64 h-64 bg-blue-500/10 blur-[120px] rounded-full"></div>
-            <div className="bg-black/5 shadow-lg rounded-md transition-all duration-500 p-10 md:p-16 relative z-10">
+            <div className="bg-black/5 shadow-lg rounded-md transition-all duration-500 p-10 max-[599px]:p-4 md:p-16 relative z-10">
               {state.succeeded ? (
                 <div className="h-full py-20 flex flex-col items-center justify-center text-center space-y-8 animate-reveal">
                   <div className="w-24 h-24 bg-blue-500 text-black flex items-center justify-center rounded-sm">
                     <Send className="w-10 h-10" />
                   </div>
-                  <h3 className="text-4xl font-black text-black uppercase tracking-tight">
+                  <h3 className="text-4xl  font-black text-black uppercase tracking-tight">
                     Data Transmitted
                   </h3>
                   <p className="text-black text-lg leading-relaxed">
@@ -168,24 +168,24 @@ const Contact: React.FC = () => {
                   </p>
                   <button
                     onClick={handleReset}
-                    className="px-12 py-4 bg-black text-black text-xs font-bold uppercase tracking-[0.3em] hover:bg-blue-500 transition-all"
+                    className="px-12 py-4 bg-black text-white text-xs font-bold uppercase tracking-[0.3em] hover:bg-blue-500 transition-all"
                   >
                     RESET FORM
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-10">
+                <form onSubmit={handleSubmit} className="space-y-10 max-[599px]:space-y-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-4xl font-black text-black uppercase tracking-tight">
+                    <h2 className="text-4xl max-[599px]:text-2xl font-black text-black uppercase tracking-tight">
                       Technical Inquiry
                     </h2>
-                    <span className="text-sm  text-black uppercase">
+                    <span className="text-sm max-[599px]:text-xs text-black uppercase">
                       FORM-ID: IP-2940
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div className="space-y-3">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-[599px]:gap-4">
+                    <div className="space-y-3  max-[599px]:space-y-1">
                       <label className="text-md font-bold uppercase text-blue-500">
                         Authorized Personnel
                       </label>
@@ -204,7 +204,7 @@ const Contact: React.FC = () => {
                       field="name"
                       errors={state.errors}
                     />
-                    <div className="space-y-3">
+                    <div className="space-y-3 max-[599px]:space-y-1">
                       <label className="text-md font-bold uppercase text-blue-500">
                         Corporate Email
                       </label>
@@ -225,8 +225,8 @@ const Contact: React.FC = () => {
                     />
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div className="space-y-3">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-[599px]:gap-4">
+                    <div className="space-y-3 max-[599px]:space-y-1">
                       <label className="text-md font-bold uppercase text-blue-500">
                         Direct Contact
                       </label>
@@ -240,7 +240,7 @@ const Contact: React.FC = () => {
                         className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all placeholder:text-black"
                       />
                     </div>
-                    <div className="space-y-3">
+                    <div className="space-y-3 max-[599px]:space-y-1">
                       <label className="text-md font-bold uppercase text-blue-500">
                         Organization Name
                       </label>
@@ -256,7 +256,7 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-3">
+                  <div className="space-y-3 max-[599px]:space-y-1">
                     <label className="text-md font-bold uppercase text-blue-500">
                       Technical Details / Part SKU
                     </label>
@@ -279,7 +279,7 @@ const Contact: React.FC = () => {
                   <button
                     disabled={state.submitting}
                     type="submit"
-                    className="w-full py-6 bg-blue-500 text-white font-bold uppercase text-lg tracking-widest hover:bg-blue-600 transition-all flex items-center justify-center gap-3 disabled:bg-gray-400 shadow-xl shadow-blue-500/20"
+                    className="w-full py-6 max-[599px]:py-4 bg-blue-500 text-white font-bold uppercase text-lg max-[599px]:text-sm tracking-widest hover:bg-blue-600 transition-all flex items-center justify-center gap-3 disabled:bg-gray-400 shadow-xl shadow-blue-500/20"
                   >
                     {state.submitting ? (
                       <Loader2 className="w-6 h-6 animate-spin" />

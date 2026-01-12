@@ -58,6 +58,43 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     footerTagline: "تحديد معايير توريد قطع الغيار الصناعية منذ عام 1998.",
     whatsappTooltip: "تواصل معنا عبر واتساب",
     testimonialTitle: "تقارير الأداء",
+
+    // Arabic subcategory labels for use in products, etc.
+    subcategoryLabels: {
+      pistons: "مكابس",
+      cylinders: "أسطوانات",
+      valves: "صمامات",
+      bearings: "رمانات",
+      gaskets: "جوانات",
+      screw: "ضواغط لولبية",
+      piston: "ضواغط مكبسية",
+      vanes: "ضواغط شفرات",
+      rotary: "ضواغط دوارة",
+    },
+
+    // Arabic product categories and subcategories (for filters/ui display)
+    productCategoryLabels: {
+      all: "كل المكونات",
+      engine: "قطع المحرك",
+      compressor: "الضواغط",
+      filter: "المرشحات",
+      spare: "القطع الاحتياطية",
+    },
+    productSubcategories: {
+      engine: [
+        { id: "pistons", label: "مكابس" },
+        { id: "cylinders", label: "أسطوانات" },
+        { id: "valves", label: "صمامات" },
+        { id: "bearings", label: "رمانات" },
+        { id: "gaskets", label: "جوانات" },
+      ],
+      compressor: [
+        { id: "screw", label: "ضواغط لولبية" },
+        { id: "piston", label: "ضواغط مكبسية" },
+        { id: "vanes", label: "ضواغط شفرات" },
+        { id: "rotary", label: "ضواغط دوارة" },
+      ],
+    },
   },
 };
 
@@ -66,6 +103,7 @@ export const PRODUCTS: Product[] = [
     id: "1",
     title: "V12 Piston Assembly",
     category: "engine",
+    subcategory: "pistons",
     desc: "High-thermal tolerance alloy with precision coating.",
     specs: "Heavy Duty Marine & Industrial",
     image: "https://images.unsplash.com/photo-1429772011165-0c2e054367b8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -74,6 +112,7 @@ export const PRODUCTS: Product[] = [
     id: "2",
     title: "Multi-Stage Screw Compressor",
     category: "compressor",
+    subcategory: "screw",
     desc: "Oil-free compression for pharmaceutical applications.",
     specs: "350 CFM | Variable Speed",
     image: "https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ",
@@ -98,6 +137,7 @@ export const PRODUCTS: Product[] = [
     id: "5",
     title: "Turbocharger Cartridge",
     category: "engine",
+    subcategory: "valves",
     desc: "Balanced assembly for high-efficiency turbo performance.",
     specs: "Precision Machined | Journal Bearing",
     image: "https://images.unsplash.com/photo-1600377232142-164c095e686e?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -106,6 +146,7 @@ export const PRODUCTS: Product[] = [
     id: "6",
     title: "Industrial Air Dryer",
     category: "compressor",
+    subcategory: "rotary",
     desc: "Desiccant-based moisture removal for compressed air systems.",
     specs: "480V | -40°C Dew Point",
     image: "https://images.unsplash.com/photo-1705129472480-2145aecb9aaa?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -130,6 +171,7 @@ export const PRODUCTS: Product[] = [
     id: "9",
     title: "Marine Cylinder Liner",
     category: "engine",
+    subcategory: "cylinders",
     desc: "Wear-resistant cast iron cylinder for marine diesel engines.",
     specs: "Honed Bore | Chrome Plated",
     image: "https://images.unsplash.com/photo-1552656967-7a0991a13906?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -138,6 +180,7 @@ export const PRODUCTS: Product[] = [
     id: "10",
     title: "Oil-Water Separator",
     category: "compressor",
+    subcategory: "piston",
     desc: "Removes oil mist and vapor from condensate streams.",
     specs: "Auto-Drain | Polypropylene Body",
     image: "https://plus.unsplash.com/premium_photo-1682145074686-96a169644544?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

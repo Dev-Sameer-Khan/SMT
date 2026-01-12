@@ -33,6 +33,20 @@ export interface Product {
   id: string;
   title: string;
   category: 'engine' | 'spare' | 'filter' | 'compressor';
+  /**
+   * Optional subcategory used for finer filtering (e.g. pistons, screw, rotary, etc.).
+   * Matches the ids defined in the engine / compressor subcategory lists.
+   */
+  subcategory?:
+    | 'pistons'
+    | 'cylinders'
+    | 'valves'
+    | 'bearings'
+    | 'gaskets'
+    | 'screw'
+    | 'piston'
+    | 'vanes'
+    | 'rotary';
   desc: string;
   specs: string;
   image: string;

@@ -8,6 +8,8 @@ const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [productsMenuOpen, setProductsMenuOpen] = useState(false);
+  const [desktopSubMenuOpen, setDesktopSubMenuOpen] = useState<string | null>(null);
+  const [mobileSubMenuOpen, setMobileSubMenuOpen] = useState<string | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -22,6 +24,8 @@ const Header: React.FC = () => {
   useEffect(() => {
     setMobileMenuOpen(false);
     setProductsMenuOpen(false);
+    setDesktopSubMenuOpen(null);
+    setMobileSubMenuOpen(null);
   }, [lang]);
 
   const navItems = [
@@ -33,8 +37,29 @@ const Header: React.FC = () => {
 
   const productCategories = [
     { id: 'all', label: 'ALL COMPONENTS', path: '/products' },
-    { id: 'engine', label: 'ENGINE PARTS', path: '/products?category=engine' },
-    { id: 'compressor', label: 'COMPRESSORS', path: '/products?category=compressor' },
+    { 
+      id: 'engine', 
+      label: 'ENGINE PARTS', 
+      path: '/products?category=engine',
+      subcategories: [
+        { id: 'pistons', label: 'Pistons', path: '/products?category=engine&subcategory=pistons' },
+        { id: 'cylinders', label: 'Cylinders', path: '/products?category=engine&subcategory=cylinders' },
+        { id: 'valves', label: 'Valves', path: '/products?category=engine&subcategory=valves' },
+        { id: 'bearings', label: 'Bearings', path: '/products?category=engine&subcategory=bearings' },
+        { id: 'gaskets', label: 'Gaskets', path: '/products?category=engine&subcategory=gaskets' },
+      ]
+    },
+    { 
+      id: 'compressor', 
+      label: 'COMPRESSORS', 
+      path: '/products?category=compressor',
+      subcategories: [
+        { id: 'screw', label: 'Screw Compressors', path: '/products?category=compressor&subcategory=screw' },
+        { id: 'piston', label: 'Piston Compressors', path: '/products?category=compressor&subcategory=piston' },
+        { id: 'vanes', label: 'Vane Compressors', path: '/products?category=compressor&subcategory=vanes' },
+        { id: 'rotary', label: 'Rotary Compressors', path: '/products?category=compressor&subcategory=rotary' },
+      ]
+    },
     { id: 'filter', label: 'FILTERS', path: '/products?category=filter' },
     { id: 'spare', label: 'SPARES', path: '/products?category=spare' }
   ];
@@ -61,7 +86,10 @@ const Header: React.FC = () => {
                     key={item.path}
                     className="relative"
                     onMouseEnter={() => setProductsMenuOpen(true)}
-                    onMouseLeave={() => setProductsMenuOpen(false)}
+                    onMouseLeave={() => {
+                      setProductsMenuOpen(false);
+                      setDesktopSubMenuOpen(null);
+                    }}
                   >
                     <Link
                       to={item.path}
@@ -70,6 +98,8 @@ const Header: React.FC = () => {
                           ? 'text-blue-500'
                           : 'text-black hover:text-black/60'
                       }`}
+                      tabIndex={0}
+                      onFocus={() => setProductsMenuOpen(true)}
                     >
                       {item.name}
                       <ChevronDown className={`w-4 h-4 transition-transform ${productsMenuOpen ? 'rotate-180' : ''}`} />
@@ -83,15 +113,54 @@ const Header: React.FC = () => {
                           : 'opacity-0 invisible -translate-y-2 pointer-events-none'
                       }`}
                     >
-                      {productCategories.map((category) => (
-                        <Link
-                          key={category.id}
-                          to={category.path}
-                          className="block px-6 py-3 text-xs font-bold uppercase tracking-widest text-black hover:bg-blue-500 hover:text-white transition-colors"
-                        >
-                          {category.label}
-                        </Link>
-                      ))}
+                      {productCategories.map((category) =>
+                        category.subcategories ? (
+                          <div
+                            key={category.id}
+                            className="group relative"
+                            onMouseEnter={() => setDesktopSubMenuOpen(category.id)}
+                            onMouseLeave={() => setDesktopSubMenuOpen(null)}
+                          >
+                            <Link
+                              to={category.path}
+                              className="flex items-center justify-between block px-6 py-3 text-xs font-bold uppercase tracking-widest text-black hover:bg-blue-500 hover:text-white transition-colors"
+                            >
+                              {category.label}
+                              <ChevronDown
+                                className={`w-3 h-3 ml-2 transition-transform ${
+                                  desktopSubMenuOpen === category.id ? 'rotate-180' : ''
+                                }`}
+                              />
+                            </Link>
+                            {/* Submenu */}
+                            <div
+                              className={`absolute top-0 left-full z-20 bg-white shadow-xl border border-gray-100 rounded-sm min-w-[200px] py-2 transition-all duration-300 ${
+                                desktopSubMenuOpen === category.id
+                                  ? 'opacity-100 visible translate-y-0'
+                                  : 'opacity-0 invisible -translate-y-2 pointer-events-none'
+                              }`}
+                            >
+                              {category.subcategories.map((sub) => (
+                                <Link
+                                  key={sub.id}
+                                  to={sub.path}
+                                  className="block px-6 py-3 text-xs font-medium uppercase tracking-widest text-black hover:bg-blue-500 hover:text-white transition-colors"
+                                >
+                                  {sub.label}
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        ) : (
+                          <Link
+                            key={category.id}
+                            to={category.path}
+                            className="block px-6 py-3 text-xs font-bold uppercase tracking-widest text-black hover:bg-blue-500 hover:text-white transition-colors"
+                          >
+                            {category.label}
+                          </Link>
+                        )
+                      )}
                     </div>
                   </div>
                 );
@@ -153,7 +222,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-white/60 backdrop-blur-sm z-40 md:hidden transition-opacity duration-300 ${
           mobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={() => setMobileMenuOpen(false)}
@@ -161,7 +230,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu Sidebar */}
       <div
-        className={`fixed top-0 ${isRTL ? 'left-0' : 'right-0'} h-full w-full bg-black/70 z-50 md:hidden transform transition-transform duration-300 ease-out ${
+        className={`fixed top-0 ${isRTL ? 'left-0' : 'right-0'} h-full w-full text-black bg-white/70 z-50 md:hidden transform transition-transform duration-300 ease-out ${
           mobileMenuOpen 
             ? 'translate-x-0' 
             : isRTL ? '-translate-x-full' : 'translate-x-full'
@@ -176,11 +245,16 @@ const Header: React.FC = () => {
                 return (
                   <div key={item.path} className="flex flex-col gap-2">
                     <button
-                      onClick={() => setProductsMenuOpen(!productsMenuOpen)}
+                      onClick={() => {
+                        setProductsMenuOpen(!productsMenuOpen);
+                        if (!productsMenuOpen) {
+                          setMobileSubMenuOpen(null);
+                        }
+                      }}
                       className={`py-3 px-4 rounded-lg text-base font-medium uppercase tracking-wide transition-all flex items-center justify-between ${
                         location.pathname === item.path
                           ? 'bg-blue-500 text-white'
-                          : 'text-white/80 hover:bg-white/10 hover:text-white'
+                          : 'text-black/80 hover:bg-white/10 hover:text-black'
                       }`}
                     >
                       {item.name}
@@ -193,20 +267,63 @@ const Header: React.FC = () => {
                         productsMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                       }`}
                     >
-                      <div className="flex flex-col gap-1 pl-6">
-                        {productCategories.map((category) => (
-                          <Link
-                            key={category.id}
-                            to={category.path}
-                            onClick={() => {
-                              setMobileMenuOpen(false);
-                              setProductsMenuOpen(false);
-                            }}
-                            className="py-2 px-4 rounded-lg text-sm font-medium uppercase tracking-wide text-white/70 hover:bg-white/10 hover:text-white transition-all"
-                          >
-                            {category.label}
-                          </Link>
-                        ))}
+                      <div className="flex flex-col gap-1 pl-2">
+                        {productCategories.map((category) =>
+                          category.subcategories ? (
+                            <div key={category.id} className="flex flex-col">
+                              <button
+                                onClick={() =>
+                                  setMobileSubMenuOpen(
+                                    mobileSubMenuOpen === category.id ? null : category.id
+                                  )
+                                }
+                                className="flex items-center justify-between py-2 px-4 rounded-lg text-sm font-bold uppercase tracking-wide text-black/80 hover:bg-white/10 hover:text-black transition-all bg-transparent"
+                              >
+                                {category.label}
+                                <ChevronDown
+                                  className={`w-3 h-3 ml-2 transition-transform ${
+                                    mobileSubMenuOpen === category.id ? 'rotate-180' : ''
+                                  }`}
+                                />
+                              </button>
+                              <div
+                                className={`flex flex-col transition-all overflow-hidden duration-300 pl-3 ${
+                                  mobileSubMenuOpen === category.id
+                                    ? 'max-h-64 opacity-100'
+                                    : 'max-h-0 opacity-0'
+                                }`}
+                              >
+                                {category.subcategories.map((sub) => (
+                                  <Link
+                                    key={sub.id}
+                                    to={sub.path}
+                                    onClick={() => {
+                                      setMobileMenuOpen(false);
+                                      setProductsMenuOpen(false);
+                                      setMobileSubMenuOpen(null);
+                                    }}
+                                    className="py-2 px-4 rounded-lg text-xs font-medium uppercase tracking-wide text-black/70 hover:bg-white/10 hover:text-black transition-all"
+                                  >
+                                    {sub.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
+                          ) : (
+                            <Link
+                              key={category.id}
+                              to={category.path}
+                              onClick={() => {
+                                setMobileMenuOpen(false);
+                                setProductsMenuOpen(false);
+                                setMobileSubMenuOpen(null);
+                              }}
+                              className="py-2 px-4 rounded-lg text-sm font-bold uppercase tracking-wide text-black/70 hover:bg-white/10 hover:text-black transition-all"
+                            >
+                              {category.label}
+                            </Link>
+                          )
+                        )}
                       </div>
                     </div>
                   </div>
@@ -220,7 +337,7 @@ const Header: React.FC = () => {
                   className={`py-3 px-4 rounded-lg text-base font-medium uppercase tracking-wide transition-all ${
                     location.pathname === item.path
                       ? 'bg-blue-500 text-white'
-                      : 'text-white/80 hover:bg-white/10 hover:text-white'
+                      : 'text-black/80 hover:bg-white/10 hover:text-black'
                   }`}
                 >
                   {item.name}

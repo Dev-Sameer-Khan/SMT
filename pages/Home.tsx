@@ -656,7 +656,7 @@ const Home: React.FC = () => {
               </div>
             </div>
             {/* Map - hides on mobile below md screens */}
-            <div className="w-full lg:w-1/2 h-64 sm:h-96 lg:h-full mt-8 lg:mt-0">
+            <div className="w-full lg:w-1/2 h-64 sm:h-[40vh] lg:h-full mt-8 lg:mt-0">
               <div className="relative h-full w-full shadow-md rounded-md overflow-hidden aspect-[4/3] md:aspect-auto">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.854678326949!2d39.25990641127877!3d21.434956273620404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cb006b0ff9c5%3A0x37d1ce70f1ae0f86!2sSumou%20Al%20Ebdaa%20Est!5e0!3m2!1sen!2sin!4v1767180371100!5m2!1sen!2sin"

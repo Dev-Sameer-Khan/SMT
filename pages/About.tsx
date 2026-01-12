@@ -112,18 +112,18 @@ const About: React.FC = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
-    <div className="pt-28 bg-white min-h-screen">
+    <div className="pt-28 max-[599px]:pt-16 bg-white min-h-screen">
       <section className="py-20 border-b border-black/50 relative">
       <div className="absolute -top-0 right-0 w-1/2 h-full bg-blue-500/5 skew-x-12 transform translate-x-20"></div>
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
-            <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
+            <span className="text-blue-500 max-[599px]:text-2xl text-4xl font-bold uppercase mb-4 max-[599px]:mb-0 block">
               ABOUT US
             </span>
-            <h1 className="text-6xl md:text-8xl text-black font-black tracking-tighter mb-12 leading-none">
+            <h1 className="text-6xl max-[599px]:text-4xl md:text-8xl text-black font-black tracking-tighter mb-12 leading-none">
               {t.aboutTitle}
             </h1>
-            <p className="text-2xl text-black/80 mb-12 font-light leading-relaxed">
+            <p className="text-2xl text-black/80 mb-12 max-[599px]:mb-0 font-light leading-relaxed max-[599px]:leading-tight">
               Established in 2014, the company has grown from a focused
               distribution operation into an integrated engineering and
               industrial solutions platform.
@@ -132,25 +132,25 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="py-24 max-[599px]:py-10">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-[599px]:gap-10 items-center">
             <div className="relative">
               <img
                 src="https://picsum.photos/seed/factory/1200/800"
                 alt="Factory"
-                className="w-full grayscale border border-gray-200"
+                className="w-full grayscale rounded-md border border-gray-200"
               />
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-blue-500/5 -z-10"></div>
             </div>
-            <div className="space-y-8">
-              <h2 className="text-7xl text-black font-black">
+            <div className="space-y-8 max-[599px]:space-y-4">
+              <h2 className="text-7xl max-[599px]:text-5xl text-black font-black">
                 {t.aboutSubtitle}
               </h2>
               <p className="text-black/80 leading-relaxed text-lg">
                 {t.aboutText}
               </p>
-              <div className="grid grid-cols-2 gap-8 pt-6 border-t border-gray-100">
+              <div className="grid grid-cols-2 max-[599px]:grid-cols-1 gap-8 pt-6 border-t border-gray-100">
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-blue-50 flex items-center justify-center text-blue-500 rounded-sm flex-shrink-0">
                     <Shield className="w-6 h-6" />
@@ -184,9 +184,9 @@ const About: React.FC = () => {
       </section>
 
       {/* Corporate Values */}
-      <section className="py-24 ">
+      <section className="py-24 max-[599px]:pt-0 max-[599px]:pb-10">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-[599px]:gap-6">
             {[
               {
                 icon: Target,
@@ -225,16 +225,16 @@ const About: React.FC = () => {
 
       {/* 6. About the Company (Editorial Showcase) */}
       <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50 overflow-hidden">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 ">
           <div className="flex flex-col md:flex-row gap-0 md:gap-16 items-center">
             <div className="w-full md:w-1/2 space-y-8 max-[599px]:space-y-2">
-              <span className="text-4xl -mb-4 font-bold uppercase  text-blue-500 block">
+              <span className="text-4xl max-[599px]:text-2xl max-[599px]:-mb-0 -mb-4 font-bold uppercase  text-blue-500 block">
                 ABOUT US
               </span>
-              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-black tracking-tighter leading-none">
+              <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-6xl font-black text-black tracking-tighter leading-none ">
                 Clinical Precision in Supply.
               </h2>
-              <div className="space-y-6 max-[599px]:space-y-3 text-black/80 text-base sm:text-lg leading-relaxed">
+              <div className="space-y-6 max-[599px]:space-y-2 text-black/80 text-base sm:text-lg leading-relaxed max-[599px]:leading-tight">
                 <p>
                   Industrial Precision operates at the intersection of
                   mechanical legacy and digital logistics. We maintain an
@@ -301,17 +301,17 @@ const About: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 max-[599px]:gap-6 items-center">
             <div className="space-y-12 max-[599px]:space-y-6">
-              <div className="space-y-4 ">
-                <span className="text-4xl font-bold uppercase  text-blue-500">
+              <div className="space-y-4 max-[599px]:space-y-1">
+                <span className="text-4xl max-[599px]:text-2xl font-bold uppercase  text-blue-500">
                   ENGINEERING EXPERTISE
                 </span>
-                <h2 className="text-5xl md:text-7xl font-black text-black tracking-tighter leading-[0.95]">
+                <h2 className="text-5xl max-[599px]:text-4xl md:text-7xl font-black text-black tracking-tighter leading-[0.95] max-[599px]:leading-tight">
                   Reliability isn’t accidental.
                   <br />
                   It is engineered.
                 </h2>
               </div>
-              <p className="text-black/80 text-xl leading-relaxed">
+              <p className="text-black/80 text-xl leading-relaxed max-[599px]:leading-tight">
                 We eliminate industrial volatility through a proprietary
                 12-point quality protocol, verifying every component from the
                 smallest gasket to the largest compressor.
@@ -356,6 +356,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
+
       <Testimonials />
 
       {/* 11. Quick Contact Section (New) */}
@@ -369,10 +370,10 @@ const About: React.FC = () => {
             <div className="w-full lg:w-1/2 flex flex-col gap-6">
               <div className="text-left space-t-8">
                 <div>
-                  <span className="text-blue-500 text-4xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
+                  <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
                     GET IN TOUCH
                   </span>
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
+                  <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
                     Connect with Engineering.
                   </h2>
                 </div>
@@ -426,7 +427,7 @@ const About: React.FC = () => {
                         ? item.action
                         : undefined
                     }
-                    className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
+                    className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 max-[599px]:p-4 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
                   >
                     <item.icon className="w-6 h-6 text-blue-500 mb-4 sm:mb-6 group-hover:scale-110 transition-transform" />
                     <h4 className="text-black font-bold uppercase tracking-widest text-xs mb-1 sm:mb-2">
@@ -440,7 +441,7 @@ const About: React.FC = () => {
               </div>
             </div>
             {/* Map - hides on mobile below md screens */}
-            <div className="w-full lg:w-1/2 h-64 sm:h-96 lg:h-full mt-8 lg:mt-0">
+            <div className="w-full lg:w-1/2 h-64 sm:h-[40vh] lg:h-full mt-8 lg:mt-0">
               <div className="relative h-full w-full shadow-md rounded-md overflow-hidden aspect-[4/3] md:aspect-auto">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.854678326949!2d39.25990641127877!3d21.434956273620404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cb006b0ff9c5%3A0x37d1ce70f1ae0f86!2sSumou%20Al%20Ebdaa%20Est!5e0!3m2!1sen!2sin!4v1767180371100!5m2!1sen!2sin"
@@ -461,10 +462,10 @@ const About: React.FC = () => {
       <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-16 max-[599px]:mb-6">
-            <span className="text-blue-500 text-4xl font-bold uppercaset mb-4 max-[599px]:mb-0 block">
+            <span className="text-blue-500 max-[599px]:text-2xl text-4xl font-bold uppercaset mb-4 max-[599px]:mb-0 block">
               KNOWLEDGE BASE
             </span>
-            <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter">
+            <h2 className="text-4xl max-[599px]:text-4xl md:text-6xl font-black text-black tracking-tighter">
               {t.faqTitle}
             </h2>
           </div>
@@ -489,7 +490,7 @@ const About: React.FC = () => {
                 open={openFaq === i}
               >
                 <summary
-                  className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-md group-hover:text-blue-500 transition-all"
+                  className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-md max-[599px]:text-sm group-hover:text-blue-500 transition-all"
                   onClick={(e) => {
                     e.preventDefault();
                     setOpenFaq(openFaq === i ? null : i);
@@ -503,7 +504,7 @@ const About: React.FC = () => {
                   />
                 </summary>
                 {openFaq === i && (
-                  <div className="mt-6 max-[599px]:mt-3 text-black/80 text-md font-bold leading-wide max-w-2xl">
+                  <div className="mt-6 max-[599px]:mt-3 text-black/80 text-md max-[599px]:text-sm font-bold leading-wide max-w-2xl">
                     {faq.a}
                   </div>
                 )}
