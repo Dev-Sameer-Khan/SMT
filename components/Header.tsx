@@ -36,32 +36,29 @@ const Header: React.FC = () => {
   ];
 
   const productCategories = [
-    { id: 'all', label: 'ALL COMPONENTS', path: '/products' },
+    { id: 'all', label: t.allComponents, path: '/products' },
     { 
       id: 'engine', 
-      label: 'ENGINE PARTS', 
+      label: t.engineParts, 
       path: '/products?category=engine',
-      subcategories: [
-        { id: 'pistons', label: 'Pistons', path: '/products?category=engine&subcategory=pistons' },
-        { id: 'cylinders', label: 'Cylinders', path: '/products?category=engine&subcategory=cylinders' },
-        { id: 'valves', label: 'Valves', path: '/products?category=engine&subcategory=valves' },
-        { id: 'bearings', label: 'Bearings', path: '/products?category=engine&subcategory=bearings' },
-        { id: 'gaskets', label: 'Gaskets', path: '/products?category=engine&subcategory=gaskets' },
-      ]
+      subcategories: (t.productSubcategories?.engine || []).map(sub => ({
+        id: sub.id,
+        label: sub.label,
+        path: `/products?category=engine&subcategory=${sub.id}`
+      }))
     },
     { 
       id: 'compressor', 
-      label: 'COMPRESSORS', 
+      label: t.compressors, 
       path: '/products?category=compressor',
-      subcategories: [
-        { id: 'screw', label: 'Screw Compressors', path: '/products?category=compressor&subcategory=screw' },
-        { id: 'piston', label: 'Piston Compressors', path: '/products?category=compressor&subcategory=piston' },
-        { id: 'vanes', label: 'Vane Compressors', path: '/products?category=compressor&subcategory=vanes' },
-        { id: 'rotary', label: 'Rotary Compressors', path: '/products?category=compressor&subcategory=rotary' },
-      ]
+      subcategories: (t.productSubcategories?.compressor || []).map(sub => ({
+        id: sub.id,
+        label: sub.label,
+        path: `/products?category=compressor&subcategory=${sub.id}`
+      }))
     },
-    { id: 'filter', label: 'FILTERS', path: '/products?category=filter' },
-    { id: 'spare', label: 'SPARES', path: '/products?category=spare' }
+    { id: 'filter', label: t.filters, path: '/products?category=filter' },
+    { id: 'spare', label: t.spares, path: '/products?category=spare' }
   ];
 
   const isRTL = lang === 'ar';

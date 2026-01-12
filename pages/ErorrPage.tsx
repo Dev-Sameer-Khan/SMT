@@ -2,8 +2,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, AlertTriangle } from 'lucide-react';
+import { useLanguage } from '../App';
 
 const ErrorPage: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <div className="h-screen bg-[#0A0A0A] flex items-center justify-center relative overflow-hidden">
       {/* Background Glitch Effect */}
@@ -23,10 +25,10 @@ const ErrorPage: React.FC = () => {
         </h1>
         
         <div className="space-y-4 relative">
-          <span className="text-blue-500 text-[10px] font-bold uppercase tracking-[0.5em] block">SYSTEM ANOMALY DETECTED</span>
-          <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase">Route Not Found</h2>
+          <span className="text-blue-500 text-[10px] font-bold uppercase tracking-[0.5em] block">{t.systemAnomaly}</span>
+          <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase">{t.routeNotFound}</h2>
           <p className="text-white/40 text-lg max-w-md mx-auto font-light leading-relaxed">
-            The requested technical directory or resource is unavailable or has been moved to a secure partition.
+            {t.errorDesc}
           </p>
         </div>
 
@@ -35,7 +37,7 @@ const ErrorPage: React.FC = () => {
             to="/" 
             className="inline-flex items-center gap-4 px-12 py-5 bg-white text-black font-bold uppercase text-[10px] tracking-[0.3em] hover:bg-blue-500 hover:text-white transition-all duration-500"
           >
-            <ArrowLeft className="w-4 h-4" /> REBOOT TO HOME
+            <ArrowLeft className="w-4 h-4" /> {t.rebootToHome}
           </Link>
         </div>
         

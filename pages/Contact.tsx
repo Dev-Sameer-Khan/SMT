@@ -67,14 +67,13 @@ const Contact: React.FC = () => {
           <div className="space-y-20 max-[599px]:space-y-10">
             <div>
               <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-2 max-[599px]:mb-1 mt-10 block">
-                ESTABLISH CONNECTION
+                {t.establishConnection}
               </span>
               <h1 className="text-6xl max-[599px]:text-4xl text-black md:text-8xl font-black text-black tracking-tighter mb-6 max-[599px]:mb-3 leading-[0.85]">
                 {t.contactTitle}
               </h1>
               <p className="text-black/80 text-2xl leading-relaxed max-[599px]:leading-tight max-w-2xl font-light">
-                Direct channel for high-volume procurement, technical
-                specifications, and global logistics coordination.
+                {t.contactDesc}
               </p>
             </div>
 
@@ -83,7 +82,7 @@ const Contact: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-blue-500" />
                   <h4 className="text-md font-bold uppercase tracking-widest text-black">
-                    Operational Hours
+                    {t.operationalHours}
                   </h4>
                 </div>
                 <p className="text-black/80 text-md leading-relaxed">
@@ -96,7 +95,7 @@ const Contact: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <ShieldCheck className="w-5 h-5 text-blue-500" />
                   <h4 className="text-md font-bold uppercase tracking-widest text-black">
-                    Encryption
+                    {t.encryption}
                   </h4>
                 </div>
                 <p className="text-black/80 text-md leading-relaxed">
@@ -113,7 +112,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold uppercase text-black">
-                    Loacation
+                    {t.location}
                   </h4>
                   <p className="text-black/80 text-lg leading-relaxed">
                   <a href="https://maps.app.goo.gl/nTAq2daNfWs85L6cA" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">Al Eid Complex Car Exhi Al Jawhara(Jeddah) - Saudi Arabia</a>
@@ -126,7 +125,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold uppercase text-black">
-                    Phone Number
+                    {t.phoneNumber}
                   </h4>
                   <p className="text-black/80 text-lg leading-relaxed flex gap-4">
                   <a href="tel:+971 0532962420" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">+966 0532962420</a>
@@ -140,7 +139,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold uppercase  text-black">
-                    Email
+                    {t.email}
                   </h4>
                   <p className="text-black/80 text-lg leading-relaxed">
                   <a href="mailto:mail2smtengines.com" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">mail2smtengines.com</a>
@@ -160,24 +159,23 @@ const Contact: React.FC = () => {
                     <Send className="w-10 h-10" />
                   </div>
                   <h3 className="text-4xl  font-black text-black uppercase tracking-tight">
-                    Data Transmitted
+                    {t.dataTransmitted}
                   </h3>
                   <p className="text-black text-lg leading-relaxed">
-                    Your inquiry has been logged in our CRM. A senior division
-                    engineer will respond within standard SLA windows.
+                    {t.dataTransmittedDesc}
                   </p>
                   <button
                     onClick={handleReset}
                     className="px-12 py-4 bg-black text-white text-xs font-bold uppercase tracking-[0.3em] hover:bg-blue-500 transition-all"
                   >
-                    RESET FORM
+                    {t.resetForm}
                   </button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-10 max-[599px]:space-y-6">
                   <div className="flex items-center justify-between mb-4">
                     <h2 className="text-4xl max-[599px]:text-2xl font-black text-black uppercase tracking-tight">
-                      Technical Inquiry
+                      {t.technicalInquiry}
                     </h2>
                     <span className="text-sm max-[599px]:text-xs text-black uppercase">
                       FORM-ID: IP-2940
@@ -187,7 +185,7 @@ const Contact: React.FC = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-[599px]:gap-4">
                     <div className="space-y-3  max-[599px]:space-y-1">
                       <label className="text-md font-bold uppercase text-blue-500">
-                        Authorized Personnel
+                        {t.authorizedPersonnel}
                       </label>
                       <input
                         required
@@ -206,7 +204,7 @@ const Contact: React.FC = () => {
                     />
                     <div className="space-y-3 max-[599px]:space-y-1">
                       <label className="text-md font-bold uppercase text-blue-500">
-                        Corporate Email
+                        {t.corporateEmail}
                       </label>
                       <input
                         required
@@ -228,7 +226,7 @@ const Contact: React.FC = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-[599px]:gap-4">
                     <div className="space-y-3 max-[599px]:space-y-1">
                       <label className="text-md font-bold uppercase text-blue-500">
-                        Direct Contact
+                        {t.directContact}
                       </label>
                       <input
                         required
@@ -242,7 +240,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div className="space-y-3 max-[599px]:space-y-1">
                       <label className="text-md font-bold uppercase text-blue-500">
-                        Organization Name
+                        {t.organizationName}
                       </label>
                       <input
                         required
@@ -258,7 +256,7 @@ const Contact: React.FC = () => {
 
                   <div className="space-y-3 max-[599px]:space-y-1">
                     <label className="text-md font-bold uppercase text-blue-500">
-                      Technical Details / Part SKU
+                      {t.technicalDetails}
                     </label>
                     <textarea
                       required
@@ -285,7 +283,7 @@ const Contact: React.FC = () => {
                       <Loader2 className="w-6 h-6 animate-spin" />
                     ) : (
                       <>
-                        EXECUTE TRANSMISSION <Send className="w-4 h-4" />
+                        {t.executeTransmission} <Send className="w-4 h-4" />
                       </>
                     )}
                   </button>

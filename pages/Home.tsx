@@ -303,7 +303,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-end max-[599px]:items-start mb-24 max-[599px]:mb-6 gap-8">
             <div className="max-w-2xl">
               <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 max-[599px]:mb-0 block">
-                PORTFOLIO
+                {t.portfolio}
               </span>
               <h2 className="text-5xl max-[599px]:text-4xl md:text-7xl font-black text-black tracking-tighter">
                 {t.productCategories}
@@ -313,7 +313,7 @@ const Home: React.FC = () => {
               to="/products"
               className="px-10 max-[599px]:w-full py-5 bg-blue-500 rounded text-white font-bold uppercase text-sm tracking-widest hover:bg-blue-600 hover:shadow-xl transition-all duration-500 flex items-center justify-center gap-3 group"
             >
-              Explore Full Invetory{" "}
+              {t.exploreFullInventory}{" "}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -402,10 +402,10 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-0 md:gap-16 items-center">
             <div className="w-full md:w-1/2 space-y-8 max-[599px]:space-y-2">
               <span className="text-4xl max-[599px]:text-2xl max-[599px]:-mb-0 -mb-4 font-bold uppercase  text-blue-500 block">
-                ABOUT US
+                {t.aboutUs}
               </span>
               <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-6xl font-black text-black tracking-tighter leading-none ">
-                Clinical Precision in Supply.
+                {t.clinicalPrecision}
               </h2>
               <div className="space-y-6 max-[599px]:space-y-2 text-black/80 text-base sm:text-lg leading-relaxed max-[599px]:leading-tight">
                 <p>
@@ -476,12 +476,10 @@ const Home: React.FC = () => {
             <div className="space-y-12 max-[599px]:space-y-6">
               <div className="space-y-4 max-[599px]:space-y-1">
                 <span className="text-4xl max-[599px]:text-2xl font-bold uppercase  text-blue-500">
-                  ENGINEERING EXPERTISE
+                  {t.engineeringExpertise}
                 </span>
                 <h2 className="text-5xl max-[599px]:text-4xl md:text-7xl font-black text-black tracking-tighter leading-[0.95] max-[599px]:leading-tight">
-                  Reliability isn’t accidental.
-                  <br />
-                  It is engineered.
+                  {t.reliabilityEngineered}
                 </h2>
               </div>
               <p className="text-black/80 text-xl leading-relaxed max-[599px]:leading-tight">
@@ -492,7 +490,7 @@ const Home: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-[599px]:gap-6 pt-12 max-[599px]:pt-6 border-t border-black/50">
                 <div>
                   <h4 className="text-xl font-bold uppercase tracking-widest text-blue-500">
-                    Our Mission
+                    {t.ourMission}
                   </h4>
                   <p className="text-black/50 text-lg">
                     To sustain global industrial productivity through the
@@ -502,7 +500,7 @@ const Home: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold uppercase tracking-widest text-blue-500">
-                    Our Vision
+                    {t.ourVision}
                   </h4>
                   <p className="text-black/50 text-lg">
                     To become the singular technical benchmark for heavy-duty
@@ -586,22 +584,21 @@ const Home: React.FC = () => {
               <div className="text-left space-t-8">
                 <div>
                   <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
-                    GET IN TOUCH
+                    {t.getInTouch}
                   </span>
                   <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
-                    Connect with Engineering.
+                    {t.connectWithEngineering}
                   </h2>
                 </div>
                 <p className="text-black/80 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg pt-4 max-[599px]:pt-2 sm:pt-6">
-                  Direct access to our technical desk and logistics hubs
-                  worldwide. We respond to industrial emergencies 24/7.
+                  {t.contactDesc2}
                 </p>
                 <div className="pt-6 max-[599px]:pt-2 sm:pt-8 pb-4 max-[599px]:pb-0 sm:pb-6">
                   <Link
                     to="/contact"
                     className="inline-flex items-center gap-3 sm:gap-4 text-black font-bold uppercase text-xs tracking-[0.3em] hover:text-blue-500 transition-colors group"
                   >
-                    GOTO TECHNICAL DESK{" "}
+                    {t.gotoTechnicalDesk}{" "}
                     <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </Link>
                 </div>
@@ -609,25 +606,25 @@ const Home: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 {[
                   {
-                    title: "Technical Support",
+                    title: t.technicalSupport,
                     desc: "logistics@iprecision.com",
                     icon: Mail,
                     action: "mailto:logistics@iprecision.com",
                   },
                   {
-                    title: "Direct Hotline",
+                    title: t.directHotline,
                     desc: "+971 4 000 0000",
                     icon: Phone,
                     action: "tel:+97140000000",
                   },
                   {
-                    title: "Global HQ",
+                    title: t.globalHQ,
                     desc: "Dubai Industrial Area 4, UAE",
                     icon: MapPin,
                     action: "/contact",
                   },
                   {
-                    title: "Europe Hub",
+                    title: t.europeHub,
                     desc: "Berlin-Adlershof, DE",
                     icon: Globe,
                     action: "/contact",
@@ -678,7 +675,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-16 max-[599px]:mb-6">
             <span className="text-blue-500 max-[599px]:text-2xl text-4xl font-bold uppercaset mb-4 max-[599px]:mb-0 block">
-              KNOWLEDGE BASE
+              {t.knowledgeBase}
             </span>
             <h2 className="text-4xl max-[599px]:text-4xl md:text-6xl font-black text-black tracking-tighter">
               {t.faqTitle}

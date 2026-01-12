@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { PRODUCTS, TESTIMONIALS } from "../constants";
+import { useLanguage } from "../App";
 import {
   ArrowLeft,
   ArrowRight,
@@ -20,6 +21,7 @@ import ProductImageViewer from "../components/ProductImageViewer";
 
 const ProductDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  const { t } = useLanguage();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   // Find product by title (id parameter is the product title)
@@ -55,13 +57,7 @@ const ProductDetails: React.FC = () => {
   };
 
   const getCategoryLabel = (category: string) => {
-    const labels: Record<string, string> = {
-      engine: "ENGINE PARTS",
-      compressor: "COMPRESSORS",
-      filter: "FILTERS",
-      spare: "SPARES",
-    };
-    return labels[category] || category.toUpperCase();
+    return t.productCategoryLabels?.[category as keyof typeof t.productCategoryLabels] || category.toUpperCase();
   };
 
   // Generate multiple product images (variations for demo)
@@ -150,7 +146,7 @@ const ProductDetails: React.FC = () => {
             className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 mb-6 font-semibold uppercase text-sm tracking-wide transition-colors group"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-            Back to Products
+            {t.backToProducts}
           </Link>
           <div className="flex items-center gap-4 mb-4">
             <span className="px-4 py-2 bg-blue-500 text-white text-xs font-bold uppercase tracking-widest">
@@ -180,7 +176,7 @@ const ProductDetails: React.FC = () => {
                 <div className="flex items-center gap-3 mb-2">
                   <Package className="w-5 h-5 text-blue-500" />
                   <span className="text-xs font-bold uppercase tracking-widest text-black/60">
-                    Category
+                    {t.category}
                   </span>
                 </div>
                 <p className="text-lg font-bold text-black">
@@ -192,7 +188,7 @@ const ProductDetails: React.FC = () => {
                 <div className="flex items-center gap-3 mb-2">
                   <Settings className="w-5 h-5 text-blue-500" />
                   <span className="text-xs font-bold uppercase tracking-widest text-black/60">
-                    Specifications
+                    {t.specifications}
                   </span>
                 </div>
                 <p className="text-lg font-bold text-blue-500">{product.specs}</p>
@@ -202,7 +198,7 @@ const ProductDetails: React.FC = () => {
             {/* Description */}
             <div className="p-8 bg-black/5 border border-black/10 rounded-lg">
               <h3 className="text-2xl text-black font-black uppercase mb-4 tracking-tight">
-                Product Description
+                {t.productDescription}
               </h3>
               <p className="text-black/80 leading-relaxed text-lg">{product.desc}</p>
             </div>
@@ -210,7 +206,7 @@ const ProductDetails: React.FC = () => {
             {/* Product Features */}
             <div className="p-8 bg-blue-500/5 border border-blue-500/20 rounded-lg">
               <h3 className="text-2xl text-black font-black uppercase mb-6 tracking-tight">
-                Product Features
+                {t.productFeatures}
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -258,20 +254,20 @@ const ProductDetails: React.FC = () => {
                 onClick={() => handleWhatsAppQuery()}
                 className="w-full py-5 bg-blue-500 text-white text-lg font-bold uppercase flex items-center justify-center gap-3 hover:bg-blue-600 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl group/btn"
               >
-                Contact via WhatsApp
+                {t.contactViaWhatsApp}
                 <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
               </button>
 
               <Link to="/contact" className="block">
                 <button className="w-full py-5 bg-white text-blue-500 border-2 border-blue-500 text-lg font-bold uppercase flex items-center justify-center gap-3 hover:bg-blue-50 rounded-lg transition-all duration-300 group/btn">
-                  Request Technical Quote
+                  {t.requestTechnicalQuote}
                   <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                 </button>
               </Link>
 
               <Link to="/products" className="block">
                 <button className="w-full py-4 bg-black/5 text-black border border-black/10 text-md font-semibold uppercase flex items-center justify-center gap-2 hover:bg-black/10 rounded-lg transition-all duration-300">
-                  View All Products
+                  {t.viewAllProducts}
                 </button>
               </Link>
             </div>
@@ -283,10 +279,10 @@ const ProductDetails: React.FC = () => {
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
-                WHY CHOOSE US
+                {t.whyChooseUs}
               </span>
               <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter mb-4">
-                Engineering Excellence You Can Trust
+                {t.engineeringExcellence}
               </h2>
               <p className="text-black/70 text-lg max-w-3xl mx-auto leading-relaxed">
                 Our commitment to quality, expertise, and customer support sets us apart as your
@@ -317,17 +313,17 @@ const ProductDetails: React.FC = () => {
               <div className="flex justify-between items-center mb-12">
                 <div>
                   <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
-                    MORE FROM THIS CATEGORY
+                    {t.moreFromCategory}
                   </span>
                   <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter">
-                    Explore {getCategoryLabel(product.category)}
+                    {t.explore} {getCategoryLabel(product.category)}
                   </h2>
                 </div>
                 <Link
                   to={`/products?category=${product.category}`}
                   className="hidden md:flex items-center gap-2 text-blue-500 hover:text-blue-600 font-semibold uppercase text-sm tracking-wide transition-colors group"
                 >
-                  View All {getCategoryLabel(product.category)}
+                  {t.viewAllProducts} {getCategoryLabel(product.category)}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -359,7 +355,7 @@ const ProductDetails: React.FC = () => {
                       <div className="flex flex-col gap-3">
                         <Link to={`/product-details/${item.title}`} className="w-full">
                           <button className="w-full py-3 bg-white text-blue-500 border border-blue-500 text-sm font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn hover:bg-blue-50">
-                            View Details
+                            {t.viewProduct}
                             <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                           </button>
                         </Link>
@@ -367,7 +363,7 @@ const ProductDetails: React.FC = () => {
                           onClick={() => handleWhatsAppQuery(item)}
                           className="w-full py-3 bg-blue-500 text-white text-sm font-bold uppercase flex items-center justify-center gap-2 hover:bg-blue-600 rounded-md transition-all group/btn"
                         >
-                          Inquire Now
+                          {t.inquireNow}
                           <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                         </button>
                       </div>
@@ -380,7 +376,7 @@ const ProductDetails: React.FC = () => {
                   to={`/products?category=${product.category}`}
                   className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 font-semibold uppercase text-sm tracking-wide transition-colors group"
                 >
-                  View All {getCategoryLabel(product.category)}
+                  {t.viewAllProducts} {getCategoryLabel(product.category)}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -395,17 +391,17 @@ const ProductDetails: React.FC = () => {
               <div className="flex justify-between items-center mb-12">
                 <div>
                   <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
-                    OUR RECOMMENDATIONS
+                    {t.ourRecommendations}
                   </span>
                   <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter">
-                    You Might Also Like
+                    {t.youMightAlsoLike}
                   </h2>
                 </div>
                 <Link
                   to="/products"
                   className="hidden md:flex items-center gap-2 text-blue-500 hover:text-blue-600 font-semibold uppercase text-sm tracking-wide transition-colors group"
                 >
-                  View All Products
+                  {t.viewAllProducts}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -437,7 +433,7 @@ const ProductDetails: React.FC = () => {
                       <div className="flex flex-col gap-2">
                         <Link to={`/product-details/${item.title}`} className="w-full">
                           <button className="w-full py-2.5 bg-white text-blue-500 border border-blue-500 text-xs font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn hover:bg-blue-50">
-                            View Product
+                            {t.viewProduct}
                             <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
                           </button>
                         </Link>
@@ -451,7 +447,7 @@ const ProductDetails: React.FC = () => {
                   to="/products"
                   className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 font-semibold uppercase text-sm tracking-wide transition-colors group"
                 >
-                  View All Products
+                  {t.viewAllProducts}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -464,10 +460,10 @@ const ProductDetails: React.FC = () => {
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
-                CLIENT REVIEWS
+                {t.clientReviews}
               </span>
               <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter mb-4">
-                What Our Clients Say
+                {t.whatClientsSay}
               </h2>
               <p className="text-black/70 text-lg max-w-3xl mx-auto leading-relaxed">
                 Verified testimonials from industrial professionals who trust our products and
@@ -518,10 +514,10 @@ const ProductDetails: React.FC = () => {
           <div className="container mx-auto px-6 max-w-4xl">
             <div className="text-center mb-12">
               <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
-                FREQUENTLY ASKED QUESTIONS
+                {t.frequentlyAskedQuestions}
               </span>
               <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter mb-4">
-                Product Information & Support
+                {t.productInfoSupport}
               </h2>
               <p className="text-black/70 text-lg max-w-3xl mx-auto leading-relaxed">
                 Find answers to common questions about {product.title} and our services.
@@ -561,7 +557,7 @@ const ProductDetails: React.FC = () => {
             <AlertCircle className="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" />
             <div>
               <h3 className="text-2xl text-black font-black uppercase mb-2 tracking-tight">
-                Need More Information?
+                {t.needMoreInfo}
               </h3>
               <p className="text-black/70 leading-relaxed">
                 Our engineering team is available to provide detailed technical specifications,
@@ -573,14 +569,14 @@ const ProductDetails: React.FC = () => {
           <div className="flex flex-wrap gap-4">
             <Link to="/contact">
               <button className="px-6 py-3 bg-blue-500 text-white text-sm font-bold uppercase hover:bg-blue-600 rounded-md transition-all">
-                Contact Form
+                {t.contactForm}
               </button>
             </Link>
             <button
               onClick={() => handleWhatsAppQuery()}
               className="px-6 py-3 bg-green-500 text-white text-sm font-bold uppercase hover:bg-green-600 rounded-md transition-all"
             >
-              WhatsApp Direct
+              {t.whatsappDirect}
             </button>
           </div>
         </div>

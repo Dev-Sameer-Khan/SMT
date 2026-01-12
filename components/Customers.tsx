@@ -1,4 +1,5 @@
 import React from "react";
+import { useLanguage } from "../App";
 
 const PARTNERS = [
   { name: "PERKINS", region: "Global", logo: "/perk.png" },
@@ -22,6 +23,7 @@ const Team = [
 ];
 
 const Customers: React.FC = () => {
+  const { t } = useLanguage();
   const scrollItems = [...PARTNERS, ...PARTNERS, ...PARTNERS];
 
   return (
@@ -32,7 +34,7 @@ const Customers: React.FC = () => {
           Our Companies
         </span> */}
         <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
-          Our Companies
+          {t.ourCompanies}
         </h2>
       </div>
 
@@ -84,10 +86,10 @@ const Customers: React.FC = () => {
       {/* Header */}
       <div className="container mx-auto mb-10 max-[599px]:mb-6 max-[599px]:px-4 px-6 text-center max-[599px]:mt-0 mt-20">
         <span className="mb-4 max-[599px]:mb-0 block max-[599px]:text-2xl text-4xl font-bold uppercase text-blue-500">
-          Trusted by
+          {t.trustedBy}
         </span>
         <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
-          Global Brands
+          {t.globalBrands}
         </h2>
       </div>
 

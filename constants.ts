@@ -1,65 +1,335 @@
-import { TranslationSet, Product } from "./types";
+import { TranslationSet, Product, Testimonial } from "./types";
 
 export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
   en: {
+    // Navigation
     navHome: "Home",
     navAbout: "About",
     navProducts: "Products",
     navContact: "Contact",
     ctaInquiry: "Contact Us",
+    
+    // Hero Section
     heroTitle: "INDUSTRIAL PRECISION",
     heroTagline: "Engineering Excellence at Scale",
     heroDesc:
       "Elite global supplier of high-performance engine components, filtration systems, and industrial compressors.",
     heroBtnProducts: "Your Products",
     heroBtnInquiry: "Contact Us",
+    
+    // Stats
     statsProducts: "Inventory Units",
+    statsExperience: "Years Experience",
     statsProjects: "Global Deliveries",
     statsClients: "Key Partners",
+    
+    // Launch Section
     launchTitle: "Air Compressor",
     launchBadge: "Main Product",
+    
+    // About Section
     aboutTitle: "RELIABILITY ENGINEERED",
     aboutSubtitle: "A Legacy of Industrial Trust",
     aboutText:
       "Focused on high-performance engine components and heavy-duty filtration. Our supply chain ensures zero downtime for global fleet owners and industrial projects.",
+    
+    // Products
     productCategories: "OUR PRODUCTS",
+    catalogTitle: "CATALOG",
+    coreInventory: "CORE INVENTORY",
+    catalogDesc: "Browse our technical specifications. If you don't find a specific part number, please use the direct inquiry form.",
+    categoriesTitle: "CATEGORIES",
+    allComponents: "ALL COMPONENTS",
+    engineParts: "ENGINE PARTS",
+    compressors: "COMPRESSORS",
+    filters: "FILTERS",
+    spares: "SPARES",
+    viewProduct: "View Product",
+    inquireNow: "Inquire Now",
+    cantFindPart: "CAN'T FIND A PART?",
+    cantFindPartDesc: "Our database includes 100,000+ unlisted part numbers. Contact engineering support.",
+    requestCustomPart: "REQUEST CUSTOM PART",
+    
+    // Product Details
+    backToProducts: "Back to Products",
+    productDescription: "Product Description",
+    productFeatures: "Product Features",
+    contactViaWhatsApp: "Contact via WhatsApp",
+    requestTechnicalQuote: "Request Technical Quote",
+    viewAllProducts: "View All Products",
+    whyChooseUs: "WHY CHOOSE US",
+    engineeringExcellence: "Engineering Excellence You Can Trust",
+    moreFromCategory: "MORE FROM THIS CATEGORY",
+    explore: "Explore",
+    ourRecommendations: "OUR RECOMMENDATIONS",
+    youMightAlsoLike: "You Might Also Like",
+    clientReviews: "CLIENT REVIEWS",
+    whatClientsSay: "What Our Clients Say",
+    frequentlyAskedQuestions: "FREQUENTLY ASKED QUESTIONS",
+    productInfoSupport: "Product Information & Support",
+    needMoreInfo: "Need More Information?",
+    contactForm: "Contact Form",
+    whatsappDirect: "WhatsApp Direct",
+    category: "Category",
+    specifications: "Specifications",
+    
+    // FAQ
     faqTitle: "TECHNICAL SPECIFICATIONS & FAQ",
+    
+    // Contact
     contactTitle: "ESTABLISH PARTNERSHIP",
+    establishConnection: "ESTABLISH CONNECTION",
+    contactDesc: "Direct channel for high-volume procurement, technical specifications, and global logistics coordination.",
+    operationalHours: "Operational Hours",
+    encryption: "Encryption",
+    location: "Location",
+    phoneNumber: "Phone Number",
+    email: "Email",
+    technicalInquiry: "Technical Inquiry",
+    authorizedPersonnel: "Authorized Personnel",
+    corporateEmail: "Corporate Email",
+    directContact: "Direct Contact",
+    organizationName: "Organization Name",
+    technicalDetails: "Technical Details / Part SKU",
+    executeTransmission: "EXECUTE TRANSMISSION",
+    dataTransmitted: "Data Transmitted",
+    dataTransmittedDesc: "Your inquiry has been logged in our CRM. A senior division engineer will respond within standard SLA windows.",
+    resetForm: "RESET FORM",
+    
+    // Footer
     footerTagline:
       "SMT is a Saudi Arabia–based company providing genuine engine spare parts and reliable maintenance and repair services, delivering quality you can trust since 2014.",
-    whatsappTooltip: "Chat with us on WhatsApp",
+    navigation: "Navigation",
+    divisions: "Divisions",
+    engineComponents: "Engine Components",
+    industrialFiltration: "Industrial Filtration",
+    screwCompressors: "Screw Compressors",
+    heavySpares: "Heavy Spares",
+    globalHub: "Global Hub",
+    termsOfService: "Terms of Service",
+    privacyPolicy: "Privacy Policy",
+    
+    // Home Page
+    portfolio: "PORTFOLIO",
+    exploreFullInventory: "Explore Full Invetory",
+    aboutUs: "ABOUT US",
+    clinicalPrecision: "Clinical Precision in Supply.",
+    engineeringExpertise: "ENGINEERING EXPERTISE",
+    reliabilityEngineered: "Reliability isn't accidental. It is engineered.",
+    ourMission: "Our Mission",
+    ourVision: "Our Vision",
+    getInTouch: "GET IN TOUCH",
+    connectWithEngineering: "Connect with Engineering.",
+    contactDesc2: "Direct access to our technical desk and logistics hubs worldwide. We respond to industrial emergencies 24/7.",
+    gotoTechnicalDesk: "GOTO TECHNICAL DESK",
+    technicalSupport: "Technical Support",
+    directHotline: "Direct Hotline",
+    globalHQ: "Global HQ",
+    europeHub: "Europe Hub",
+    knowledgeBase: "KNOWLEDGE BASE",
+    
+    // Testimonials
     testimonialTitle: "What Clients Say",
+    verifiedReliability: "Verified Industrial Reliability.",
+    
+    // Customers
+    ourCompanies: "Our Companies",
+    trustedBy: "Trusted by",
+    globalBrands: "Global Brands",
+    
+    // Error Page
+    systemAnomaly: "SYSTEM ANOMALY DETECTED",
+    routeNotFound: "Route Not Found",
+    errorDesc: "The requested technical directory or resource is unavailable or has been moved to a secure partition.",
+    rebootToHome: "REBOOT TO HOME",
+    
+    // WhatsApp
+    whatsappTooltip: "Chat with us on WhatsApp",
+    
+    // Subcategories
+    subcategoryLabels: {
+      pistons: "Pistons",
+      cylinders: "Cylinders",
+      valves: "Valves",
+      bearings: "Bearings",
+      gaskets: "Gaskets",
+      screw: "Screw Compressors",
+      piston: "Piston Compressors",
+      vanes: "Vane Compressors",
+      rotary: "Rotary Compressors",
+    },
+    
+    // Product categories
+    productCategoryLabels: {
+      all: "ALL COMPONENTS",
+      engine: "ENGINE PARTS",
+      compressor: "COMPRESSORS",
+      filter: "FILTERS",
+      spare: "SPARES",
+    },
+    
+    // Product subcategories
+    productSubcategories: {
+      engine: [
+        { id: "pistons", label: "Pistons" },
+        { id: "cylinders", label: "Cylinders" },
+        { id: "valves", label: "Valves" },
+        { id: "bearings", label: "Bearings" },
+        { id: "gaskets", label: "Gaskets" },
+      ],
+      compressor: [
+        { id: "screw", label: "Screw Compressors" },
+        { id: "piston", label: "Piston Compressors" },
+        { id: "vanes", label: "Vane Compressors" },
+        { id: "rotary", label: "Rotary Compressors" },
+      ],
+    },
   },
   ar: {
+    // Navigation
     navHome: "الرئيسية",
     navAbout: "من نحن",
     navProducts: "المنتجات",
     navContact: "اتصل بنا",
     ctaInquiry: "استفسار مباشر",
+    
+    // Hero Section
     heroTitle: "دقة صناعية",
     heroTagline: "التميز الهندسي على نطاق واسع",
     heroDesc:
       "مورد عالمي لنخبة مكونات المحركات، وأنظمة الترشيح، والضواغط الصناعية.",
     heroBtnProducts: "عرض الإمكانيات",
     heroBtnInquiry: "استفسار فني",
+    
+    // Stats
     statsProducts: "وحدات المخزون",
     statsExperience: "سنوات الخبرة",
     statsProjects: "تسليمات عالمية",
     statsClients: "شركاء رئيسيون",
+    
+    // Launch Section
     launchTitle: "ريادة طاقة الهواء: قسم الضواغط",
     launchBadge: "قسم جديد",
+    
+    // About Section
     aboutTitle: "موثوقية هندسية",
     aboutSubtitle: "إرث من الثقة الصناعية",
     aboutText:
       "نركز على مكونات المحركات عالية الأداء والترشيح الشاق. تضمن سلسلة التوريد الخاصة بنا عدم وجود فترات توقف لأصحاب الأساطيل العالمية.",
+    
+    // Products
     productCategories: "القدرات الأساسية",
+    catalogTitle: "الكتالوج",
+    coreInventory: "المخزون الأساسي",
+    catalogDesc: "تصفح المواصفات الفنية لدينا. إذا لم تجد رقم جزء محدد، يرجى استخدام نموذج الاستفسار المباشر.",
+    categoriesTitle: "الفئات",
+    allComponents: "جميع المكونات",
+    engineParts: "قطع المحرك",
+    compressors: "الضواغط",
+    filters: "المرشحات",
+    spares: "القطع الاحتياطية",
+    viewProduct: "عرض المنتج",
+    inquireNow: "استفسر الآن",
+    cantFindPart: "لا تجد جزءًا؟",
+    cantFindPartDesc: "تتضمن قاعدة البيانات لدينا أكثر من 100,000 رقم جزء غير مدرج. اتصل بدعم الهندسة.",
+    requestCustomPart: "طلب جزء مخصص",
+    
+    // Product Details
+    backToProducts: "العودة إلى المنتجات",
+    productDescription: "وصف المنتج",
+    productFeatures: "ميزات المنتج",
+    contactViaWhatsApp: "اتصل عبر واتساب",
+    requestTechnicalQuote: "طلب عرض فني",
+    viewAllProducts: "عرض جميع المنتجات",
+    whyChooseUs: "لماذا تختارنا",
+    engineeringExcellence: "التميز الهندسي الذي يمكنك الوثوق به",
+    moreFromCategory: "المزيد من هذه الفئة",
+    explore: "استكشف",
+    ourRecommendations: "توصياتنا",
+    youMightAlsoLike: "قد يعجبك أيضًا",
+    clientReviews: "آراء العملاء",
+    whatClientsSay: "ماذا يقول عملاؤنا",
+    frequentlyAskedQuestions: "الأسئلة الشائعة",
+    productInfoSupport: "معلومات المنتج والدعم",
+    needMoreInfo: "تحتاج إلى مزيد من المعلومات؟",
+    contactForm: "نموذج الاتصال",
+    whatsappDirect: "واتساب مباشر",
+    category: "الفئة",
+    specifications: "المواصفات",
+    
+    // FAQ
     faqTitle: "المواصفات الفنية والأسئلة الشائعة",
+    
+    // Contact
     contactTitle: "تأسيس شراكة",
-    footerTagline: "تحديد معايير توريد قطع الغيار الصناعية منذ عام 1998.",
-    whatsappTooltip: "تواصل معنا عبر واتساب",
+    establishConnection: "إنشاء اتصال",
+    contactDesc: "قناة مباشرة للمشتريات الكبيرة والمواصفات الفنية وتنسيق الخدمات اللوجستية العالمية.",
+    operationalHours: "ساعات العمل",
+    encryption: "التشفير",
+    location: "الموقع",
+    phoneNumber: "رقم الهاتف",
+    email: "البريد الإلكتروني",
+    technicalInquiry: "استفسار فني",
+    authorizedPersonnel: "الموظفون المصرح لهم",
+    corporateEmail: "البريد الإلكتروني للشركة",
+    directContact: "الاتصال المباشر",
+    organizationName: "اسم المنظمة",
+    technicalDetails: "التفاصيل الفنية / رقم جزء SKU",
+    executeTransmission: "تنفيذ الإرسال",
+    dataTransmitted: "تم إرسال البيانات",
+    dataTransmittedDesc: "تم تسجيل استفسارك في نظام إدارة علاقات العملاء لدينا. سيرد مهندس قسم كبير ضمن نافذة SLA القياسية.",
+    resetForm: "إعادة تعيين النموذج",
+    
+    // Footer
+    footerTagline: "SMT هي شركة مقرها المملكة العربية السعودية تقدم قطع غيار المحركات الأصلية وخدمات الصيانة والإصلاح الموثوقة، وتقدم جودة يمكنك الوثوق بها منذ عام 2014.",
+    navigation: "التنقل",
+    divisions: "الأقسام",
+    engineComponents: "مكونات المحرك",
+    industrialFiltration: "الترشيح الصناعي",
+    screwCompressors: "الضواغط اللولبية",
+    heavySpares: "القطع الاحتياطية الثقيلة",
+    globalHub: "المركز العالمي",
+    termsOfService: "شروط الخدمة",
+    privacyPolicy: "سياسة الخصوصية",
+    
+    // Home Page
+    portfolio: "المحفظة",
+    exploreFullInventory: "استكشف المخزون الكامل",
+    aboutUs: "من نحن",
+    clinicalPrecision: "الدقة السريرية في التوريد.",
+    engineeringExpertise: "الخبرة الهندسية",
+    reliabilityEngineered: "الموثوقية ليست عرضية. إنها مصممة هندسيًا.",
+    ourMission: "مهمتنا",
+    ourVision: "رؤيتنا",
+    getInTouch: "تواصل معنا",
+    connectWithEngineering: "تواصل مع الهندسة.",
+    contactDesc2: "وصول مباشر إلى مكتبنا الفني ومراكز الخدمات اللوجستية في جميع أنحاء العالم. نستجيب لحالات الطوارئ الصناعية على مدار الساعة.",
+    gotoTechnicalDesk: "اذهب إلى المكتب الفني",
+    technicalSupport: "الدعم الفني",
+    directHotline: "الخط الساخن المباشر",
+    globalHQ: "المقر العالمي",
+    europeHub: "مركز أوروبا",
+    knowledgeBase: "قاعدة المعرفة",
+    
+    // Testimonials
     testimonialTitle: "تقارير الأداء",
-
-    // Arabic subcategory labels for use in products, etc.
+    verifiedReliability: "الموثوقية الصناعية الموثقة.",
+    
+    // Customers
+    ourCompanies: "شركاتنا",
+    trustedBy: "موثوق به من قبل",
+    globalBrands: "العلامات التجارية العالمية",
+    
+    // Error Page
+    systemAnomaly: "تم اكتشاف شذوذ في النظام",
+    routeNotFound: "المسار غير موجود",
+    errorDesc: "الدليل الفني المطلوب أو المورد غير متاح أو تم نقله إلى قسم آمن.",
+    rebootToHome: "إعادة التشغيل إلى الصفحة الرئيسية",
+    
+    // WhatsApp
+    whatsappTooltip: "تواصل معنا عبر واتساب",
+    
+    // Subcategories
     subcategoryLabels: {
       pistons: "مكابس",
       cylinders: "أسطوانات",
@@ -71,8 +341,8 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       vanes: "ضواغط شفرات",
       rotary: "ضواغط دوارة",
     },
-
-    // Arabic product categories and subcategories (for filters/ui display)
+    
+    // Product categories
     productCategoryLabels: {
       all: "كل المكونات",
       engine: "قطع المحرك",
@@ -80,6 +350,8 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       filter: "المرشحات",
       spare: "القطع الاحتياطية",
     },
+    
+    // Product subcategories
     productSubcategories: {
       engine: [
         { id: "pistons", label: "مكابس" },

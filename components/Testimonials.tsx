@@ -1,8 +1,9 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../App';
 import { TESTIMONIALS } from '../constants';
 import { Quote } from 'lucide-react';
+import type { Swiper as SwiperType } from 'swiper';
 
 // Swiper import and css
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -38,7 +39,15 @@ const TestimonialCard: React.FC<{ item: any }> = ({ item }) => (
 );
 
 const Testimonials: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const swiperRef = useRef<SwiperType | null>(null);
+
+  useEffect(() => {
+    // Update Swiper when language changes
+    if (swiperRef.current) {
+      swiperRef.current.update();
+    }
+  }, [lang]);
 
   return (
     <section className="py-32 max-[599px]:py-10 relative overflow-hidden border-t border-white/5">
@@ -51,7 +60,7 @@ const Testimonials: React.FC = () => {
             {t.testimonialTitle}
           </span>
           <h2 className="text-5xl md:text-7xl max-[599px]:text-4xl font-black text-black tracking-tighter  leading-none">
-            Verified Industrial Reliability.
+            {t.verifiedReliability}
           </h2>
         </div>
 
@@ -64,6 +73,10 @@ const Testimonials: React.FC = () => {
         {/* Mobile Swiper */}
         <div className="block md:hidden">
           <Swiper
+            key={`testimonials-swiper-${lang}`}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
             modules={[Pagination]}
             pagination={{ clickable: true }}
             spaceBetween={12}

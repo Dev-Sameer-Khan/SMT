@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useLanguage } from "../App";
+import type { Swiper as SwiperType } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,8 +11,22 @@ import "swiper/css/scrollbar";
 import { Link } from "react-router-dom";
 
 const CustomImageSlider = ({ image = {}, className = "" }) => {
+  const { lang } = useLanguage();
+  const swiperRef = useRef<SwiperType | null>(null);
+
+  useEffect(() => {
+    // Update Swiper when language changes
+    if (swiperRef.current) {
+      swiperRef.current.update();
+    }
+  }, [lang]);
+
   return (
     <Swiper
+      key={`custom-slider-${lang}`}
+      onSwiper={(swiper) => {
+        swiperRef.current = swiper;
+      }}
       slidesPerView={1}
       loop={true}
       pagination={{

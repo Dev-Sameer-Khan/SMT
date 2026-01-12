@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
 
           {/* Links */}
           <div className="space-y-6 max-[599px]:space-y-2">
-            <h4 className="text-sm font-bold uppercase tracking-widest text-blue-500">Navigation</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-blue-500">{t.navigation}</h4>
             <ul className="space-y-4 max-[599px]:space-y-2">
               <li><Link to="/" className="text-black hover:text-black/60 transition-colors">{t.navHome}</Link></li>
               <li><Link to="/about" className="text-black hover:text-black/60 transition-colors">{t.navAbout}</Link></li>
@@ -45,18 +45,18 @@ const Footer: React.FC = () => {
 
           {/* Industrial Divisions */}
           <div className="space-y-6 max-[599px]:space-y-2">
-            <h4 className="text-sm font-bold uppercase tracking-widest text-blue-500">Divisions</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-blue-500">{t.divisions}</h4>
             <ul className="space-y-4 max-[599px]:space-y-2 text-black">
-              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">Engine Components</Link></li>
-              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">Industrial Filtration</Link></li>
-              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">Screw Compressors</Link></li>
-              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">Heavy Spares</Link></li>
+              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">{t.engineComponents}</Link></li>
+              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">{t.industrialFiltration}</Link></li>
+              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">{t.screwCompressors}</Link></li>
+              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">{t.heavySpares}</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div className="space-y-6 max-[599px]:space-y-2">
-            <h4 className="text-sm font-bold uppercase tracking-widest text-blue-500">Global Hub</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-blue-500">{t.globalHub}</h4>
             <ul className="space-y-4 max-[599px]:space-y-2">
               <li className="flex gap-3 text-black">
                 <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0" />
@@ -78,8 +78,8 @@ const Footer: React.FC = () => {
         <div className="pt-12 max-[599px]:pt-0 max-[599px]:text-center border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-black text-xs font-mono tracking-widest uppercase">
           <p>© 2024 Sumou Al Ebdaa Est. All Rights Reserved.</p>
           <div className="flex gap-8">
-            <Link to="/terms-of-service" className="hover:text-black/60 transition-colors">Terms of Service</Link>
-            <Link to="/privacy-policy" className="hover:text-black/60 transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="hover:text-black/60 transition-colors">{t.termsOfService}</Link>
+            <Link to="/privacy-policy" className="hover:text-black/60 transition-colors">{t.privacyPolicy}</Link>
           </div>
         </div>
       </div>

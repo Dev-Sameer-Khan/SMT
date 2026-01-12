@@ -21,7 +21,7 @@ const COMPRESSOR_SUBCATEGORIES = [
 ];
 
 const ProductsPage: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const categoryParam = searchParams.get("category") || "all";
@@ -36,17 +36,30 @@ const ProductsPage: React.FC = () => {
     setActiveSubcategory(subcategory);
   }, [searchParams]);
 
+  // Get subcategories from translations
+  const ENGINE_SUBCATEGORIES_TRANSLATED = t.productSubcategories?.engine || ENGINE_SUBCATEGORIES;
+  const COMPRESSOR_SUBCATEGORIES_TRANSLATED = t.productSubcategories?.compressor || COMPRESSOR_SUBCATEGORIES;
+
   const categories = [
-    { id: "all", label: "ALL COMPONENTS" },
-    { id: "engine", label: "ENGINE PARTS", subcategories: ENGINE_SUBCATEGORIES },
-    { id: "compressor", label: "COMPRESSORS", subcategories: COMPRESSOR_SUBCATEGORIES },
-    { id: "filter", label: "FILTERS" },
-    { id: "spare", label: "SPARES" },
+    { id: "all", label: t.allComponents },
+    { id: "engine", label: t.engineParts, subcategories: ENGINE_SUBCATEGORIES_TRANSLATED },
+    { id: "compressor", label: t.compressors, subcategories: COMPRESSOR_SUBCATEGORIES_TRANSLATED },
+    { id: "filter", label: t.filters },
+    { id: "spare", label: t.spares },
   ];
 
   // Show subcategories if "engine" or "compressor" category is active
   const currentCategoryObj = categories.find((cat) => cat.id === activeCategory);
   const subcategoriesToShow = currentCategoryObj && currentCategoryObj.subcategories ? currentCategoryObj.subcategories : [];
+  
+  // Helper function to get category/subcategory label
+  const getCategoryLabel = (category: string) => {
+    return t.productCategoryLabels?.[category as keyof typeof t.productCategoryLabels] || category.toUpperCase();
+  };
+  
+  const getSubcategoryLabel = (subcategory: string) => {
+    return t.subcategoryLabels?.[subcategory as keyof typeof t.subcategoryLabels] || subcategory.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  };
 
   // Product filtering logic
   let filteredProducts: typeof PRODUCTS = [];
@@ -85,14 +98,13 @@ const ProductsPage: React.FC = () => {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-500/5 skew-x-12 transform translate-x-20"></div>
         <div className="container mx-auto px-6 relative z-10">
           <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-2 block">
-            CATALOG
+            {t.catalogTitle}
           </span>
           <h1 className="text-5xl max-[599px]:text-4xl md:text-7xl font-black tracking-tighter mb-8 max-[599px]:mb-2">
-            CORE INVENTORY
+            {t.coreInventory}
           </h1>
           <p className="text-black/80 text-lg max-w-2xl font-light italic">
-            Browse our technical specifications. If you don't find a specific
-            part number, please use the direct inquiry form.
+            {t.catalogDesc}
           </p>
         </div>
       </section>
@@ -103,7 +115,7 @@ const ProductsPage: React.FC = () => {
           <aside className="w-full lg:w-64 space-y-12">
             <div>
               <h4 className="text-4xl text-black font-bold uppercase t mb-6 border-b border-black/50 pb-2">
-                CATEGORIES
+                {t.categoriesTitle}
               </h4>
               <div className="space-y-2">
                 {/* Top-level categories */}
@@ -155,14 +167,13 @@ const ProductsPage: React.FC = () => {
             <Link to="/contact">
               <div className="p-6 bg-black/5 text-black rounded-md max-[1024px]:hidden mt-6">
                 <h4 className="text-lg font-bold uppercase mb-4">
-                  CAN'T FIND A PART?
+                  {t.cantFindPart}
                 </h4>
                 <p className="text-black/80 text-sm mb-6">
-                  Our database includes 100,000+ unlisted part numbers. Contact
-                  engineering support.
+                  {t.cantFindPartDesc}
                 </p>
                 <button className="w-full rounded-md py-3 bg-blue-500 text-white text-sm font-bold uppercase hover:bg-blue-600 transition-all duration-300">
-                  REQUEST CUSTOM PART
+                  {t.requestCustomPart}
                 </button>
               </div>
             </Link>
@@ -184,11 +195,9 @@ const ProductsPage: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <span className="absolute top-4 left-4 px-3 py-1 bg-black text-white text-sm font-bold uppercase">
-                      {product.category}
+                      {getCategoryLabel(product.category)}
                       {product.subcategory
-                        ? ` • ${product.subcategory
-                            .replace(/_/g, " ")
-                            .replace(/\b\w/g, (c) => c.toUpperCase())}`
+                        ? ` • ${getSubcategoryLabel(product.subcategory)}`
                         : ""}
                     </span>
                   </div>
@@ -209,7 +218,7 @@ const ProductsPage: React.FC = () => {
                         <button
                           className="w-full py-4 bg-white text-blue-500 border border-blue-500 text-md font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn"
                         >
-                          View Product{" "}
+                          {t.viewProduct}{" "}
                           <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                         </button>
                       </Link>
@@ -217,7 +226,7 @@ const ProductsPage: React.FC = () => {
                         onClick={() => handleWhatsAppQuery(product)}
                         className="w-full py-4 bg-blue-500 text-white text-md font-bold uppercase flex items-center justify-center gap-2 hover:bg-blue-600 rounded-md transition-all group/btn"
                       >
-                        Inquire Now{" "}
+                        {t.inquireNow}{" "}
                         <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                       </button>
                     </div>
@@ -229,14 +238,13 @@ const ProductsPage: React.FC = () => {
           <Link to="/contact">
               <div className="p-6 bg-black/5 text-black rounded-md max-[1024px]:block hidden mt-6">
                 <h4 className="text-lg font-bold uppercase mb-4">
-                  CAN'T FIND A PART?
+                  {t.cantFindPart}
                 </h4>
                 <p className="text-black/80 text-sm mb-6">
-                  Our database includes 100,000+ unlisted part numbers. Contact
-                  engineering support.
+                  {t.cantFindPartDesc}
                 </p>
                 <button className="w-full rounded-md py-3 bg-blue-500 text-white text-sm font-bold uppercase hover:bg-blue-600 transition-all duration-300">
-                  REQUEST CUSTOM PART
+                  {t.requestCustomPart}
                 </button>
               </div>
             </Link>
