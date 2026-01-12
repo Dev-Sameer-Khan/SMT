@@ -171,11 +171,10 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     // Product subcategories
     productSubcategories: {
       engine: [
-        { id: "pistons", label: "Pistons" },
-        { id: "cylinders", label: "Cylinders" },
-        { id: "valves", label: "Valves" },
-        { id: "bearings", label: "Bearings" },
-        { id: "gaskets", label: "Gaskets" },
+        { id: "caterpiller", label: "Caterpiller" },
+        { id: "cummins", label: "Cummins" },
+        { id: "deutz", label: "Deutz" },
+        { id: "perkins", label: "Perkins" },
       ],
       compressor: [
         { id: "screw", label: "Screw Compressors" },
@@ -354,11 +353,10 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     // Product subcategories
     productSubcategories: {
       engine: [
-        { id: "pistons", label: "مكابس" },
-        { id: "cylinders", label: "أسطوانات" },
-        { id: "valves", label: "صمامات" },
-        { id: "bearings", label: "رمانات" },
-        { id: "gaskets", label: "جوانات" },
+        { id: "caterpiller", label: "مكابس" },
+        { id: "cummins", label: "أسطوانات" },
+        { id: "deutz", label: "صمامات" },
+        { id: "perkins", label: "رمانات" },
       ],
       compressor: [
         { id: "screw", label: "ضواغط لولبية" },

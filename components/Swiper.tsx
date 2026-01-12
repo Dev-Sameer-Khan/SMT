@@ -75,12 +75,12 @@ const Swipers = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 ">
-              <button className="group max-[599px]:w-full relative bg-blue-500 text-white px-20 py-4 rounded font-bold overflow-hidden transition-all duration-300 hover:bg-blue-600 hover:shadow-md">
+              <button className="cursor-pointer group max-[599px]:w-full relative bg-blue-500 text-white px-20 py-4 rounded font-bold overflow-hidden transition-all duration-300 hover:bg-blue-600 hover:shadow-md">
                 <span className="relative z-10">View Product</span>
                 {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div> */}
               </button>
 
-              <button className="px-20 max-[599px]:w-full py-4 rounded font-bold border border-white/30 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+              <button className="cursor-pointer px-20 max-[599px]:w-full py-4 rounded font-bold border border-white/30 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
                 Buy Now
               </button>
             </div>
@@ -120,12 +120,12 @@ const Swipers = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 ">
-              <button className="group max-[599px]:w-full relative bg-blue-500 text-white px-20 py-4 rounded font-bold overflow-hidden transition-all duration-300 hover:bg-blue-600 hover:shadow-md">
+              <button className="cursor-pointer group max-[599px]:w-full relative bg-blue-500 text-white px-20 py-4 rounded font-bold overflow-hidden transition-all duration-300 hover:bg-blue-600 hover:shadow-md">
                 <span className="relative z-10">View Product</span>
                 {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div> */}
               </button>
 
-              <button className="px-20 max-[599px]:w-full py-4 rounded font-bold border border-white/30 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+              <button className="cursor-pointer px-20 max-[599px]:w-full py-4 rounded font-bold border border-white/30 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
                 Buy Now
               </button>
             </div>
@@ -165,12 +165,12 @@ const Swipers = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 ">
-              <button className="group max-[599px]:w-full relative bg-blue-500 text-white px-20 py-4 rounded font-bold overflow-hidden transition-all duration-300 hover:bg-blue-600 hover:shadow-md">
+              <button className="cursor-pointer group max-[599px]:w-full relative bg-blue-500 text-white px-20 py-4 rounded font-bold overflow-hidden transition-all duration-300 hover:bg-blue-600 hover:shadow-md">
                 <span className="relative z-10">View Product</span>
                 {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div> */}
               </button>
 
-              <button className="px-20 max-[599px]:w-full py-4 rounded font-bold border border-white/30 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+              <button className="cursor-pointer px-20 max-[599px]:w-full py-4 rounded font-bold border border-white/30 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
                 Buy Now
               </button>
             </div>

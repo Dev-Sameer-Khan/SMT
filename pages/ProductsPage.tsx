@@ -128,7 +128,7 @@ const ProductsPage: React.FC = () => {
                         setSearchParams({ category: cat.id });
                       }
                     }}
-                    className={`w-full rounded text-left px-4 py-3 text-xs font-bold uppercase tracking-widest transition-all ${
+                    className={`w-full cursor-pointer rounded text-left px-4 py-3 text-xs font-bold uppercase tracking-widest transition-all ${
                       activeCategory === cat.id
                         ? "bg-blue-500 text-white shadow-lg"
                         : "bg-black/5 text-black border border-white/5 hover:border-blue-500 hover:text-blue-500"
@@ -148,7 +148,7 @@ const ProductsPage: React.FC = () => {
                         setActiveSubcategory(sub.id);
                         setSearchParams({ category: activeCategory, subcategory: sub.id });
                       }}
-                      className={`block w-full rounded text-left px-3 py-2 max-[599px]:py-1 text-xs font-normal uppercase tracking-widest transition-all ${
+                      className={`block cursor-pointer w-full rounded text-left px-3 py-2 max-[599px]:py-1 text-xs font-normal uppercase tracking-widest transition-all ${
                         activeSubcategory === sub.id
                           ? "bg-blue-100 text-blue-900 font-bold shadow"
                           : "bg-black/0 text-black hover:bg-blue-50 hover:text-blue-700"
@@ -161,7 +161,6 @@ const ProductsPage: React.FC = () => {
                 </div>
               )}
             </div>
-            <Link to="/contact">
               <div className="p-6 bg-black/5 text-black rounded-md max-[1024px]:hidden mt-6">
                 <h4 className="text-lg font-bold uppercase mb-4">
                   {t.cantFindPart}
@@ -169,11 +168,12 @@ const ProductsPage: React.FC = () => {
                 <p className="text-black/80 text-sm mb-6">
                   {t.cantFindPartDesc}
                 </p>
-                <button className="w-full rounded-md py-3 bg-blue-500 text-white text-sm font-bold uppercase hover:bg-blue-600 transition-all duration-300">
+            <Link to="/contact">
+                <button className="w-full cursor-pointer rounded-md py-3 bg-blue-500 text-white text-sm font-bold uppercase hover:bg-blue-600 transition-all duration-300">
                   {t.requestCustomPart}
                 </button>
-              </div>
             </Link>
+              </div>
           </aside>
 
           {/* Product Grid */}
@@ -213,7 +213,7 @@ const ProductsPage: React.FC = () => {
                     <div className="flex flex-col gap-4 justify-center items-center">
                       <Link className="w-full" to={`/product-details/${product.title}`}>
                         <button
-                          className="w-full py-4 bg-white text-blue-500 border border-blue-500 text-md font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn"
+                          className="w-full cursor-pointer py-4 bg-white text-blue-500 border border-blue-500 text-md font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn"
                         >
                           {t.viewProduct}{" "}
                           <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -221,7 +221,7 @@ const ProductsPage: React.FC = () => {
                       </Link>
                       <button
                         onClick={() => handleWhatsAppQuery(product)}
-                        className="w-full py-4 bg-blue-500 text-white text-md font-bold uppercase flex items-center justify-center gap-2 hover:bg-blue-600 rounded-md transition-all group/btn"
+                        className="w-full cursor-pointer py-4 bg-blue-500 text-white text-md font-bold uppercase flex items-center justify-center gap-2 hover:bg-blue-600 rounded-md transition-all group/btn"
                       >
                         {t.inquireNow}{" "}
                         <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -240,7 +240,7 @@ const ProductsPage: React.FC = () => {
                 <p className="text-black/80 text-sm mb-6">
                   {t.cantFindPartDesc}
                 </p>
-                <button className="w-full rounded-md py-3 bg-blue-500 text-white text-sm font-bold uppercase hover:bg-blue-600 transition-all duration-300">
+                <button className="w-full cursor-pointer rounded-md py-3 bg-blue-500 text-white text-sm font-bold uppercase hover:bg-blue-600 transition-all duration-300">
                   {t.requestCustomPart}
                 </button>
               </div>

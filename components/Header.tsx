@@ -182,7 +182,7 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center gap-6">
             <button
               onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
-              className={`flex items-center gap-2 text-black hover:text-black/60 text-sm  uppercase tracking-widest`}
+              className={`flex items-center cursor-pointer gap-2 text-black hover:text-black/60 text-sm  uppercase tracking-widest`}
             >
               <Globe className="w-4 h-4" />
               {lang === 'en' ? 'AR' : 'EN'}
