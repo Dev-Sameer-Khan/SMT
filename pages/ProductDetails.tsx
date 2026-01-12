@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { PRODUCTS, TESTIMONIALS } from "../constants";
 import { useLanguage } from "../App";
+import SEO from "../components/SEO";
+import StructuredData from "../components/StructuredData";
+import LazyImage from "../components/LazyImage";
 import {
   ArrowLeft,
   ArrowRight,
@@ -31,18 +34,31 @@ const ProductDetails: React.FC = () => {
 
   // If product not found, show error page
   if (!product) {
-    return <ErrorPage />;
+    return (
+      <>
+        <SEO title="Product Not Found" noindex={true} />
+        <ErrorPage />
+      </>
+    );
   }
 
-  // Get products from same category (excluding current product)
-  const sameCategoryProducts = PRODUCTS.filter(
-    (p) => p.category === product.category && p.id !== product.id
-  ).slice(0, 3);
+  // Get products from same category (excluding current product) - memoized
+  const sameCategoryProducts = useMemo(
+    () =>
+      PRODUCTS.filter(
+        (p) => p.category === product.category && p.id !== product.id
+      ).slice(0, 3),
+    [product.category, product.id]
+  );
 
-  // Get recommended products (top products from different categories)
-  const recommendedProducts = PRODUCTS.filter((p) => p.id !== product.id)
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 4);
+  // Get recommended products (top products from different categories) - memoized
+  const recommendedProducts = useMemo(
+    () =>
+      PRODUCTS.filter((p) => p.id !== product.id)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 4),
+    [product.id]
+  );
 
   const handleWhatsAppQuery = (productItem?: typeof product) => {
     const phoneNumber = "966532962420";
@@ -136,9 +152,18 @@ const ProductDetails: React.FC = () => {
   ];
 
   return (
-    <div className="pt-28 max-[599px]:pt-16 bg-white min-h-screen pb-24">
-      {/* Hero Section */}
-      <section className="py-16 text-black overflow-hidden relative mb-12 border-b border-black/20">
+    <>
+      <SEO
+        title={product.title}
+        description={`${product.desc} - ${product.specs}. Available for immediate inquiry. Premium quality industrial parts from Sumou Al Ebdaa Est (SMT).`}
+        keywords={`${product.title}, ${product.category}, ${product.specs}, industrial parts, ${product.subcategory || ""}`}
+        image={product.image}
+        type="product"
+      />
+      <StructuredData type="product" productId={product.id} />
+      <div className="pt-28 max-[599px]:pt-16 bg-white min-h-screen pb-24">
+        {/* Hero Section */}
+        <section className="py-16 text-black overflow-hidden relative mb-12 border-b border-black/20">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-500/5 skew-x-12 transform translate-x-20"></div>
         <div className="container mx-auto px-6 relative z-10">
           <Link
@@ -334,9 +359,9 @@ const ProductDetails: React.FC = () => {
                     className="group bg-black/5 shadow-md border hover:border-blue-500/50 hover:shadow-2xl rounded-lg transition-all duration-500 overflow-hidden"
                   >
                     <div className="relative h-64 overflow-hidden">
-                      <img
+                      <LazyImage
                         src={item.image}
-                        alt={item.title}
+                        alt={`${item.title} - ${item.specs}`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -412,9 +437,9 @@ const ProductDetails: React.FC = () => {
                     className="group bg-black/5 shadow-md border hover:border-blue-500/50 hover:shadow-2xl rounded-lg transition-all duration-500 overflow-hidden"
                   >
                     <div className="relative h-48 overflow-hidden">
-                      <img
+                      <LazyImage
                         src={item.image}
-                        alt={item.title}
+                        alt={`${item.title} - ${item.specs}`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -581,7 +606,7 @@ const ProductDetails: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

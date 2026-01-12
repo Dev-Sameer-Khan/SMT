@@ -1,5 +1,6 @@
 import { React, useEffect, useState, useRef } from "react";
 import { useLanguage } from "../App";
+import LazyImage from "../components/LazyImage";
 import {
   Shield,
   Target,
@@ -114,7 +115,7 @@ const About: React.FC = () => {
   return (
     <div className="pt-28 max-[599px]:pt-16 bg-white min-h-screen">
       <section className="py-20 border-b border-black/50 relative">
-      <div className="absolute -top-0 right-0 w-1/2 h-full bg-blue-500/5 skew-x-12 transform translate-x-20"></div>
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-500/5 skew-x-12 transform translate-x-20"></div>
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
             <span className="text-blue-500 max-[599px]:text-2xl text-4xl font-bold uppercase mb-4 max-[599px]:mb-0 block">
@@ -136,9 +137,9 @@ const About: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-[599px]:gap-10 items-center">
             <div className="relative">
-              <img
+              <LazyImage
                 src="https://picsum.photos/seed/factory/1200/800"
-                alt="Factory"
+                alt="Sumou Al Ebdaa Est manufacturing facility and warehouse"
                 className="w-full grayscale rounded-md border border-gray-200"
               />
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-blue-500/5 -z-10"></div>
@@ -272,9 +273,9 @@ const About: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 relative mt-10 md:mt-0 flex justify-center">
               <div className="aspect-[4/5] rounded-md overflow-hidden shadow-2xl w-full max-w-lg sm:max-w-sm md:max-w-full mx-auto">
-                <img
+                <LazyImage
                   src="/bg.jpeg"
-                  alt="Industrial Engineering"
+                  alt="Industrial Engineering - Sumou Al Ebdaa Est operations"
                   className="w-full h-full object-cover "
                 />
               </div>

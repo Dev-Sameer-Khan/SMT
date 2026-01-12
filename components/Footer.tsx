@@ -3,18 +3,19 @@ import React from 'react';
 import { useLanguage } from '../App';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import LazyImage from './LazyImage';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-white text-black pt-24 max-[599px]:pt-12 pb-12 max-[599px]:pb-6 border-t border-black/50">
+    <footer className="bg-white text-black pt-20 max-[599px]:pt-10 pb-12 max-[599px]:pb-6 border-t border-black/50">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-[599px]:gap-6 mb-20 max-[599px]:mb-10">
           {/* Brand */}
           <div className="space-y-6 max-[599px]:space-y-4">
-            <div className="flex items-center gap-2">
-              <img className="h-32 -my-6 -ml-6 " src="/logo2.png" alt="" />
+            <div className="flex items-center gap-2 -mt-6 -mb-2 -ml-6">
+              <LazyImage className="h-32  " src="/logo2.png" alt="Sumou Al Ebdaa Est (SMT) Logo" />
             </div>
             <p className="text-black text-sm leading-relaxed max-w-xs">
               {t.footerTagline}

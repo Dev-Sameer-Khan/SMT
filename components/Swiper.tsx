@@ -37,7 +37,7 @@ const Swipers = () => {
       modules={[Autoplay, Pagination]}
       centeredSlides={true}
       autoplay={{
-        delay: 2000,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       className="w-full h-[92vh] mt-20 max-[599px]:mt-14"

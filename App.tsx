@@ -1,17 +1,32 @@
-import React, { useState, useEffect, createContext, useContext } from "react";
+import React, { useState, useEffect, createContext, useContext, Suspense, lazy } from "react";
 import { HashRouter, Routes, Route, Link, useLocation, Router, BrowserRouter } from "react-router-dom";
 import { Language, TranslationSet } from "./types";
 import { TRANSLATIONS } from "./constants";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import ProductsPage from "./pages/ProductsPage";
-import Contact from "./pages/Contact";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfService from "./pages/TernsOfService";
-import ErrorPage from "./pages/ErorrPage";
-import ProductDetails from "./pages/ProductDetails";
+import SEO from "./components/SEO";
+import StructuredData from "./components/StructuredData";
+import PerformanceOptimizer from "./components/PerformanceOptimizer";
+
+// Lazy load pages for code splitting
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const ProductsPage = lazy(() => import("./pages/ProductsPage"));
+const Contact = lazy(() => import("./pages/Contact"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./pages/TernsOfService"));
+const ErrorPage = lazy(() => import("./pages/ErorrPage"));
+const ProductDetails = lazy(() => import("./pages/ProductDetails"));
+
+// Loading component
+const PageLoader = () => (
+  <div className="min-h-screen flex items-center justify-center bg-white">
+    <div className="flex flex-col items-center gap-4">
+      <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+      <p className="text-black/60 text-sm">Loading...</p>
+    </div>
+  </div>
+);
 
 interface LanguageContextType {
   lang: Language;
@@ -92,18 +107,114 @@ const App: React.FC = () => {
           }`}
           dir={lang === "ar" ? "rtl" : "ltr"}
         >
+          <PerformanceOptimizer />
           <Header />
           <main className="overflow-hidden">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/products" element={<ProductsPage />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/terms-of-service" element={<TermsOfService />} />
-              <Route path="/product-details/:id" element={<ProductDetails />} />
-              <Route path="*" element={<ErrorPage />} />
-            </Routes>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <>
+                      <SEO
+                        title="Industrial Parts & Engineering Solutions"
+                        description="Sumou Al Ebdaa Est (SMT) - Premium industrial parts supplier providing genuine engine spare parts, compressors, filters, and engineering solutions since 2014."
+                        keywords="industrial parts, engine components, compressors, filters, spare parts, Saudi Arabia, engineering solutions"
+                      />
+                      <StructuredData type="website" />
+                      <StructuredData type="organization" />
+                      <Home />
+                    </>
+                  }
+                />
+                <Route
+                  path="/about"
+                  element={
+                    <>
+                      <SEO
+                        title="About Us - Industrial Engineering Excellence"
+                        description="Learn about Sumou Al Ebdaa Est (SMT) - A trusted provider of industrial parts and engineering solutions with ISO 9001:2015 certification."
+                        keywords="about SMT, industrial engineering, company history, ISO certified"
+                      />
+                      <StructuredData type="breadcrumb" />
+                      <About />
+                    </>
+                  }
+                />
+                <Route
+                  path="/products"
+                  element={
+                    <>
+                      <SEO
+                        title="Product Catalog - Industrial Parts Inventory"
+                        description="Browse our comprehensive catalog of industrial parts including engine components, compressors, filters, and spare parts. 100,000+ part numbers available."
+                        keywords="product catalog, industrial parts catalog, engine parts, compressor parts, filter parts, spare parts"
+                      />
+                      <StructuredData type="breadcrumb" />
+                      <ProductsPage />
+                    </>
+                  }
+                />
+                <Route
+                  path="/contact"
+                  element={
+                    <>
+                      <SEO
+                        title="Contact Us - Get Technical Support"
+                        description="Contact Sumou Al Ebdaa Est (SMT) for technical inquiries, part requests, and engineering support. Available 24/7 for industrial emergencies."
+                        keywords="contact SMT, technical support, part inquiry, engineering consultation"
+                      />
+                      <StructuredData type="breadcrumb" />
+                      <Contact />
+                    </>
+                  }
+                />
+                <Route
+                  path="/privacy-policy"
+                  element={
+                    <>
+                      <SEO
+                        title="Privacy Policy"
+                        description="Privacy policy for Sumou Al Ebdaa Est (SMT) - Learn how we protect your data and ensure secure transactions."
+                        noindex={true}
+                      />
+                      <PrivacyPolicy />
+                    </>
+                  }
+                />
+                <Route
+                  path="/terms-of-service"
+                  element={
+                    <>
+                      <SEO
+                        title="Terms of Service"
+                        description="Terms of service for Sumou Al Ebdaa Est (SMT) - B2B engagement terms and conditions."
+                        noindex={true}
+                      />
+                      <TermsOfService />
+                    </>
+                  }
+                />
+                <Route
+                  path="/product-details/:id"
+                  element={
+                    <>
+                      <StructuredData type="breadcrumb" />
+                      <ProductDetails />
+                    </>
+                  }
+                />
+                <Route
+                  path="*"
+                  element={
+                    <>
+                      <SEO title="Page Not Found" noindex={true} />
+                      <ErrorPage />
+                    </>
+                  }
+                />
+              </Routes>
+            </Suspense>
           </main>
           <Footer />
           <WhatsAppButton />

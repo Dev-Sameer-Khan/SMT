@@ -37,7 +37,7 @@ const CustomImageSlider = ({ image = {}, className = "" }) => {
       modules={[Autoplay, Pagination]}
       centeredSlides={true}
       autoplay={{
-        delay: 2000,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       className="w-1/2 max-[599px]:w-full h-[75vh] max-[599px]:h-[50vh] rounded-md relative group"

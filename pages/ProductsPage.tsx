@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, memo } from "react";
 import { useLanguage } from "../App";
 import { PRODUCTS } from "../constants";
 import { Search, Filter, ArrowRight } from "lucide-react";
 import { Link, useSearchParams } from "react-router-dom";
+import LazyImage from "../components/LazyImage";
 
 // Define subcategories for engine and compressor
 const ENGINE_SUBCATEGORIES = [
@@ -61,25 +62,26 @@ const ProductsPage: React.FC = () => {
     return t.subcategoryLabels?.[subcategory as keyof typeof t.subcategoryLabels] || subcategory.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   };
 
-  // Product filtering logic
-  let filteredProducts: typeof PRODUCTS = [];
-  if (activeCategory === "all") {
-    filteredProducts = PRODUCTS;
-  } else if (activeCategory === "engine" || activeCategory === "compressor") {
-    // For "engine" or "compressor", show all products under the category, unless subcategory filter is on.
-    if (activeSubcategory) {
-      // Show only products in the specific subcategory
-      filteredProducts = PRODUCTS.filter(
-        (p) => p.category === activeCategory && p.subcategory === activeSubcategory
-      );
+  // Product filtering logic - memoized for performance
+  const filteredProducts = useMemo(() => {
+    if (activeCategory === "all") {
+      return PRODUCTS;
+    } else if (activeCategory === "engine" || activeCategory === "compressor") {
+      // For "engine" or "compressor", show all products under the category, unless subcategory filter is on.
+      if (activeSubcategory) {
+        // Show only products in the specific subcategory
+        return PRODUCTS.filter(
+          (p) => p.category === activeCategory && p.subcategory === activeSubcategory
+        );
+      } else {
+        // Show all products of the category, regardless of subcategory
+        return PRODUCTS.filter((p) => p.category === activeCategory);
+      }
     } else {
-      // Show all products of the category, regardless of subcategory
-      filteredProducts = PRODUCTS.filter((p) => p.category === activeCategory);
+      // For other categories, filter by category
+      return PRODUCTS.filter((p) => p.category === activeCategory);
     }
-  } else {
-    // For other categories, filter by category
-    filteredProducts = PRODUCTS.filter((p) => p.category === activeCategory);
-  }
+  }, [activeCategory, activeSubcategory]);
 
   // Opens WhatsApp with product info
   const handleWhatsAppQuery = (product) => {
@@ -187,10 +189,10 @@ const ProductsPage: React.FC = () => {
                   key={product.id}
                   className="group glass bg-black/5 shadow-md border hover:border-blue-500/50 hover:shadow-2xl rounded-md transition-all duration-500 overflow-hidden"
                 >
-                  <div className="relative h-64 overflow-hidden0">
-                    <img
+                  <div className="relative h-64 overflow-hidden">
+                    <LazyImage
                       src={product.image}
-                      alt={product.title}
+                      alt={`${product.title} - ${product.specs}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-all duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

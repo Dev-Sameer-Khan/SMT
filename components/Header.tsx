@@ -66,12 +66,12 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-[60] transition-all duration-500 will-change-[background,padding] py-0 glass bg-white shadow-md`}
+        className={`fixed top-0 left-0 w-full z-[60] transition-all duration-500 will-change-[background,padding] py-0 bg-white shadow-md`}
       >
         <div className="container mx-auto lg:pr-6 lg:pl-0 pl-3 pr-6 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 z-50">
-            <img className="h-16 md:h-20 lg:h-28 max-h-[72px] md:max-h-[80px] lg:max-h-[112px] w-auto" src="/logo2.png" alt="" />
+            <img className="h-16 md:h-20 lg:h-28 max-h-[72px] md:max-h-[80px] lg:max-h-[112px] w-auto" src="/logo2.png" alt="Sumou Al Ebdaa Est (SMT) Logo" />
           </Link>
 
           {/* Navigation */}

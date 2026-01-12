@@ -1,5 +1,6 @@
 import React from "react";
 import { useLanguage } from "../App";
+import LazyImage from "./LazyImage";
 
 const PARTNERS = [
   { name: "PERKINS", region: "Global", logo: "/perk.png" },
@@ -48,11 +49,10 @@ const Customers: React.FC = () => {
           <div className="flex min-w-[220px] flex-col items-center justify-center px-12 max-[599px]:px-0 transition-all duration-300 hover:bg-white/5 hover:border-white/10 border border-transparent">
             {/* Logo container */}
             <div className="mb-6 flex h-32 aspect-square w-32  items-center justify-center overflow-hidden md:h-44 md:w-44">
-              <img
+              <LazyImage
                 src={"/sumou.png"}
-                alt={`sumou logo`}
-                className={`max-h-full max-w-full object-contain
-                  `}
+                alt="Sumou Al Ebdaa Est company logo"
+                className="max-h-full max-w-full object-contain"
               />
             </div>
 
@@ -67,11 +67,10 @@ const Customers: React.FC = () => {
           <div className="inline-flex min-w-[220px] flex-col items-center justify-center px-12 max-[599px]:px-0 transition-all duration-300 hover:bg-white/5 hover:border-white/10 border border-transparent">
             {/* Logo container */}
             <div className="mb-6 flex h-32 aspect-square w-32  items-center justify-center overflow-hidden md:h-44 md:w-44">
-              <img
+              <LazyImage
                 src={"/ramz.png"}
-                alt={`ramz logo`}
-                className={`max-h-full max-w-full object-contain
-                  `}
+                alt="Ramz Al Tameer Est company logo"
+                className="max-h-full max-w-full object-contain"
               />
             </div>
 
@@ -107,11 +106,10 @@ const Customers: React.FC = () => {
             >
               {/* Logo container */}
               <div className="mb-6 flex h-32 w-32 items-center justify-center overflow-hidden md:h-44 md:w-44">
-                <img
+                <LazyImage
                   src={partner.logo}
-                  alt={`${partner.name} logo`}
-                  className={`aspect-square max-h-full max-w-full object-contain
-                  `}
+                  alt={`${partner.name} brand logo - ${partner.region}`}
+                  className="aspect-square max-h-full max-w-full object-contain"
                 />
               </div>
 

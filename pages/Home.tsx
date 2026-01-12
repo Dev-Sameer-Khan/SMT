@@ -1,6 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useMemo, memo } from "react";
 import { useLanguage } from "../App";
 import { PRODUCTS } from "../constants";
+import LazyImage from "../components/LazyImage";
 import {
   ArrowRight,
   ChevronDown,
@@ -121,7 +122,7 @@ const ThreeDIcon: React.FC = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="relative group/icon flex mb-8">
       {/* Outer Glow on Hover (blue, matches theme) */}
-      {/* <div className="absolute inset-0 bg-blue-500/40 blur-[30px] rounded-full scale-150 opacity-0 group-hover/icon:opacity-100 transition-opacity duration-700" /> */}
+      {/* <div className="absolute inset-0 bg-blue-500/40 blur-[30px] rounded-full scale-150 opacity-0 group-hover/icon:opacity-100 transition-opacity duration-500" /> */}
       {/* Main 3D cube */}
       <div className="relative w-16 h-16 rounded-[18px] flex items-center justify-center bg-white shadow-[10px_10px_22px_rgba(0,0,0,0.1),-2px_-2px_5px_rgba(0,0,0,0.05),inset_2px_2px_4px_rgba(0,0,0,0.05),inset_-2px_-2px_10px_rgba(0,0,0,0.1)] transition-all duration-500 group-hover:-translate-y-2 group-hover:rotate-3">
         {/* Border and subtle gradient */}
@@ -368,10 +369,10 @@ const Home: React.FC = () => {
                 to={cat.link}
                 className="group block relative aspect-[16/10] rounded-md shadow-md overflow-hidden bg-gray-100"
               >
-                <img
+                <LazyImage
                   src={cat.img}
-                  alt={cat.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+                  alt={`${cat.title} - ${cat.count} - ${cat.desc}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                 />
                 <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent h-[50%] max-[599px]:h-full w-full"></div>
                 <div className="absolute bottom-0 left-0 p-10 max-[599px]:p-4 w-full flex justify-between items-end">
@@ -401,7 +402,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6 ">
           <div className="flex flex-col md:flex-row gap-0 md:gap-16 items-center">
             <div className="w-full md:w-1/2 space-y-8 max-[599px]:space-y-2">
-              <span className="text-4xl max-[599px]:text-2xl max-[599px]:-mb-0 -mb-4 font-bold uppercase  text-blue-500 block">
+              <span className="text-4xl max-[599px]:text-2xl max-[599px]:mb-0 mb-2 font-bold uppercase  text-blue-500 block">
                 {t.aboutUs}
               </span>
               <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-6xl font-black text-black tracking-tighter leading-none ">
@@ -445,9 +446,9 @@ const Home: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 relative mt-10 md:mt-0 flex justify-center">
               <div className="aspect-[4/5] rounded-md overflow-hidden shadow-2xl w-full max-w-lg sm:max-w-sm md:max-w-full mx-auto">
-                <img
+                <LazyImage
                   src="/bg.jpeg"
-                  alt="Industrial Engineering"
+                  alt="Industrial Engineering - Sumou Al Ebdaa Est manufacturing facility"
                   className="w-full h-full object-cover "
                 />
               </div>
@@ -573,160 +574,160 @@ const Home: React.FC = () => {
       </section> */}
 
       {/* 11. Quick Contact Section (New) */}
-      <section className="py-10 md:py-24 lg:py-32 bg-white border-t border-black/50 relative overflow-hidden">
-        {/* Decorative Grid Line */}
-        {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-white/5 hidden md:block"></div> */}
+        <section className="py-10 md:py-24 lg:py-32 bg-white border-t border-black/50 relative overflow-hidden">
+          {/* Decorative Grid Line */}
+          {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-white/5 hidden md:block"></div> */}
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          <div className="w-full flex flex-col lg:flex-row items-stretch gap-12 max-[599px]:gap-0 lg:gap-20">
-            {/* Text & Contacts */}
-            <div className="w-full lg:w-1/2 flex flex-col gap-6">
-              <div className="text-left space-t-8">
-                <div>
-                  <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
-                    {t.getInTouch}
-                  </span>
-                  <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
-                    {t.connectWithEngineering}
-                  </h2>
-                </div>
-                <p className="text-black/80 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg pt-4 max-[599px]:pt-2 sm:pt-6">
-                  {t.contactDesc2}
-                </p>
-                <div className="pt-6 max-[599px]:pt-2 sm:pt-8 pb-4 max-[599px]:pb-0 sm:pb-6">
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-3 sm:gap-4 text-black font-bold uppercase text-xs tracking-[0.3em] hover:text-blue-500 transition-colors group"
-                  >
-                    {t.gotoTechnicalDesk}{" "}
-                    <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                  </Link>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                {[
-                  {
-                    title: t.technicalSupport,
-                    desc: "logistics@iprecision.com",
-                    icon: Mail,
-                    action: "mailto:logistics@iprecision.com",
-                  },
-                  {
-                    title: t.directHotline,
-                    desc: "+971 4 000 0000",
-                    icon: Phone,
-                    action: "tel:+97140000000",
-                  },
-                  {
-                    title: t.globalHQ,
-                    desc: "Dubai Industrial Area 4, UAE",
-                    icon: MapPin,
-                    action: "/contact",
-                  },
-                  {
-                    title: t.europeHub,
-                    desc: "Berlin-Adlershof, DE",
-                    icon: Globe,
-                    action: "/contact",
-                  },
-                ].map((item, i) => (
-                  <a
-                    key={i}
-                    href={
-                      item.action.startsWith("http") ||
-                      item.action.startsWith("mailto") ||
-                      item.action.startsWith("tel")
-                        ? item.action
-                        : undefined
-                    }
-                    className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 max-[599px]:p-4 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
-                  >
-                    <item.icon className="w-6 h-6 text-blue-500 mb-4 sm:mb-6 group-hover:scale-110 transition-transform" />
-                    <h4 className="text-black font-bold uppercase tracking-widest text-xs mb-1 sm:mb-2">
-                      {item.title}
-                    </h4>
-                    <p className="text-black/60 text-xs sm:text-sm  break-words">
-                      {item.desc}
-                    </p>
-                  </a>
-                ))}
-              </div>
-            </div>
-            {/* Map - hides on mobile below md screens */}
-            <div className="w-full lg:w-1/2 h-64 sm:h-[40vh] lg:h-full mt-8 lg:mt-0">
-              <div className="relative h-full w-full shadow-md rounded-md overflow-hidden aspect-[4/3] md:aspect-auto">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.854678326949!2d39.25990641127877!3d21.434956273620404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cb006b0ff9c5%3A0x37d1ce70f1ae0f86!2sSumou%20Al%20Ebdaa%20Est!5e0!3m2!1sen!2sin!4v1767180371100!5m2!1sen!2sin"
-                  width="900"
-                  height="700"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="location-map"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 10. FAQs */}
-      <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <div className="text-center mb-16 max-[599px]:mb-6">
-            <span className="text-blue-500 max-[599px]:text-2xl text-4xl font-bold uppercaset mb-4 max-[599px]:mb-0 block">
-              {t.knowledgeBase}
-            </span>
-            <h2 className="text-4xl max-[599px]:text-4xl md:text-6xl font-black text-black tracking-tighter">
-              {t.faqTitle}
-            </h2>
-          </div>
-          <div className="divide-y divide-black/50">
-            {[
-              {
-                q: "What are your delivery timelines for critical engine parts?",
-                a: "Stocked items are dispatched within 6 hours. International freight usually takes 3-5 business days via our premium logistics partners.",
-              },
-              {
-                q: "Do you offer warranty on aftermarket components?",
-                a: "All premium aftermarket parts supplied by Industrial Precision carry a standard 12-month operational warranty, matching OEM standards.",
-              },
-              {
-                q: "Can you provide customized compressor configurations?",
-                a: "Yes. Our engineering team can modify screw compressor outputs and filtration stages to meet specific industrial environments, including high-salinity or desert conditions.",
-              },
-            ].map((faq, i) => (
-              <details
-                key={i}
-                className="group py-8 max-[599px]:py-2"
-                open={openFaq === i}
-              >
-                <summary
-                  className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-md max-[599px]:text-sm group-hover:text-blue-500 transition-all"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setOpenFaq(openFaq === i ? null : i);
-                  }}
-                >
-                  {faq.q}
-                  <ChevronDown
-                    className={`w-5 h-5 text-black/80 transition-all duration-300 ${
-                      openFaq === i ? "rotate-180" : ""
-                    }`}
-                  />
-                </summary>
-                {openFaq === i && (
-                  <div className="mt-6 max-[599px]:mt-3 text-black/80 text-md max-[599px]:text-sm font-bold leading-wide max-w-2xl">
-                    {faq.a}
+          <div className="container mx-auto px-4 sm:px-6 relative z-10">
+            <div className="w-full flex flex-col lg:flex-row items-stretch gap-12 max-[599px]:gap-0 lg:gap-20">
+              {/* Text & Contacts */}
+              <div className="w-full lg:w-1/2 flex flex-col gap-6">
+                <div className="text-left space-t-8">
+                  <div>
+                    <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
+                      {t.getInTouch}
+                    </span>
+                    <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
+                      {t.connectWithEngineering}
+                    </h2>
                   </div>
-                )}
-              </details>
-            ))}
+                  <p className="text-black/80 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg pt-4 max-[599px]:pt-2 sm:pt-6">
+                    {t.contactDesc2}
+                  </p>
+                  <div className="pt-6 max-[599px]:pt-2 sm:pt-8 pb-4 max-[599px]:pb-0 sm:pb-6">
+                    <Link
+                      to="/contact"
+                      className="inline-flex items-center gap-3 sm:gap-4 text-black font-bold uppercase text-xs tracking-[0.3em] hover:text-blue-500 transition-colors group"
+                    >
+                      {t.gotoTechnicalDesk}{" "}
+                      <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                  {[
+                    {
+                      title: t.technicalSupport,
+                      desc: "logistics@iprecision.com",
+                      icon: Mail,
+                      action: "mailto:logistics@iprecision.com",
+                    },
+                    {
+                      title: t.directHotline,
+                      desc: "+971 4 000 0000",
+                      icon: Phone,
+                      action: "tel:+97140000000",
+                    },
+                    {
+                      title: t.globalHQ,
+                      desc: "Dubai Industrial Area 4, UAE",
+                      icon: MapPin,
+                      action: "/contact",
+                    },
+                    {
+                      title: t.europeHub,
+                      desc: "Berlin-Adlershof, DE",
+                      icon: Globe,
+                      action: "/contact",
+                    },
+                  ].map((item, i) => (
+                    <a
+                      key={i}
+                      href={
+                        item.action.startsWith("http") ||
+                        item.action.startsWith("mailto") ||
+                        item.action.startsWith("tel")
+                          ? item.action
+                          : undefined
+                      }
+                      className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 max-[599px]:p-4 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
+                    >
+                      <item.icon className="w-6 h-6 text-blue-500 mb-4 sm:mb-6 group-hover:scale-110 transition-transform" />
+                      <h4 className="text-black font-bold uppercase tracking-widest text-xs mb-1 sm:mb-2">
+                        {item.title}
+                      </h4>
+                      <p className="text-black/60 text-xs sm:text-sm  break-words">
+                        {item.desc}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              </div>
+              {/* Map - hides on mobile below md screens */}
+              <div className="w-full lg:w-1/2 h-64 sm:h-[40vh] lg:h-full mt-8 lg:mt-0">
+                <div className="relative h-full w-full shadow-md rounded-md overflow-hidden aspect-[4/3] md:aspect-auto">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.854678326949!2d39.25990641127877!3d21.434956273620404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cb006b0ff9c5%3A0x37d1ce70f1ae0f86!2sSumou%20Al%20Ebdaa%20Est!5e0!3m2!1sen!2sin!4v1767180371100!5m2!1sen!2sin"
+                    width="900"
+                    height="700"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="location-map"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
-  );
+        </section>
+
+        {/* 10. FAQs */}
+        <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <div className="text-center mb-16 max-[599px]:mb-6">
+              <span className="text-blue-500 max-[599px]:text-2xl text-4xl font-bold uppercaset mb-4 max-[599px]:mb-0 block">
+                {t.knowledgeBase}
+              </span>
+              <h2 className="text-4xl max-[599px]:text-4xl md:text-6xl font-black text-black tracking-tighter">
+                {t.faqTitle}
+              </h2>
+            </div>
+            <div className="divide-y divide-black/50">
+              {[
+                {
+                  q: "What are your delivery timelines for critical engine parts?",
+                  a: "Stocked items are dispatched within 6 hours. International freight usually takes 3-5 business days via our premium logistics partners.",
+                },
+                {
+                  q: "Do you offer warranty on aftermarket components?",
+                  a: "All premium aftermarket parts supplied by Industrial Precision carry a standard 12-month operational warranty, matching OEM standards.",
+                },
+                {
+                  q: "Can you provide customized compressor configurations?",
+                  a: "Yes. Our engineering team can modify screw compressor outputs and filtration stages to meet specific industrial environments, including high-salinity or desert conditions.",
+                },
+              ].map((faq, i) => (
+                <details
+                  key={i}
+                  className="group py-8 max-[599px]:py-2"
+                  open={openFaq === i}
+                >
+                  <summary
+                    className="list-none cursor-pointer text-black/70 flex justify-between items-center font-bold uppercase tracking-wide text-md max-[599px]:text-sm group-hover:text-blue-500 transition-all"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setOpenFaq(openFaq === i ? null : i);
+                    }}
+                  >
+                    {faq.q}
+                    <ChevronDown
+                      className={`w-5 h-5 text-black/80 transition-all duration-300 ${
+                        openFaq === i ? "rotate-180" : ""
+                      }`}
+                    />
+                  </summary>
+                  {openFaq === i && (
+                    <div className="mt-6 max-[599px]:mt-3 text-black/80 text-md max-[599px]:text-sm font-bold leading-wide max-w-2xl">
+                      {faq.a}
+                    </div>
+                  )}
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+    );
 };
 
 export default Home;
