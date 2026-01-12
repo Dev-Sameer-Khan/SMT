@@ -378,7 +378,7 @@ export const PRODUCTS: Product[] = [
     subcategory: "gaskets",
     desc: "Genuine Perkins Powerpart water pump kit, includes pump and gasket for engine cooling.",
     specs: "Perkins Genuine Powerpart",
-    image: "https://drive.google.com/uc?export=view&id=1CXR6MNQoAlFUdNP0mOjrbdAoiXb6TpFZ"
+    image: "https://drive.google.com/thumbnail?id=1CXR6MNQoAlFUdNP0mOjrbdAoiXb6TpFZ&sz=w1000"
   },
   {
     id: "2",
