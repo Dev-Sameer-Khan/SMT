@@ -19,8 +19,7 @@ import {
   Star,
   Quote,
 } from "lucide-react";
-// Fixed typo in ErrorPage import
-import ErrorPage from "./ErrorPage";
+import ErrorPage from "./ErorrPage";
 import ProductImageViewer from "../components/ProductImageViewer";
 
 const ProductDetails: React.FC = () => {
