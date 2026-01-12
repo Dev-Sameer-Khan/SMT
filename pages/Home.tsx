@@ -21,14 +21,14 @@ import {
   Phone,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import Testimonials from "@/components/Testimonials";
-import Customers from "@/components/Customers";
+import Testimonials from "../components/Testimonials";
+import Customers from "../components/Customers";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import Swipers from "@/components/Swiper";
-import CustomImageSlider from "@/components/CustomImageSlider";
+import Swipers from "../components/Swiper";
+import CustomImageSlider from "../components/CustomImageSlider";
 
 function StatCard({
   label,
@@ -608,9 +608,9 @@ const Home: React.FC = () => {
                   {[
                     {
                       title: t.technicalSupport,
-                      desc: "logistics@iprecision.com",
+                      desc: "logistics..iprecision.com",
                       icon: Mail,
-                      action: "mailto:logistics@iprecision.com",
+                      action: "mailto:logistics..iprecision.com",
                     },
                     {
                       title: t.directHotline,

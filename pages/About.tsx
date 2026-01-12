@@ -16,8 +16,8 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import Testimonials from "@/components/Testimonials";
-import Customers from "@/components/Customers";
+import Testimonials from "../components/Testimonials";
+import Customers from "../components/Customers";
 import { Link } from "react-router-dom";
 
 function StatCard({
