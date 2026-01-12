@@ -373,7 +373,7 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
 export const PRODUCTS: Product[] = [
   {
     id: "1",
-    title: "Perkins Water Pump Kit",
+    title: "1100 SERIES WATER PUMP KIT",
     category: "engine",
     subcategory: "gaskets",
     desc: "Genuine Perkins Powerpart water pump kit, includes pump and gasket for engine cooling.",
