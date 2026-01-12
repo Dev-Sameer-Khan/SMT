@@ -373,12 +373,12 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
 export const PRODUCTS: Product[] = [
   {
     id: "1",
-    title: "V12 Piston Assembly",
+    title: "Perkins Water Pump Kit",
     category: "engine",
-    subcategory: "pistons",
-    desc: "High-thermal tolerance alloy with precision coating.",
-    specs: "Heavy Duty Marine & Industrial",
-    image: "https://images.unsplash.com/photo-1429772011165-0c2e054367b8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    subcategory: "gaskets",
+    desc: "Genuine Perkins Powerpart water pump kit, includes pump and gasket for engine cooling.",
+    specs: "Perkins Genuine Powerpart",
+    image: "https://drive.google.com/file/d/1CXR6MNQoAlFUdNP0mOjrbdAoiXb6TpFZ/view?usp=sharing"
   },
   {
     id: "2",

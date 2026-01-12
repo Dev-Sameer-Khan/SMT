@@ -67,18 +67,14 @@ const ProductsPage: React.FC = () => {
     if (activeCategory === "all") {
       return PRODUCTS;
     } else if (activeCategory === "engine" || activeCategory === "compressor") {
-      // For "engine" or "compressor", show all products under the category, unless subcategory filter is on.
       if (activeSubcategory) {
-        // Show only products in the specific subcategory
         return PRODUCTS.filter(
           (p) => p.category === activeCategory && p.subcategory === activeSubcategory
         );
       } else {
-        // Show all products of the category, regardless of subcategory
         return PRODUCTS.filter((p) => p.category === activeCategory);
       }
     } else {
-      // For other categories, filter by category
       return PRODUCTS.filter((p) => p.category === activeCategory);
     }
   }, [activeCategory, activeSubcategory]);
@@ -113,7 +109,6 @@ const ProductsPage: React.FC = () => {
 
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-12 max-[599px]:gap-6">
-          {/* Filters Sidebar */}
           <aside className="w-full lg:w-64 space-y-12">
             <div>
               <h4 className="text-4xl text-black font-bold uppercase t mb-6 border-b border-black/50 pb-2">
