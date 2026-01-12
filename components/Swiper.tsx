@@ -85,7 +85,7 @@ const Swipers = () => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                 </span>
                 <span className="text-xs font-medium tracking-widest uppercase">
-                  Sister Category {slide.id}
+                  Category {slide.id}
                 </span>
               </div>
 
