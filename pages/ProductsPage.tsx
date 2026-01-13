@@ -14,12 +14,12 @@ const ENGINE_SUBCATEGORIES = [
   { id: "gaskets", label: "Gaskets" },
 ];
 
-const COMPRESSOR_SUBCATEGORIES = [
-  { id: "screw", label: "Screw Compressors" },
-  { id: "piston", label: "Piston Compressors" },
-  { id: "vanes", label: "Vane Compressors" },
-  { id: "rotary", label: "Rotary Compressors" },
-];
+// const COMPRESSOR_SUBCATEGORIES = [
+//   { id: "screw", label: "Screw Compressors" },
+//   { id: "piston", label: "Piston Compressors" },
+//   { id: "vanes", label: "Vane Compressors" },
+//   { id: "rotary", label: "Rotary Compressors" },
+// ];
 
 const ProductsPage: React.FC = () => {
   const { t, lang } = useLanguage();
@@ -39,14 +39,15 @@ const ProductsPage: React.FC = () => {
 
   // Get subcategories from translations
   const ENGINE_SUBCATEGORIES_TRANSLATED = t.productSubcategories?.engine || ENGINE_SUBCATEGORIES;
-  const COMPRESSOR_SUBCATEGORIES_TRANSLATED = t.productSubcategories?.compressor || COMPRESSOR_SUBCATEGORIES;
+  // const COMPRESSOR_SUBCATEGORIES_TRANSLATED = t.productSubcategories?.compressor || COMPRESSOR_SUBCATEGORIES;
 
   const categories = [
     { id: "all", label: t.allComponents },
     { id: "engine", label: t.engineParts, subcategories: ENGINE_SUBCATEGORIES_TRANSLATED },
-    { id: "compressor", label: t.compressors, subcategories: COMPRESSOR_SUBCATEGORIES_TRANSLATED },
+    { id: "compressor", label: t.compressors, },
     { id: "filter", label: t.filters },
-    { id: "spare", label: t.spares },
+    { id: "electric", label: t.electricItem },
+    { id: "rubberCoupling", label: t.rubberCoupling },
   ];
 
   // Show subcategories if "engine" or "compressor" category is active
@@ -117,49 +118,52 @@ const ProductsPage: React.FC = () => {
               <div className="space-y-2">
                 {/* Top-level categories */}
                 {categories.map((cat) => (
-                  <button
-                    key={cat.id}
-                    onClick={() => {
-                      setActiveCategory(cat.id);
-                      setActiveSubcategory(""); // Reset subcategory selection
-                      if (cat.id === "all") {
-                        setSearchParams({});
-                      } else {
-                        setSearchParams({ category: cat.id });
-                      }
-                    }}
-                    className={`w-full cursor-pointer rounded text-left px-4 py-3 text-xs font-bold uppercase tracking-widest transition-all ${
-                      activeCategory === cat.id
-                        ? "bg-blue-500 text-white shadow-lg"
-                        : "bg-black/5 text-black border border-white/5 hover:border-blue-500 hover:text-blue-500"
-                    }`}
-                  >
-                    {cat.label}
-                  </button>
+                  <div key={cat.id}>
+                    <button
+                      onClick={() => {
+                        setActiveCategory(cat.id);
+                        setActiveSubcategory(""); // Reset subcategory selection
+                        if (cat.id === "all") {
+                          setSearchParams({});
+                        } else {
+                          setSearchParams({ category: cat.id });
+                        }
+                      }}
+                      className={`w-full cursor-pointer rounded text-left px-4 py-3 text-xs font-bold uppercase tracking-widest transition-all ${
+                        activeCategory === cat.id
+                          ? "bg-blue-500 text-white shadow-lg"
+                          : "bg-black/5 text-black border border-white/5 hover:border-blue-500 hover:text-blue-500"
+                      }`}
+                    >
+                      {cat.label}
+                    </button>
+                    {/* Only show subcategories for currently active category */}
+                    {activeCategory === cat.id && subcategoriesToShow.length > 0 && (
+                      <div className="space-y-1 mt-2 max-[599px]:mt-3 ml-4 border-l-2 border-blue-200 pl-4">
+                        {subcategoriesToShow.map((sub) => (
+                          <button
+                            key={sub.id}
+                            onClick={() => {
+                              setActiveSubcategory(sub.id);
+                              setSearchParams({ category: activeCategory, subcategory: sub.id });
+                            }}
+                            className={`block cursor-pointer w-full rounded text-left px-3 py-2 max-[599px]:py-1 text-xs font-normal uppercase tracking-widest transition-all ${
+                              activeSubcategory === sub.id
+                                ? "bg-blue-100 text-blue-900 font-bold shadow"
+                                : "bg-black/0 text-black hover:bg-blue-50 hover:text-blue-700"
+                            }`}
+                            style={{ marginBottom: "2px" }}
+                          >
+                            {sub.label}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
               {/* Subcategory Buttons */}
-              {subcategoriesToShow.length > 0 && (
-                <div className="space-y-1 mt-6 max-[599px]:mt-3 ml-4 border-l-2 border-blue-200 pl-4">
-                  {subcategoriesToShow.map((sub) => (
-                    <button
-                      key={sub.id}
-                      onClick={() => {
-                        setActiveSubcategory(sub.id);
-                        setSearchParams({ category: activeCategory, subcategory: sub.id });
-                      }}
-                      className={`block cursor-pointer w-full rounded text-left px-3 py-2 max-[599px]:py-1 text-xs font-normal uppercase tracking-widest transition-all ${
-                        activeSubcategory === sub.id
-                          ? "bg-blue-100 text-blue-900 font-bold shadow"
-                          : "bg-black/0 text-black hover:bg-blue-50 hover:text-blue-700"
-                      }`}
-                      style={{ marginBottom: "2px" }}
-                    >
-                      {sub.label}
-                    </button>
-                  ))}
-                </div>
-              )}
+             
             </div>
               <div className="p-6 bg-black/5 text-black rounded-md max-[1024px]:hidden mt-6">
                 <h4 className="text-lg font-bold uppercase mb-4">
@@ -190,7 +194,7 @@ const ProductsPage: React.FC = () => {
                       alt={`${product.title} - ${product.specs}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-all duration-300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>   */}
                     <span className="absolute top-4 left-4 px-3 py-1 bg-black text-white text-sm font-bold uppercase">
                       {getCategoryLabel(product.category)}
                       {product.subcategory

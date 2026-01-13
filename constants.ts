@@ -43,7 +43,8 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     engineParts: "ENGINE PARTS",
     compressors: "COMPRESSORS",
     filters: "FILTERS",
-    spares: "SPARES",
+    electricItem: "ELECTRIC ITEM",
+    rubberCoupling: "RUBBER & COUPLING",
     viewProduct: "View Product",
     inquireNow: "Inquire Now",
     cantFindPart: "CAN'T FIND A PART?",
@@ -150,13 +151,13 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     subcategoryLabels: {
       pistons: "Pistons",
       cylinders: "Cylinders",
-      valves: "Valves",
+      perkins: "Perkins",
       bearings: "Bearings",
       gaskets: "Gaskets",
-      screw: "Screw Compressors",
-      piston: "Piston Compressors",
-      vanes: "Vane Compressors",
-      rotary: "Rotary Compressors",
+      // screw: "Screw Compressors",
+      // piston: "Piston Compressors",
+      // vanes: "Vane Compressors",
+      // rotary: "Rotary Compressors",
     },
     
     // Product categories
@@ -165,7 +166,8 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       engine: "ENGINE PARTS",
       compressor: "COMPRESSORS",
       filter: "FILTERS",
-      spare: "SPARES",
+      rubberCoupling:  "RUBBER & COUPLING",
+      electric : "ELECTRIC"
     },
     
     // Product subcategories
@@ -176,12 +178,12 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
         { id: "deutz", label: "Deutz" },
         { id: "perkins", label: "Perkins" },
       ],
-      compressor: [
-        { id: "screw", label: "Screw Compressors" },
-        { id: "piston", label: "Piston Compressors" },
-        { id: "vanes", label: "Vane Compressors" },
-        { id: "rotary", label: "Rotary Compressors" },
-      ],
+      // compressor: [
+      //   { id: "screw", label: "Screw Compressors" },
+      //   { id: "piston", label: "Piston Compressors" },
+      //   { id: "vanes", label: "Vane Compressors" },
+      //   { id: "rotary", label: "Rotary Compressors" },
+      // ],
     },
   },
   ar: {
@@ -226,7 +228,8 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     engineParts: "قطع المحرك",
     compressors: "الضواغط",
     filters: "المرشحات",
-    spares: "القطع الاحتياطية",
+    electricItem: "كهربائي",
+    rubberCoupling: "المطاط والاقتران",
     viewProduct: "عرض المنتج",
     inquireNow: "استفسر الآن",
     cantFindPart: "لا تجد جزءًا؟",
@@ -332,13 +335,13 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     subcategoryLabels: {
       pistons: "مكابس",
       cylinders: "أسطوانات",
-      valves: "صمامات",
+      perkins: "صمامات",
       bearings: "رمانات",
       gaskets: "جوانات",
-      screw: "ضواغط لولبية",
-      piston: "ضواغط مكبسية",
-      vanes: "ضواغط شفرات",
-      rotary: "ضواغط دوارة",
+      // screw: "ضواغط لولبية",
+      // piston: "ضواغط مكبسية",
+      // vanes: "ضواغط شفرات",
+      // rotary: "ضواغط دوارة",
     },
     
     // Product categories
@@ -347,7 +350,8 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       engine: "قطع المحرك",
       compressor: "الضواغط",
       filter: "المرشحات",
-      spare: "القطع الاحتياطية",
+      rubberCoupling:  "المطاط والاقتران",
+      electric : "كهربائي",
     },
     
     // Product subcategories
@@ -358,12 +362,12 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
         { id: "deutz", label: "صمامات" },
         { id: "perkins", label: "رمانات" },
       ],
-      compressor: [
-        { id: "screw", label: "ضواغط لولبية" },
-        { id: "piston", label: "ضواغط مكبسية" },
-        { id: "vanes", label: "ضواغط شفرات" },
-        { id: "rotary", label: "ضواغط دوارة" },
-      ],
+      // compressor: [
+      //   { id: "screw", label: "ضواغط لولبية" },
+      //   { id: "piston", label: "ضواغط مكبسية" },
+      //   { id: "vanes", label: "ضواغط شفرات" },
+      //   { id: "rotary", label: "ضواغط دوارة" },
+      // ],
     },
   },
 };
@@ -373,7 +377,7 @@ export const PRODUCTS: Product[] = [
     id: "1",
     title: "1100 SERIES WATER PUMP KIT",
     category: "engine",
-    subcategory: "gaskets",
+    subcategory: "perkins",
     desc: "Genuine Perkins Powerpart water pump kit, includes pump and gasket for engine cooling.",
     specs: "Perkins Genuine Powerpart",
     image: "/image.jpeg"
@@ -382,7 +386,7 @@ export const PRODUCTS: Product[] = [
     id: "2",
     title: "Multi-Stage Screw Compressor",
     category: "compressor",
-    subcategory: "screw",
+    // subcategory: "screw",
     desc: "Oil-free compression for pharmaceutical applications.",
     specs: "350 CFM | Variable Speed",
     image: "https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ",
@@ -398,7 +402,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "4",
     title: "Gasket Performance Kit",
-    category: "spare",
+    category: "rubberCoupling",
     desc: "Full sealing solution for heavy earthmovers.",
     specs: "Heat Resilient Fluoroelastomer",
     image: "https://images.unsplash.com/photo-1759419281480-bacc913c9606?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -407,7 +411,7 @@ export const PRODUCTS: Product[] = [
     id: "5",
     title: "Turbocharger Cartridge",
     category: "engine",
-    subcategory: "valves",
+    subcategory: "perkins",
     desc: "Balanced assembly for high-efficiency turbo performance.",
     specs: "Precision Machined | Journal Bearing",
     image: "https://images.unsplash.com/photo-1600377232142-164c095e686e?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -416,7 +420,7 @@ export const PRODUCTS: Product[] = [
     id: "6",
     title: "Industrial Air Dryer",
     category: "compressor",
-    subcategory: "rotary",
+    // subcategory: "rotary",
     desc: "Desiccant-based moisture removal for compressed air systems.",
     specs: "480V | -40°C Dew Point",
     image: "https://images.unsplash.com/photo-1705129472480-2145aecb9aaa?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -432,7 +436,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "8",
     title: "Valve Overhaul Kit",
-    category: "spare",
+    category: "electric",
     desc: "Complete set for rapid on-site valve maintenance.",
     specs: "NBR & Viton Options",
     image: "https://images.unsplash.com/photo-1763836393379-68f9721966ee?q=80&w=848&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -450,7 +454,7 @@ export const PRODUCTS: Product[] = [
     id: "10",
     title: "Oil-Water Separator",
     category: "compressor",
-    subcategory: "piston",
+    // subcategory: "piston",
     desc: "Removes oil mist and vapor from condensate streams.",
     specs: "Auto-Drain | Polypropylene Body",
     image: "https://plus.unsplash.com/premium_photo-1682145074686-96a169644544?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -466,7 +470,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "12",
     title: "Universal Seal Kit",
-    category: "spare",
+    category: "rubberCoupling",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
     image: "https://images.unsplash.com/photo-1727413434026-0f8314c037d8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

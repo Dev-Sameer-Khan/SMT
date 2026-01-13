@@ -8,36 +8,66 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Link } from "react-router-dom";
 
 const Swipers = () => {
   const { lang } = useLanguage();
   const swiperRef = useRef<SwiperType | null>(null);
 
+  
+  // Opens WhatsApp with product info
+  const handleWhatsAppQuery = (product) => {
+    const phoneNumber = "966532962420";
+    const message = `Hi, I'm interested in the ${product.title} (${product.specs}). Can I get more technical specs?`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const newWindow = window.open(whatsappUrl, "_blank");
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === "undefined") {
+      alert("Please allow popups for this site to send a WhatsApp message.");
+    }
+  };
+
+
   // Data for the 4 specific categories
   const slidesData = [
     {
       id: "01",
-      title: "Air Compressor",
+      title: "Compressor",
       description: "High-efficiency industrial air compressors designed for reliable power and continuous operation in demanding environments.",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1920",
+      image: "https://5.imimg.com/data5/IOS/Default/2023/8/333180526/IZ/XT/ZN/113044899/product-jpeg.png",
+      link : "/products?category=compressor",
+          specs: "Perkins Genuine Powerpart",
     },
     {
       id: "02",
-      title: "Rubber and Couplings",
+      title: "Engine Parts",
       description: "Durable industrial rubber components and precision-engineered couplings for seamless mechanical power transmission.",
-      image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=1920",
+      image: "https://img.oemoffhighway.com/files/base/acbm/ooh/image/2014/01/perkins-1204fe44ta_11300838.png?auto=format,compress&q=70",
+      link : "/products?category=engine",
+          specs: "Perkins Genuine Powerpart",
     },
     {
       id: "03",
       title: "Filters",
       description: "Advanced filtration systems to ensure purity and protect your equipment from contaminants and wear.",
-      image: "https://images.unsplash.com/photo-1616788494707-ec28f08d05a1?auto=format&fit=crop&q=80&w=1920",
+      image: "https://3.imimg.com/data3/BV/GU/MY-3117832/amw-filters.jpg",
+      link : "/products?category=filter",
+      specs: "Perkins Genuine Powerpart",
     },
     {
       id: "04",
       title: "Electric Items",
       description: "Comprehensive range of industrial electrical components, switchgear, and control systems for modern infrastructure.",
-      image: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80&w=1920",
+      image: "https://m.media-amazon.com/images/I/71B+8UAMFYL.jpg",
+      link : "/products?category=electric",
+      specs: "Perkins Genuine Powerpart",
+    },
+    {
+      id: "05",
+      title: "Rubber and Couplings",
+      description: "Durable industrial rubber components and precision-engineered couplings for seamless mechanical power transmission.",
+      image: "https://m.media-amazon.com/images/I/41iiqs4kYIL._AC_UF1000,1000_QL80_.jpg",
+      link : "/products?category=rubberCoulpling",
+          specs: "Perkins Genuine Powerpart",
     },
   ];
 
@@ -62,7 +92,7 @@ const Swipers = () => {
       modules={[Autoplay, Pagination]}
       centeredSlides={true}
       autoplay={{
-        delay: 3500,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       className="w-full h-[92vh] mt-20 max-[599px]:mt-14"
@@ -98,11 +128,16 @@ const Swipers = () => {
               </p>
 
               <div className="flex flex-wrap gap-4 ">
+                
+                <Link to={slide.link}>
                 <button className="cursor-pointer group max-[599px]:w-full relative bg-blue-500 text-white px-12 md:px-20 py-4 rounded font-bold overflow-hidden transition-all duration-300 hover:bg-blue-600 hover:shadow-md">
-                  <span className="relative z-10">View Product</span>
+                <span className="relative z-10">View Product</span>
                 </button>
+                </Link>
 
-                <button className="cursor-pointer px-12 md:px-20 max-[599px]:w-full py-4 rounded font-bold border border-white/30 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+                <button
+                onClick={() => handleWhatsAppQuery(slide)}
+                className="cursor-pointer px-12 md:px-20 max-[599px]:w-full py-4 rounded font-bold border border-white/30 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
                   Buy Now
                 </button>
               </div>

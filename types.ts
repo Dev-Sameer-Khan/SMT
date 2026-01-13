@@ -41,7 +41,8 @@ export interface TranslationSet {
   engineParts: string;
   compressors: string;
   filters: string;
-  spares: string;
+  electricItem: string;
+  rubberCoupling: string;
   viewProduct: string;
   inquireNow: string;
   cantFindPart: string;
@@ -147,13 +148,13 @@ export interface TranslationSet {
   subcategoryLabels?: {
     pistons: string;
     cylinders: string;
-    valves: string;
+    perkins: string;
     bearings: string;
     gaskets: string;
-    screw: string;
-    piston: string;
-    vanes: string;
-    rotary: string;
+    // screw: string;
+    // piston: string;
+    // vanes: string;
+    // rotary: string;
   };
   
   // Product categories (for dynamic access)
@@ -162,20 +163,21 @@ export interface TranslationSet {
     engine: string;
     compressor: string;
     filter: string;
-    spare: string;
+    rubberCoupling:  string;
+    electric :string;
   };
   
   // Product subcategories (for dynamic access)
   productSubcategories?: {
     engine: Array<{ id: string; label: string }>;
-    compressor: Array<{ id: string; label: string }>;
+    // compressor: Array<{ id: string; label: string }>;
   };
 }
 
 export interface Product {
   id: string;
   title: string;
-  category: 'engine' | 'spare' | 'filter' | 'compressor';
+  category: 'engine' | 'electric' | 'rubberCoupling' | 'filter' | 'compressor';
   /**
    * Optional subcategory used for finer filtering (e.g. pistons, screw, rotary, etc.).
    * Matches the ids defined in the engine / compressor subcategory lists.
@@ -183,13 +185,9 @@ export interface Product {
   subcategory?:
     | 'pistons'
     | 'cylinders'
-    | 'valves'
+    | 'perkins'
     | 'bearings'
     | 'gaskets'
-    | 'screw'
-    | 'piston'
-    | 'vanes'
-    | 'rotary';
   desc: string;
   specs: string;
   image: string;

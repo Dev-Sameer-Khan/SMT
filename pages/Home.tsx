@@ -322,14 +322,14 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-[599px]:gap-4">
             {[
               {
-                title: "Engine Spares",
+                title: "Engine Parts",
                 count: "4,500+ SKUs",
                 img: "https://t4.ftcdn.net/jpg/02/58/95/41/360_F_258954135_TAjOL99tceCUQ4of5nAFACAY4u8fiRE1.jpg",
                 desc: "Pistons, liners, valves, and crankshafts for CAT, Cummins, and Komatsu units.",
                 link : "/products?category=engine"
               },
               {
-                title: "Compressors Spares",
+                title: "Compressors",
                 count: "32 Models",
                 img: "https://3.imimg.com/data3/TE/YU/MY-14849337/rotary-tablet-machine-spare-parts.jpg",
                 desc: "Industrial air power solutions from 5.5kW to 350kW with integrated drying.",

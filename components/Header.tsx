@@ -51,14 +51,15 @@ const Header: React.FC = () => {
       id: 'compressor', 
       label: t.compressors, 
       path: '/products?category=compressor',
-      subcategories: (t.productSubcategories?.compressor || []).map(sub => ({
-        id: sub.id,
-        label: sub.label,
-        path: `/products?category=compressor&subcategory=${sub.id}`
-      }))
+      // subcategories: (t.productSubcategories?.compressor || []).map(sub => ({
+      //   id: sub.id,
+      //   label: sub.label,
+      //   path: `/products?category=compressor&subcategory=${sub.id}`
+      // }))
     },
     { id: 'filter', label: t.filters, path: '/products?category=filter' },
-    { id: 'spare', label: t.spares, path: '/products?category=spare' }
+    { id: 'electric', label: t.electricItem, path: '/products?category=electric' },
+    { id: 'rubberCoupling', label: t.rubberCoupling, path: '/products?category=rubberCoupling' },
   ];
 
   const isRTL = lang === 'ar';
