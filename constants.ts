@@ -587,11 +587,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "17",
-    title: "Universal Seal Kit5",
+    title: "3.152 SERIES WATER PUMP",
     category: "rubberCoupling",
     subcategory: "perkins",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
+    desc: "Heavy-duty replacement water pump designed for Perkins 3.152 series engines, ensuring optimal coolant circulation and temperature regulation.",
+    specs: "Cast Iron Housing | Precision Bearings | Leak-Proof Seals",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413158/1_cqeqzd.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413157/2_uuowbv.jpg",
@@ -601,11 +601,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "18",
-    title: "Universal Seal Kit6",
+    title: "4.236 SERIES WATER PUMP",
     category: "rubberCoupling",
     subcategory: "perkins",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
+    desc: "Engineered specifically for Perkins 4.236 series engines to provide reliable cooling performance in demanding industrial and agricultural environments.",
+    specs: "High-Flow Impeller | Corrosion Resistant | OEM Fitment",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413168/1_arsmjw.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413167/2_zqvhhn.jpg",
@@ -615,11 +615,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "19",
-    title: "Universal Seal Kit7",
+    title: "400 AND 400 SERIES WATER PUMP",
     category: "rubberCoupling",
     subcategory: "perkins",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
+    desc: "Premium water pump assembly tailored for Perkins 400 series compact engines, offering efficient thermal management and long-term durability.",
+    specs: "Compact Design | Low-Noise Operation | Heat-Treated Shaft",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413176/1_wro5ne.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413172/2_jkxp6u.jpg",
@@ -629,11 +629,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "20",
-    title: "Universal Seal Kit8",
+    title: "500 SERIES WATER PUMP",
     category: "rubberCoupling",
     subcategory: "perkins",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
+    desc: "Robust coolant pump for Perkins 500 series engines, built to withstand high-pressure cooling cycles and prevent engine overheating.",
+    specs: "Includes Gasket | Heavy-Duty Internal Seal | Direct Bolt-on",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413161/1_yccqiv.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413161/2_ahhwn3.jpg",
@@ -642,11 +642,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "21",
-    title: "Universal Seal Kit9",
+    title: "700 SERIES WATER PUMP",
     category: "rubberCoupling",
     subcategory: "perkins",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
+    desc: "High-performance water pump for Perkins 700 series engines, designed to provide consistent flow rates and maximum engine protection.",
+    specs: "Reinforced Housing | Specialized Bearing Kit | Anti-Corrosive Coating",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413163/1_vc0ygx.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413162/2_vassvu.jpg",
@@ -656,11 +656,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "22",
-    title: "Universal Seal Kit11",
+    title: "900 SERIES WATER PUMP",
     category: "rubberCoupling",
     subcategory: "perkins",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413156/1_gz3mgr.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413155/2_xctcze.jpg",
