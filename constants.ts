@@ -381,9 +381,9 @@ export const PRODUCTS: Product[] = [
     desc: "It is an elongated shaft with a series of lobes and bearings, and a gear at one end. The part is shown horizontally against a plain white background.",
     specs: "Perkins Genuine Powerpart",
     image : [
-      "/prduct-images/perkins/engine-parts/400-series-camshaft/1.jpeg",
-      "/prduct-images/perkins/engine-parts/400-series-camshaft/2.jpeg",
-      "/prduct-images/perkins/engine-parts/400-series-camshaft/3.jpeg",
+      "https://drive.google.com/thumbnail?id=1aQKAdnKJYPaDtAttuWlByM4zLw1VMqxS&sz=2000",
+      "https://drive.google.com/thumbnail?id=1vP2LeCJZukt_tKA5-_uW-xjJApiOqAg8&sz=2000",
+      "https://drive.google.com/thumbnail?id=1116WmFXW1uw2mTn01ARmgpCd9Z7XBOZH&sz=2000",
     ]
   },
   {
@@ -394,8 +394,8 @@ export const PRODUCTS: Product[] = [
     desc: "Oil-free compression for pharmaceutical applications.",
     specs: "1000 and 4.236 gear",
     image : [
-      "/prduct-images/perkins/engine-parts/1000-and-4.236-series-camshaft-gear/1.jpeg",
-      "/prduct-images/perkins/engine-parts/1000-and-4.236-series-camshaft-gear/2.jpeg",
+      "https://drive.google.com/thumbnail?id=1BsMbq488le8bT-yX8SJdHvpzbGgXDNvU&sz=2000",
+      "https://drive.google.com/thumbnail?id=1do79ErlLBIJp0gNPjRpN3NzDjw5LlvMp&sz=2000",
     ]
   },
   {
@@ -406,8 +406,8 @@ export const PRODUCTS: Product[] = [
     desc: "Advanced particulate capture for high-pressure common rail systems.",
     specs: "1000 and 1100 case",
     image : [
-      "/prduct-images/perkins/engine-parts/1000-and-1100-series-timing-case/1.jpeg",
-      "/prduct-images/perkins/engine-parts/1000-and-1100-series-timing-case/2.jpeg",
+      "https://drive.google.com/thumbnail?id=1lCPMC_y8C_hekivn2uvGGDXHRCbopwEi&sz=2000",
+      "https://drive.google.com/thumbnail?id=1ESWS9rrrLYWxxTsLJj7_U0PvPHFKLkg6&sz=2000",
     ]
   },
   {
@@ -417,10 +417,8 @@ export const PRODUCTS: Product[] = [
     desc: "Full sealing solution for heavy earthmovers.",
     specs: "Heat Resilient Fluoroelastomer",
     image : [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+      "https://drive.google.com/thumbnail?id=121L5XRoyJZaLTJyp0UtystKqYMdxWjGe&sz=2000",
+      "https://drive.google.com/thumbnail?id=0hhugGSrNVEB3Ni1WZg5EcwjU9OcIDhy&sz=2000",
     ]
   },
   {
@@ -431,10 +429,9 @@ export const PRODUCTS: Product[] = [
     desc: "Balanced assembly for high-efficiency turbo performance.",
     specs: "Precision Machined | Journal Bearing",
     image : [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+      "https://drive.google.com/thumbnail?id=1IDvMG2cZePGr8GbxQavXDw44RLYE3xMk&sz=2000",
+      "https://drive.google.com/thumbnail?id=1ffCUDMu_EHUMETfIsUbIM-jgpMYaCvDj&sz=2000",
+      "https://drive.google.com/thumbnail?id=15HqvC9aIlUBd7RbU81MvGoqJapTUTDpe&sz=2000",
     ]
   },
   {
