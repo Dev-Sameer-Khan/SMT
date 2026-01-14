@@ -380,7 +380,7 @@ export const PRODUCTS: Product[] = [
     subcategory: "perkins",
     desc: "It is an elongated shaft with a series of lobes and bearings, and a gear at one end. The part is shown horizontally against a plain white background.",
     specs: "Perkins Genuine Powerpart",
-    image: "https://drive.google.com/thumbnail?/1aQKAdnKJYPaDtAttuWlByM4zLw1VMqxS/view?usp=sharing"
+    image: "https://drive.google.com/thumbnail?id=1aQKAdnKJYPaDtAttuWlByM4zLw1VMqxS"
   },
   {
     id: "2",
