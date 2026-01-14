@@ -154,6 +154,7 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       perkins: "Perkins",
       bearings: "Bearings",
       gaskets: "Gaskets",
+      waterpump: "waterpump"
       // screw: "Screw Compressors",
       // piston: "Piston Compressors",
       // vanes: "Vane Compressors",
@@ -338,6 +339,7 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       perkins: "صمامات",
       bearings: "رمانات",
       gaskets: "جوانات",
+      waterpump: "مضخة مياه"
       // screw: "ضواغط لولبية",
       // piston: "ضواغط مكبسية",
       // vanes: "ضواغط شفرات",
@@ -518,7 +520,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "12",
     title: "3.152 SERIES WATER PUMP",
-    category: "WaterPump",
+    category: "waterpump",
     subcategory: "perkins",
     desc: "The 3.152 Series Water Pump is a direct replacement component used in Perkins D3.152 and 3.1524 diesel engines. Its function is critical for engine cooling, as it circulates coolant through the block and radiator to prevent overheating. These engines are commonly found in industrial, agricultural, and marine equipment.",
     specs: "Assorted Sizes | Chemical Resistant",
@@ -532,7 +534,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "13",
     title: "4.236 SERIES WATER PUMP",
-    category: "WaterPump",
+    category: "waterpump",
     subcategory: "perkins",
     desc: "he 4.236 Series Water Pump is an engine-driven component for Perkins 4.236, 4.248, and related diesel engines. Its primary function is to circulate fresh water coolant within the engine's closed cooling system, ensuring efficient temperature regulation. These water pumps are vital for engines commonly used in a wide range of industrial, agricultural, and marine applications.",
     specs: "Equivalent to U5MW0106 | Shaft diameter typically 19mm (or 0.750\")",
@@ -546,7 +548,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "14",
     title: "400 AND 400 SERIES WATER PUMP",
-    category: "WaterPump",
+    category: "waterpump",
     subcategory: "perkins",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Features high-quality ceramic cartridge seals and sealed bearings; Engineered for specific engine coolant flow and pressure; Example Equivalent Part No: U45011020",
@@ -560,7 +562,7 @@ export const PRODUCTS: Product[] = [
   {
   id: "15",
   title: "500 SERIES WATER PUMP",
-  category: "WaterPump",
+  category: "waterpump",
   subcategory: "perkins",
   desc: "The 500 Series Water Pump is a fresh water pump specifically designed for the Perkins 500 / Prima Series Marine Engine. Its critical role is to circulate coolant within the closed cooling system to maintain optimal engine operating temperatures and prevent overheating, which is vital for its common marine and industrial applications.",
   specs: "Engineered for precise coolant flow and pressure; Features high-quality ceramic seals and sealed bearings for extended life; Requires careful installation of the pulley, supporting the impeller end of the shaft.",
