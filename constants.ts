@@ -378,7 +378,7 @@ export const PRODUCTS: Product[] = [
     title: "400 Series CamShaft",
     category: "engine",
     subcategory: "perkins",
-    desc: "Genuine Perkins Powerpart water pump kit, includes pump and gasket for engine cooling.",
+    desc: "It is an elongated shaft with a series of lobes and bearings, and a gear at one end. The part is shown horizontally against a plain white background.",
     specs: "Perkins Genuine Powerpart",
     image : [
       "/prduct-images/perkins/engine-parts/400-series-camshaft/1.jpeg",
@@ -425,7 +425,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "5",
-    title: "Turbocharger Cartridge",
+    title: "Perkins 1100 Series Engine Overhaul Kit",
     category: "engine",
     subcategory: "perkins",
     desc: "Balanced assembly for high-efficiency turbo performance.",
@@ -441,7 +441,7 @@ export const PRODUCTS: Product[] = [
     id: "6",
     title: "Industrial Air Dryer",
     category: "compressor",
-    // subcategory: "rotary",
+    subcategory: "perkins",
     desc: "Desiccant-based moisture removal for compressed air systems.",
     specs: "480V | -40°C Dew Point",
     image : [
