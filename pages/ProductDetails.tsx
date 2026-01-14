@@ -76,32 +76,6 @@ const ProductDetails: React.FC = () => {
     return t.productCategoryLabels?.[category as keyof typeof t.productCategoryLabels] || category.toUpperCase();
   };
 
-  // Generate multiple product images (variations for demo)
-  // In production, you would have an array of actual product images in your data
-  const generateProductImages = (baseImage: string): string[] => {
-    const images = [baseImage];
-    
-    // Add variations using different image parameters for better demo experience
-    // In production, replace this with actual product images from your database
-    try {
-      const url = new URL(baseImage);
-      const existingParams = url.search;
-      // Create 3 additional variations with different sizes
-      images.push(`${url.origin}${url.pathname}?w=800&h=600${existingParams ? "&" + existingParams.substring(1) : ""}`);
-      images.push(`${url.origin}${url.pathname}?w=600&h=800${existingParams ? "&" + existingParams.substring(1) : ""}`);
-      images.push(`${url.origin}${url.pathname}?w=1000&h=1000${existingParams ? "&" + existingParams.substring(1) : ""}`);
-    } catch {
-      // If URL parsing fails, use the same image multiple times
-      // In production, you would have actual different images
-      for (let i = 0; i < 3; i++) {
-        images.push(baseImage);
-      }
-    }
-    
-    return images;
-  };
-
-  const productImages = generateProductImages(product.image);
 
   // Product-specific FAQ
   const productFAQs = [
@@ -191,7 +165,7 @@ const ProductDetails: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Product Image Viewer */}
-          <ProductImageViewer images={productImages} productTitle={product.title} />
+          <ProductImageViewer images={product.image} productTitle={product.title} />
 
           {/* Product Details */}
           <div className="space-y-8">

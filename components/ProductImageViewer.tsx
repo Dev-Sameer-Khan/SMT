@@ -18,8 +18,8 @@ const ProductImageViewer: React.FC<ProductImageViewerProps> = ({
   const imageRef = useRef<HTMLDivElement>(null);
   const lightboxImageRef = useRef<HTMLDivElement>(null);
 
-  // Use provided images or generate variations
-  const productImages = images.length > 1 ? images : images;
+  // Use the provided images array directly
+  const productImages = images;
 
   const handleThumbnailClick = (index: number) => {
     setSelectedImageIndex(index);

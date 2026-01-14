@@ -375,29 +375,40 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
 export const PRODUCTS: Product[] = [
   {
     id: "1",
-    title: "1100 SERIES WATER PUMP KIT",
+    title: "400 Series CamShaft",
     category: "engine",
     subcategory: "perkins",
     desc: "Genuine Perkins Powerpart water pump kit, includes pump and gasket for engine cooling.",
     specs: "Perkins Genuine Powerpart",
-    image: "/image.jpeg"
+    image : [
+      "/prduct-images/perkins/engine-parts/400-series-camshaft/1.jpeg",
+      "/prduct-images/perkins/engine-parts/400-series-camshaft/2.jpeg",
+      "/prduct-images/perkins/engine-parts/400-series-camshaft/3.jpeg",
+    ]
   },
   {
     id: "2",
-    title: "Multi-Stage Screw Compressor",
-    category: "compressor",
-    // subcategory: "screw",
+    title: "1000 and 4.236 series camshaft gear",
+    category: "engine",
+    subcategory: "perkins",
     desc: "Oil-free compression for pharmaceutical applications.",
-    specs: "350 CFM | Variable Speed",
-    image: "https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ",
+    specs: "1000 and 4.236 gear",
+    image : [
+      "/prduct-images/perkins/engine-parts/1000-and-4.236-series-camshaft-gear/1.jpeg",
+      "/prduct-images/perkins/engine-parts/1000-and-4.236-series-camshaft-gear/2.jpeg",
+    ]
   },
   {
     id: "3",
-    title: "Nanofiber Fuel Filter",
-    category: "filter",
+    title: "1000 and 1100 series timing case",
+    category: "engine",
+    subcategory : "perkins",
     desc: "Advanced particulate capture for high-pressure common rail systems.",
-    specs: "Efficiency 99.9%",
-    image: "https://images.unsplash.com/photo-1730201127761-15888d9ddf98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    specs: "1000 and 1100 case",
+    image : [
+      "/prduct-images/perkins/engine-parts/1000-and-1100-series-timing-case/1.jpeg",
+      "/prduct-images/perkins/engine-parts/1000-and-1100-series-timing-case/2.jpeg",
+    ]
   },
   {
     id: "4",
@@ -405,7 +416,12 @@ export const PRODUCTS: Product[] = [
     category: "rubberCoupling",
     desc: "Full sealing solution for heavy earthmovers.",
     specs: "Heat Resilient Fluoroelastomer",
-    image: "https://images.unsplash.com/photo-1759419281480-bacc913c9606?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image : [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+    ]
   },
   {
     id: "5",
@@ -414,7 +430,12 @@ export const PRODUCTS: Product[] = [
     subcategory: "perkins",
     desc: "Balanced assembly for high-efficiency turbo performance.",
     specs: "Precision Machined | Journal Bearing",
-    image: "https://images.unsplash.com/photo-1600377232142-164c095e686e?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image : [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+    ]
   },
   {
     id: "6",
@@ -423,7 +444,12 @@ export const PRODUCTS: Product[] = [
     // subcategory: "rotary",
     desc: "Desiccant-based moisture removal for compressed air systems.",
     specs: "480V | -40°C Dew Point",
-    image: "https://images.unsplash.com/photo-1705129472480-2145aecb9aaa?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image : [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+    ]
   },
   {
     id: "7",
@@ -431,7 +457,12 @@ export const PRODUCTS: Product[] = [
     category: "filter",
     desc: "High-dirt holding capacity and low pressure drop.",
     specs: "Flow Rate 120 L/min | 10 Micron",
-    image: "https://images.unsplash.com/photo-1614447428943-52ec0bdbc7aa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image : [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+    ]
   },
   {
     id: "8",
@@ -439,16 +470,26 @@ export const PRODUCTS: Product[] = [
     category: "electric",
     desc: "Complete set for rapid on-site valve maintenance.",
     specs: "NBR & Viton Options",
-    image: "https://images.unsplash.com/photo-1763836393379-68f9721966ee?q=80&w=848&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image : [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+    ]
   },
   {
     id: "9",
     title: "Marine Cylinder Liner",
     category: "engine",
-    subcategory: "cylinders",
+    // subcategory: "cylinders",``
     desc: "Wear-resistant cast iron cylinder for marine diesel engines.",
     specs: "Honed Bore | Chrome Plated",
-    image: "https://images.unsplash.com/photo-1552656967-7a0991a13906?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image : [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+    ]
   },
   {
     id: "10",
@@ -457,7 +498,12 @@ export const PRODUCTS: Product[] = [
     // subcategory: "piston",
     desc: "Removes oil mist and vapor from condensate streams.",
     specs: "Auto-Drain | Polypropylene Body",
-    image: "https://plus.unsplash.com/premium_photo-1682145074686-96a169644544?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image : [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+    ]
   },
   {
     id: "11",
@@ -465,7 +511,12 @@ export const PRODUCTS: Product[] = [
     category: "filter",
     desc: "Captures allergens and fine particulates for cabin filtration.",
     specs: "Minimum Efficiency 97% | Activated Carbon",
-    image: "https://images.unsplash.com/photo-1556838656-af51dadc2c93?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image : [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+    ]
   },
   {
     id: "12",
@@ -473,7 +524,12 @@ export const PRODUCTS: Product[] = [
     category: "rubberCoupling",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
-    image: "https://images.unsplash.com/photo-1727413434026-0f8314c037d8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image : [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+    ]
   },
 ];
 

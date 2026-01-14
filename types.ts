@@ -183,14 +183,13 @@ export interface Product {
    * Matches the ids defined in the engine / compressor subcategory lists.
    */
   subcategory?:
-    | 'pistons'
-    | 'cylinders'
+    | 'cummins'
+    | 'deutz'
     | 'perkins'
-    | 'bearings'
-    | 'gaskets'
+    | 'caterpiler'
   desc: string;
   specs: string;
-  image: string;
+  image: string[];
 }
 
 export interface Testimonial {

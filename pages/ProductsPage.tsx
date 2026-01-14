@@ -190,7 +190,7 @@ const ProductsPage: React.FC = () => {
                 >
                   <div className="relative h-64 overflow-hidden">
                     <LazyImage
-                      src={product.image}
+                      src={product.image[0]}
                       alt={`${product.title} - ${product.specs}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-all duration-300"
                     />
