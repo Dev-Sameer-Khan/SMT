@@ -573,11 +573,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "16",
-    title: "Universal Seal Kit4",
+    title: "1200 SERIES WATER PUMP KIT",
     category: "rubberCoupling",
     subcategory: "perkins",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
+    desc: "A comprehensive cooling system overhaul kit for Perkins 1200 series engines, featuring a high-capacity pump and all necessary components for a complete professional installation.",
+    specs: "Full Gasket Set Included | High-Flow Design | OEM Standard Bearings",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413165/1_am8qo2.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413164/2_gpvyqv.jpg",
