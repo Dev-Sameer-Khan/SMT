@@ -414,6 +414,7 @@ export const PRODUCTS: Product[] = [
     id: "4",
     title: "Gasket Performance Kit",
     category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Full sealing solution for heavy earthmovers.",
     specs: "Heat Resilient Fluoroelastomer",
     image : [
@@ -451,6 +452,7 @@ export const PRODUCTS: Product[] = [
     id: "7",
     title: "Hydraulic Return Filter",
     category: "filter",
+    subcategory: "perkins",
     desc: "High-dirt holding capacity and low pressure drop.",
     specs: "Flow Rate 120 L/min | 10 Micron",
     image : [
@@ -463,6 +465,7 @@ export const PRODUCTS: Product[] = [
     id: "8",
     title: "Valve Overhaul Kit",
     category: "electric",
+    subcategory: "perkins",
     desc: "Complete set for rapid on-site valve maintenance.",
     specs: "NBR & Viton Options",
     image : [
@@ -475,7 +478,7 @@ export const PRODUCTS: Product[] = [
     id: "9",
     title: "Marine Cylinder Liner",
     category: "engine",
-    // subcategory: "cylinders",``
+    subcategory: "perkins",
     desc: "Wear-resistant cast iron cylinder for marine diesel engines.",
     specs: "Honed Bore | Chrome Plated",
     image : [
@@ -488,7 +491,7 @@ export const PRODUCTS: Product[] = [
     id: "10",
     title: "Oil-Water Separator",
     category: "compressor",
-    // subcategory: "piston",
+    subcategory: "perkins",
     desc: "Removes oil mist and vapor from condensate streams.",
     specs: "Auto-Drain | Polypropylene Body",
     image : [
@@ -502,6 +505,7 @@ export const PRODUCTS: Product[] = [
     id: "11",
     title: "High-Efficiency Cabin Filter",
     category: "filter",
+    subcategory: "perkins",
     desc: "Captures allergens and fine particulates for cabin filtration.",
     specs: "Minimum Efficiency 97% | Activated Carbon",
     image : [
@@ -513,32 +517,39 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "12",
-    title: "Universal Seal Kit",
-    category: "rubberCoupling",
-    desc: "Multi-application sealing solution for pumps and valves.",
+    title: "3.152 SERIES WATER PUMP",
+    category: "WaterPump",
+    subcategory: "perkins",
+    desc: "The 3.152 Series Water Pump is a direct replacement component used in Perkins D3.152 and 3.1524 diesel engines. Its function is critical for engine cooling, as it circulates coolant through the block and radiator to prevent overheating. These engines are commonly found in industrial, agricultural, and marine equipment.",
     specs: "Assorted Sizes | Chemical Resistant",
-    image : [
-      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413151/1_lo9huv.jpg",
-      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413151/2_fkjhte.jpg",
+    image: [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800\&h=800\&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800\&h=800\&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800\&h=800\&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800\&h=800\&fit=crop"
     ]
   },
   {
     id: "13",
-    title: "Universal Seal Kit1",
-    category: "rubberCoupling",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
-    image : [
-      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413150/1_ldqitg.jpg",
-      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413150/2_h1qysi.jpg",
+    title: "4.236 SERIES WATER PUMP",
+    category: "WaterPump",
+    subcategory: "perkins",
+    desc: "he 4.236 Series Water Pump is an engine-driven component for Perkins 4.236, 4.248, and related diesel engines. Its primary function is to circulate fresh water coolant within the engine's closed cooling system, ensuring efficient temperature regulation. These water pumps are vital for engines commonly used in a wide range of industrial, agricultural, and marine applications.",
+    specs: "Equivalent to U5MW0106 | Shaft diameter typically 19mm (or 0.750\")",
+    image: [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800\&h=800\&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800\&h=800\&fit=crop",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800\&h=800\&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800\&h=800\&fit=crop"
     ]
-  },
+  }
   {
     id: "14",
-    title: "Universal Seal Kit2",
-    category: "rubberCoupling",
+    title: "400 AND 400 SERIES WATER PUMP",
+    category: "WaterPump",
+    subcategory: "perkins",
     desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
+    specs: "Features high-quality ceramic cartridge seals and sealed bearings; Engineered for specific engine coolant flow and pressure; Example Equivalent Part No: U45011020",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413171/2_wrghqv.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413171/1_ehetfp.jpg",
@@ -547,11 +558,12 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
-    id: "15",
-    title: "Universal Seal Kit3",
-    category: "rubberCoupling",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Assorted Sizes | Chemical Resistant",
+  id: "15",
+  title: "500 SERIES WATER PUMP",
+  category: "WaterPump",
+  subcategory: "perkins",
+  desc: "The 500 Series Water Pump is a fresh water pump specifically designed for the Perkins 500 / Prima Series Marine Engine. Its critical role is to circulate coolant within the closed cooling system to maintain optimal engine operating temperatures and prevent overheating, which is vital for its common marine and industrial applications.",
+  specs: "Engineered for precise coolant flow and pressure; Features high-quality ceramic seals and sealed bearings for extended life; Requires careful installation of the pulley, supporting the impeller end of the shaft.",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413177/4_sfnrmy.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413177/1_dl9guh.jpg",
@@ -563,6 +575,7 @@ export const PRODUCTS: Product[] = [
     id: "16",
     title: "Universal Seal Kit4",
     category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
     image : [
@@ -576,6 +589,7 @@ export const PRODUCTS: Product[] = [
     id: "17",
     title: "Universal Seal Kit5",
     category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
     image : [
@@ -589,6 +603,7 @@ export const PRODUCTS: Product[] = [
     id: "18",
     title: "Universal Seal Kit6",
     category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
     image : [
@@ -602,6 +617,7 @@ export const PRODUCTS: Product[] = [
     id: "19",
     title: "Universal Seal Kit7",
     category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
     image : [
@@ -615,6 +631,7 @@ export const PRODUCTS: Product[] = [
     id: "20",
     title: "Universal Seal Kit8",
     category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
     image : [
@@ -627,6 +644,7 @@ export const PRODUCTS: Product[] = [
     id: "21",
     title: "Universal Seal Kit9",
     category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
     image : [
@@ -640,6 +658,7 @@ export const PRODUCTS: Product[] = [
     id: "22",
     title: "Universal Seal Kit11",
     category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
     image : [
