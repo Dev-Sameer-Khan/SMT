@@ -381,9 +381,9 @@ export const PRODUCTS: Product[] = [
     desc: "It is an elongated shaft with a series of lobes and bearings, and a gear at one end. The part is shown horizontally against a plain white background.",
     specs: "Perkins Genuine Powerpart",
     image : [
-      "https://drive.google.com/thumbnail?id=1aQKAdnKJYPaDtAttuWlByM4zLw1VMqxS&sz=2000",
-      "https://drive.google.com/thumbnail?id=1vP2LeCJZukt_tKA5-_uW-xjJApiOqAg8&sz=2000",
-      "https://drive.google.com/thumbnail?id=1116WmFXW1uw2mTn01ARmgpCd9Z7XBOZH&sz=2000",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413143/2_agmra8.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413143/3_py1qpb.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413143/1_syr98c.jpg",
     ]
   },
   {
@@ -394,8 +394,8 @@ export const PRODUCTS: Product[] = [
     desc: "Oil-free compression for pharmaceutical applications.",
     specs: "1000 and 4.236 gear",
     image : [
-      "https://drive.google.com/thumbnail?id=1BsMbq488le8bT-yX8SJdHvpzbGgXDNvU&sz=2000",
-      "https://drive.google.com/thumbnail?id=1do79ErlLBIJp0gNPjRpN3NzDjw5LlvMp&sz=2000",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413142/2_shgihi.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413142/1_yptvxt.jpg",
     ]
   },
   {
@@ -406,8 +406,8 @@ export const PRODUCTS: Product[] = [
     desc: "Advanced particulate capture for high-pressure common rail systems.",
     specs: "1000 and 1100 case",
     image : [
-      "https://drive.google.com/thumbnail?id=1lCPMC_y8C_hekivn2uvGGDXHRCbopwEi&sz=2000",
-      "https://drive.google.com/thumbnail?id=1ESWS9rrrLYWxxTsLJj7_U0PvPHFKLkg6&sz=2000",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413141/2_tvpnkn.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413140/1_amoxp3.jpg",
     ]
   },
   {
@@ -417,8 +417,8 @@ export const PRODUCTS: Product[] = [
     desc: "Full sealing solution for heavy earthmovers.",
     specs: "Heat Resilient Fluoroelastomer",
     image : [
-      "https://drive.google.com/thumbnail?id=121L5XRoyJZaLTJyp0UtystKqYMdxWjGe&sz=2000",
-      "https://drive.google.com/thumbnail?id=0hhugGSrNVEB3Ni1WZg5EcwjU9OcIDhy&sz=2000",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413140/2_ztvk3z.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413139/1_nkyv5m.jpg",
     ]
   },
   {
@@ -429,9 +429,9 @@ export const PRODUCTS: Product[] = [
     desc: "Balanced assembly for high-efficiency turbo performance.",
     specs: "Precision Machined | Journal Bearing",
     image : [
-      "https://drive.google.com/thumbnail?id=1IDvMG2cZePGr8GbxQavXDw44RLYE3xMk&sz=2000",
-      "https://drive.google.com/thumbnail?id=1ffCUDMu_EHUMETfIsUbIM-jgpMYaCvDj&sz=2000",
-      "https://drive.google.com/thumbnail?id=15HqvC9aIlUBd7RbU81MvGoqJapTUTDpe&sz=2000",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413144/3_npgw9q.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413144/1_onfx9u.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413144/2_wrnf9f.jpg",
     ]
   },
   {
@@ -442,10 +442,9 @@ export const PRODUCTS: Product[] = [
     desc: "Desiccant-based moisture removal for compressed air systems.",
     specs: "480V | -40°C Dew Point",
     image : [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413144/2_wrnf9f.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413147/2_vc6fj0.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413146/3_n39ej1.jpg",
     ]
   },
   {
@@ -455,10 +454,9 @@ export const PRODUCTS: Product[] = [
     desc: "High-dirt holding capacity and low pressure drop.",
     specs: "Flow Rate 120 L/min | 10 Micron",
     image : [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413146/1_j7yrqn.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413146/2_mbho8y.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413145/3_yjfwc2.jpg",
     ]
   },
   {
@@ -468,10 +466,9 @@ export const PRODUCTS: Product[] = [
     desc: "Complete set for rapid on-site valve maintenance.",
     specs: "NBR & Viton Options",
     image : [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413149/1_s6a3rh.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413148/2_bzk2nw.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413147/3_oho6lx.jpg",
     ]
   },
   {
@@ -482,10 +479,9 @@ export const PRODUCTS: Product[] = [
     desc: "Wear-resistant cast iron cylinder for marine diesel engines.",
     specs: "Honed Bore | Chrome Plated",
     image : [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413153/1_izgtis.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413152/2_nfp5ha.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413152/3_elo8lo.jpg",
     ]
   },
   {
@@ -496,10 +492,10 @@ export const PRODUCTS: Product[] = [
     desc: "Removes oil mist and vapor from condensate streams.",
     specs: "Auto-Drain | Polypropylene Body",
     image : [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413154/1_hag5yc.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413154/2_bwol6w.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413153/4_p1w8vv.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413153/3_lrtobv.jpg"
     ]
   },
   {
@@ -509,10 +505,10 @@ export const PRODUCTS: Product[] = [
     desc: "Captures allergens and fine particulates for cabin filtration.",
     specs: "Minimum Efficiency 97% | Activated Carbon",
     image : [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413152/4_xwr5af.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413149/1_ym8cci.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413149/2_twruqe.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413149/3_an5fmz.jpg"
     ]
   },
   {
@@ -522,10 +518,135 @@ export const PRODUCTS: Product[] = [
     desc: "Multi-application sealing solution for pumps and valves.",
     specs: "Assorted Sizes | Chemical Resistant",
     image : [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&h=800&fit=crop"
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413151/1_lo9huv.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413151/2_fkjhte.jpg",
+    ]
+  },
+  {
+    id: "13",
+    title: "Universal Seal Kit1",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413150/1_ldqitg.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413150/2_h1qysi.jpg",
+    ]
+  },
+  {
+    id: "14",
+    title: "Universal Seal Kit2",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413171/2_wrghqv.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413171/1_ehetfp.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413170/4_srjaqo.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413170/3_tzf3i0.jpg",
+    ]
+  },
+  {
+    id: "15",
+    title: "Universal Seal Kit3",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413177/4_sfnrmy.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413177/1_dl9guh.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413177/2_wnnucj.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413176/3_ext6mt.jpg",
+    ]
+  },
+  {
+    id: "16",
+    title: "Universal Seal Kit4",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413165/1_am8qo2.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413164/2_gpvyqv.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413163/3_yk4yri.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413163/4_kewcz2.jpg",
+    ]
+  },
+  {
+    id: "17",
+    title: "Universal Seal Kit5",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413158/1_cqeqzd.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413157/2_uuowbv.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413157/3_hwypwk.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413156/4_sutyzx.jpg",
+    ]
+  },
+  {
+    id: "18",
+    title: "Universal Seal Kit6",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413168/1_arsmjw.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413167/2_zqvhhn.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413165/4_cbsrpu.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413165/3_ljciqe.jpg",
+    ]
+  },
+  {
+    id: "19",
+    title: "Universal Seal Kit7",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413176/1_wro5ne.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413172/2_jkxp6u.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413172/3_aahtul.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413172/4_z6jvxo.jpg",
+    ]
+  },
+  {
+    id: "20",
+    title: "Universal Seal Kit8",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413161/1_yccqiv.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413161/2_ahhwn3.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413158/3_nrmieo.jpg",
+    ]
+  },
+  {
+    id: "21",
+    title: "Universal Seal Kit9",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413163/1_vc0ygx.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413162/2_vassvu.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413162/3_eibumx.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413161/4_bjakmy.jpg",
+    ]
+  },
+  {
+    id: "22",
+    title: "Universal Seal Kit11",
+    category: "rubberCoupling",
+    desc: "Multi-application sealing solution for pumps and valves.",
+    specs: "Assorted Sizes | Chemical Resistant",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413156/1_gz3mgr.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413155/2_xctcze.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413155/3_yb98ym.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413155/4_qerzos.jpg",
     ]
   },
 ];
