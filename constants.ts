@@ -545,11 +545,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "14",
-    title: "400 AND 400 SERIES WATER PUMP",
+    title: "1000 SERIES WATER PUMP",
     category: "engine",
     subcategory: "perkins",
-    desc: "Multi-application sealing solution for pumps and valves.",
-    specs: "Features high-quality ceramic cartridge seals and sealed bearings; Engineered for specific engine coolant flow and pressure; Example Equivalent Part No: U45011020",
+    desc: "A heavy-duty water pump specifically designed for the Perkins 1000 series engines, ensuring efficient coolant circulation to maintain steady operating temperatures under heavy loads.",
+    specs: "Ceramic Cartridge Seals | Sealed Precision Bearings | Cast Iron Housing | Equivalent to U45011020",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413171/2_wrghqv.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413171/1_ehetfp.jpg",
@@ -559,11 +559,11 @@ export const PRODUCTS: Product[] = [
   },
   {
   id: "15",
-  title: "500 SERIES WATER PUMP",
+  title: "1100 Series Water Pump kit",
   category: "engine",
   subcategory: "perkins",
-  desc: "The 500 Series Water Pump is a fresh water pump specifically designed for the Perkins 500 / Prima Series Marine Engine. Its critical role is to circulate coolant within the closed cooling system to maintain optimal engine operating temperatures and prevent overheating, which is vital for its common marine and industrial applications.",
-  specs: "Engineered for precise coolant flow and pressure; Features high-quality ceramic seals and sealed bearings for extended life; Requires careful installation of the pulley, supporting the impeller end of the shaft.",
+  desc: "High-performance water pump kit for Perkins 1100 series engines, engineered to provide maximum flow and pressure for demanding agricultural and industrial cooling systems.",
+  specs: "Includes O-Rings & Gaskets | High-Strength Impeller | Ceramic Face Seals | Corrosion Resistant Finish",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413177/4_sfnrmy.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413177/1_dl9guh.jpg",
