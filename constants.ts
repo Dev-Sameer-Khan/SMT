@@ -542,7 +542,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800\&h=800\&fit=crop",
       "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800\&h=800\&fit=crop"
     ]
-  }
+  },
   {
     id: "14",
     title: "400 AND 400 SERIES WATER PUMP",
