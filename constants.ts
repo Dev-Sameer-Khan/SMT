@@ -476,11 +476,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "9",
-    title: "Marine Cylinder Liner",
+    title: "1000 SERIES THERMOSTAT",
     category: "engine",
     subcategory: "perkins",
-    desc: "Wear-resistant cast iron cylinder for marine diesel engines.",
-    specs: "Honed Bore | Chrome Plated",
+    desc: "Regulates engine temperature by controlling coolant flow to the radiator.",
+    specs: "Wax-element Type | Precision Temperature Response",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413153/1_izgtis.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413152/2_nfp5ha.jpg",
@@ -489,11 +489,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "10",
-    title: "Oil-Water Separator",
+    title: "1100 AND 400 SERIES CONNECTION",
     category: "compressor",
     subcategory: "perkins",
-    desc: "Removes oil mist and vapor from condensate streams.",
-    specs: "Auto-Drain | Polypropylene Body",
+    desc: "High-pressure connector designed for engine intake and cooling systems.",
+    specs: "Corrosion Resistant | Secure Seal Fitting",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413154/1_hag5yc.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413154/2_bwol6w.jpg",
@@ -503,11 +503,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "11",
-    title: "High-Efficiency Cabin Filter",
+    title: "1200 SERIES THERMOSTAT ASSEMBLY",
     category: "filter",
     subcategory: "perkins",
-    desc: "Captures allergens and fine particulates for cabin filtration.",
-    specs: "Minimum Efficiency 97% | Activated Carbon",
+    desc: "Complete housing and thermostat unit for cooling system management.",
+    specs: "Heavy-duty Housing | Pre-calibrated Spring",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413152/4_xwr5af.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413149/1_ym8cci.jpg",
