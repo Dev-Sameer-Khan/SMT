@@ -380,7 +380,7 @@ export const PRODUCTS: Product[] = [
     subcategory: "perkins",
     desc: "It is an elongated shaft with a series of lobes and bearings, and a gear at one end. The part is shown horizontally against a plain white background.",
     specs: "Perkins Genuine Powerpart",
-    image: "https://drive.google.com/file/d/1aQKAdnKJYPaDtAttuWlByM4zLw1VMqxS/view?usp=sharing"
+    image: "https://drive.google.com/thumbnail?/1aQKAdnKJYPaDtAttuWlByM4zLw1VMqxS/view?usp=sharing"
   },
   {
     id: "2",
@@ -422,7 +422,7 @@ export const PRODUCTS: Product[] = [
     id: "6",
     title: "Industrial Air Dryer",
     category: "compressor",
-    // subcategory: "rotary",
+    subcategory: "perkins",
     desc: "Desiccant-based moisture removal for compressed air systems.",
     specs: "480V | -40°C Dew Point",
     image: "https://images.unsplash.com/photo-1705129472480-2145aecb9aaa?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
