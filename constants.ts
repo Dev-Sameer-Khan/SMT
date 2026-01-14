@@ -412,11 +412,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "4",
-    title: "Gasket Performance Kit",
+    title: "1100 SERIES CAMSHAFT",
     category: "rubberCoupling",
     subcategory: "perkins",
-    desc: "Full sealing solution for heavy earthmovers.",
-    specs: "Heat Resilient Fluoroelastomer",
+    desc: "Precision-engineered camshaft designed for Perkins 1100 series engines to ensure accurate valve timing and optimal combustion efficiency.",
+    specs: "High-Grade Forged Steel | Induction Hardened Lobes | Precision Ground",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413140/2_ztvk3z.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413139/1_nkyv5m.jpg",
@@ -427,8 +427,8 @@ export const PRODUCTS: Product[] = [
     title: "Perkins 1100 Series Engine Overhaul Kit",
     category: "engine",
     subcategory: "perkins",
-    desc: "Balanced assembly for high-efficiency turbo performance.",
-    specs: "Precision Machined | Journal Bearing",
+    desc: "A complete professional-grade restoration kit containing all essential components to rebuild and extend the service life of Perkins 1100 series engines.",
+    specs: "Includes Pistons, Rings, Liners & Gasket Set | OEM Quality | Heavy-Duty Construction",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413144/3_npgw9q.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413144/1_onfx9u.jpg",
@@ -437,11 +437,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "6",
-    title: "Industrial Air Dryer",
+    title: "Perkins 1100 Series Engine Overhaul Kit",
     category: "compressor",
     subcategory: "perkins",
-    desc: "Desiccant-based moisture removal for compressed air systems.",
-    specs: "480V | -40°C Dew Point",
+    desc: "Comprehensive engine rebuild solution featuring precision-matched parts for Perkins 1100 series applications, ensuring factory-spec performance.",
+    specs: "Main & Con-Rod Bearings | Full Engine Gasket Kit | High-Tensile Fasteners",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413144/2_wrnf9f.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413147/2_vc6fj0.jpg",
@@ -450,11 +450,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "7",
-    title: "Hydraulic Return Filter",
+    title: "1000 AND 700 SERIES PISTON KIT",
     category: "filter",
     subcategory: "perkins",
-    desc: "High-dirt holding capacity and low pressure drop.",
-    specs: "Flow Rate 120 L/min | 10 Micron",
+    desc: "High-strength piston assembly kit designed for compatibility across Perkins 1000 and 700 series engines, engineered for thermal resilience and durability.",
+    specs: "Anodized Piston Crown | Phosphate Coated | Includes Pins & Clips",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413146/1_j7yrqn.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413146/2_mbho8y.jpg",
@@ -463,11 +463,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "8",
-    title: "Valve Overhaul Kit",
+    title: "Piston And Ring Kit",
     category: "electric",
     subcategory: "perkins",
-    desc: "Complete set for rapid on-site valve maintenance.",
-    specs: "NBR & Viton Options",
+    desc: "A matched set of pistons and high-tension rings designed to restore engine compression and reduce oil consumption in Perkins diesel engines.",
+    specs: "Multi-Piece Ring Set | Heat-Resistant Alloy | Reduced Friction Profile",
     image : [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413149/1_s6a3rh.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413148/2_bzk2nw.jpg",
@@ -517,7 +517,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "12",
-    title: "3.152 SERIES WATER PUMP",
+    title: "error",
     category: "engine",
     subcategory: "perkins",
     desc: "The 3.152 Series Water Pump is a direct replacement component used in Perkins D3.152 and 3.1524 diesel engines. Its function is critical for engine cooling, as it circulates coolant through the block and radiator to prevent overheating. These engines are commonly found in industrial, agricultural, and marine equipment.",
@@ -531,7 +531,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "13",
-    title: "4.236 SERIES WATER PUMP",
+    title: "error",
     category: "engine",
     subcategory: "perkins",
     desc: "he 4.236 Series Water Pump is an engine-driven component for Perkins 4.236, 4.248, and related diesel engines. Its primary function is to circulate fresh water coolant within the engine's closed cooling system, ensuring efficient temperature regulation. These water pumps are vital for engines commonly used in a wide range of industrial, agricultural, and marine applications.",
