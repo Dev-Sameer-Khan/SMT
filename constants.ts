@@ -389,7 +389,7 @@ export const PRODUCTS: Product[] = [
     subcategory: "perkins",
     desc: "Spur gears are the most common type of gear and are used to transmit motion between two parallel shafts. They have straight teeth that are cut parallel to the axis of rotation.",
     specs: "Perkins Genuine Powerpart",
-    image: "https://drive.google.com/file/d/1BsMbq488le8bT-yX8SJdHvpzbGgXDNvU/view?usp=sharing",
+    image: "https://drive.google.com/thumbnail?id=1BsMbq488le8bT-yX8SJdHvpzbGgXDNvU",
   },
   {
     id: "3",
