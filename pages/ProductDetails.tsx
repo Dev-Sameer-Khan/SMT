@@ -277,7 +277,7 @@ const ProductDetails: React.FC = () => {
         <section className="py-16 max-[599px]:py-10 max-[599px]:mb-6 mb-16 border-y border-black/20">
           <div className="container mx-auto px-6 max-[599px]:px-0">
             <div className="text-center mb-12">
-              <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
+              <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 block">
                 {t.whyChooseUs}
               </span>
               <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter mb-4">
@@ -311,7 +311,7 @@ const ProductDetails: React.FC = () => {
             <div className="container mx-auto px-6 max-[599px]:px-0">
               <div className="flex justify-between items-center mb-12">
                 <div>
-                  <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
+                  <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 block">
                     {t.moreFromCategory}
                   </span>
                   <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter">
@@ -389,7 +389,7 @@ const ProductDetails: React.FC = () => {
             <div className="container mx-auto px-6 max-[599px]:px-0">
               <div className="flex justify-between items-center mb-12">
                 <div>
-                  <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
+                  <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 block">
                     {t.ourRecommendations}
                   </span>
                   <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter">
@@ -458,7 +458,7 @@ const ProductDetails: React.FC = () => {
         <section className="py-16 max-[599px]:py-10 max-[599px]:mb-6 mb-16 border-y border-black/20">
           <div className="container mx-auto px-6 max-[599px]:px-0">
             <div className="text-center mb-12">
-              <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
+              <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 block">
                 {t.clientReviews}
               </span>
               <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter mb-4">
@@ -512,7 +512,7 @@ const ProductDetails: React.FC = () => {
         <section className="py-16 max-[599px]:py-10 max-[599px]:mb-6 mb-16 border-y border-black/20">
           <div className="container mx-auto px-6 max-[599px]:px-0 max-w-4xl">
             <div className="text-center mb-12">
-              <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
+              <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 block">
                 {t.frequentlyAskedQuestions}
               </span>
               <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter mb-4">
