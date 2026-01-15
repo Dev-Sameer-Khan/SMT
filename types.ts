@@ -186,7 +186,7 @@ export interface Product {
     | 'cummins'
     | 'deutz'
     | 'perkins'
-    | 'caterpiler'
+    | 'caterpiller'
   desc: string;
   specs: string;
   image: string[];

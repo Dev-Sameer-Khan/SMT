@@ -517,30 +517,26 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "12",
-    title: "error",
+    title: "400 SERIES THERMOSTAT",
     category: "engine",
     subcategory: "perkins",
     desc: "The 3.152 Series Water Pump is a direct replacement component used in Perkins D3.152 and 3.1524 diesel engines. Its function is critical for engine cooling, as it circulates coolant through the block and radiator to prevent overheating. These engines are commonly found in industrial, agricultural, and marine equipment.",
     specs: "Assorted Sizes | Chemical Resistant",
     image: [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800\&h=800\&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800\&h=800\&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800\&h=800\&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800\&h=800\&fit=crop"
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413151/1_lo9huv.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413151/2_fkjhte.jpg",
     ]
   },
   {
     id: "13",
-    title: "error",
+    title: "900 SERIES THERMOSTAT ASSEMBLY",
     category: "engine",
     subcategory: "perkins",
     desc: "he 4.236 Series Water Pump is an engine-driven component for Perkins 4.236, 4.248, and related diesel engines. Its primary function is to circulate fresh water coolant within the engine's closed cooling system, ensuring efficient temperature regulation. These water pumps are vital for engines commonly used in a wide range of industrial, agricultural, and marine applications.",
     specs: "Equivalent to U5MW0106 | Shaft diameter typically 19mm (or 0.750\")",
     image: [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800\&h=800\&fit=crop",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800\&h=800\&fit=crop",
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800\&h=800\&fit=crop",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800\&h=800\&fit=crop"
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413150/1_ldqitg.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413150/2_h1qysi.jpg",
     ]
   },
   {
@@ -666,6 +662,202 @@ export const PRODUCTS: Product[] = [
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413155/2_xctcze.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413155/3_yb98ym.jpg",
       "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413155/4_qerzos.jpg",
+    ]
+  },
+  {
+    id: "23",
+    title: "Engine Part Kit",
+    category: "engine",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413110/3_psmrrd.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413109/1_x7kxb1.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413109/4_iertgw.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413109/2_ejvqwh.jpg",
+    ]
+  },
+  {
+    id: "24",
+    title: "Piston",
+    category: "engine",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413121/1_kulylt.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413121/2_ftjibr.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413120/3_nx8z2t.jpg",
+    ]
+  },
+  {
+    id: "25",
+    title: "Piston AS",
+    category: "engine",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413111/1_mns6bm.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413110/2_jzd4mo.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413110/3_kfwpah.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413110/4_beyoob.jpg",
+    ]
+  },
+  {
+    id: "26",
+    title: "Piston Assembly",
+    category: "engine",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413123/1_j9vcrb.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413122/4_acctdm.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413122/2_kzbope.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413122/3_bb1o3h.jpg",
+    ]
+  },
+  {
+    id: "27",
+    title: "Piston Clutch",
+    category: "engine",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413125/1_l12jfe.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413124/3_biodxb.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413124/2_flrgv3.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413124/4_oqucp9.jpg",
+    ]
+  },
+  {
+    id: "28",
+    title: "Air Conditioner Thermostart ",
+    category: "electric",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413128/1_etvjxl.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413127/2_wwyvyb.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413127/3_cwsavi.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413127/4_gp1tyu.jpg",
+    ]
+  },
+  {
+    id: "29",
+    title: "Engine Thermostart",
+    category: "electric",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413129/1_kj3hdd.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413129/2_djvrnf.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413128/3_h14ie2.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413128/4_mldkku.jpg",
+    ]
+  },
+  {
+    id: "30",
+    title: "Thermostart  A",
+    category: "electric",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413133/1_bwuovw.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413132/2_aqvunn.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413132/3_rii3yo.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413131/4_ty71fq.jpg",
+    ]
+  },
+  {
+    id: "31",
+    title: "Thermostart Housing",
+    category: "electric",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413131/1_cygot7.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413131/3_dd9kxj.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413131/2_dx5kyk.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413130/4_lidnuk.jpg",
+    ]
+  },
+  {
+    id: "32",
+    title: "Water Temperature Regulator Thermostat",
+    category: "electric",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413126/1_woudub.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413126/2_xgtagr.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413125/3_hd6hgv.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413125/4_nwxlzf.jpg",
+    ]
+  },
+  {
+    id: "33",
+    title: "10R-1669: Cat® Reman Water Pump",
+    category: "compressor",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413136/1_hvvbe3.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413135/2_f7dwbb.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413135/3_n3rjtx.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413134/4_dowzoh.jpg",
+    ]
+  },
+
+  {
+    id: "34",
+    title: "20R-7175: Cat® Reman Auxiliary Sea Water Pump",
+    category: "compressor",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413134/1_u05hqq.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413134/2_zihxcf.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413133/3_em7cvg.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413133/4_kxsrsc.jpg",
+    ]
+  },
+  {
+    id: "35",
+    title: "20R-9122: Cat® Reman Water Pump",
+    category: "compressor",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413137/1_cg3pld.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413137/2_xoawni.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413136/3_pgjhkp.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413136/4_mfjavn.jpg",
+    ]
+  },
+  {
+    id: "36",
+    title: "248-5513: Engine Water Temperature Reg",
+    category: "rubberCoupling",
+    subcategory: "caterpiller",
+    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    image : [
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413139/1_aomdki.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413139/2_gu603f.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413138/3_arlenm.jpg",
+      "https://res.cloudinary.com/dbgzq41x2/image/upload/v1768413137/4_xroboq.jpg",
     ]
   },
 ];

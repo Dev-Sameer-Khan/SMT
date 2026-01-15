@@ -135,9 +135,9 @@ const ProductDetails: React.FC = () => {
         type="product"
       />
       <StructuredData type="product" productId={product.id} />
-      <div className="pt-28 max-[599px]:pt-16 bg-white min-h-screen pb-24">
+      <div className="pt-28 max-[599px]:pt-16 bg-white min-h-screen pb-24 max-[599px]:pb-10">
         {/* Hero Section */}
-        <section className="py-16 text-black overflow-hidden relative mb-12 border-b border-black/20">
+        <section className="py-16 max-[599px]:py-10 text-black overflow-hidden relative mb-12 max-[599px]:mb-6 border-b border-black/20">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-500/5 skew-x-12 transform translate-x-20"></div>
         <div className="container mx-auto px-6 relative z-10">
           <Link
@@ -251,21 +251,21 @@ const ProductDetails: React.FC = () => {
             <div className="space-y-4 pt-4">
               <button
                 onClick={() => handleWhatsAppQuery()}
-                className="w-full py-5 bg-blue-500 text-white text-lg font-bold uppercase flex items-center justify-center gap-3 hover:bg-blue-600 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl group/btn"
+                className="w-full py-5 cursor-pointer bg-blue-500 text-white text-lg font-bold uppercase flex items-center justify-center gap-3 hover:bg-blue-600 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl group/btn"
               >
                 {t.contactViaWhatsApp}
                 <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
               </button>
 
               <Link to="/contact" className="block">
-                <button className="w-full py-5 bg-white text-blue-500 border-2 border-blue-500 text-lg font-bold uppercase flex items-center justify-center gap-3 hover:bg-blue-50 rounded-lg transition-all duration-300 group/btn">
+                <button className="w-full cursor-pointer py-5 bg-white text-blue-500 border-2 border-blue-500 text-lg font-bold uppercase flex items-center justify-center gap-3 hover:bg-blue-50 rounded-lg transition-all duration-300 group/btn">
                   {t.requestTechnicalQuote}
                   <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                 </button>
               </Link>
 
               <Link to="/products" className="block">
-                <button className="w-full py-4 bg-black/5 text-black border border-black/10 text-md font-semibold uppercase flex items-center justify-center gap-2 hover:bg-black/10 rounded-lg transition-all duration-300">
+                <button className="w-full cursor-pointer py-4 bg-black/5 text-black border border-black/10 text-md font-semibold uppercase flex items-center justify-center gap-2 hover:bg-black/10 rounded-lg transition-all duration-300">
                   {t.viewAllProducts}
                 </button>
               </Link>
@@ -274,8 +274,8 @@ const ProductDetails: React.FC = () => {
         </div>
 
         {/* Why Choose Us Section */}
-        <section className="py-16 mb-16 border-y border-black/20">
-          <div className="container mx-auto px-6">
+        <section className="py-16 max-[599px]:py-10 max-[599px]:mb-6 mb-16 border-y border-black/20">
+          <div className="container mx-auto px-6 max-[599px]:px-0">
             <div className="text-center mb-12">
               <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
                 {t.whyChooseUs}
@@ -292,7 +292,7 @@ const ProductDetails: React.FC = () => {
               {whyChooseUsFeatures.map((feature, i) => (
                 <div
                   key={i}
-                  className="p-8 bg-black/5 border border-black/10 hover:border-blue-500/50 hover:shadow-2xl rounded-lg transition-all duration-500 group"
+                  className="p-8 max-[599px]:p-6 bg-black/5 border border-black/10 hover:border-blue-500/50 hover:shadow-2xl rounded-lg transition-all duration-500 group"
                 >
                   <feature.icon className="w-10 h-10 text-blue-500 mb-6 group-hover:scale-110 transition-transform" />
                   <h3 className="text-xl font-black uppercase mb-4 tracking-tight text-black">
@@ -307,8 +307,8 @@ const ProductDetails: React.FC = () => {
 
         {/* More from This Category Section */}
         {sameCategoryProducts.length > 0 && (
-          <section className="py-16 mb-16 border-y border-black/20">
-            <div className="container mx-auto px-6">
+          <section className="py-16 mb-16 max-[599px]:mb-6 border-y border-black/20">
+            <div className="container mx-auto px-6 max-[599px]:px-0">
               <div className="flex justify-between items-center mb-12">
                 <div>
                   <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
@@ -334,11 +334,11 @@ const ProductDetails: React.FC = () => {
                   >
                     <div className="relative h-64 overflow-hidden">
                       <LazyImage
-                        src={item.image}
+                        src={item.image[0]}
                         alt={`${item.title} - ${item.specs}`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                      {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
                       <span className="absolute top-4 left-4 px-3 py-1 bg-black text-white text-xs font-bold uppercase">
                         {getCategoryLabel(item.category)}
                       </span>
@@ -353,14 +353,14 @@ const ProductDetails: React.FC = () => {
                       </p>
                       <div className="flex flex-col gap-3">
                         <Link to={`/product-details/${item.title}`} className="w-full">
-                          <button className="w-full py-3 bg-white text-blue-500 border border-blue-500 text-sm font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn hover:bg-blue-50">
+                          <button className="w-full cursor-pointer py-3 bg-white text-blue-500 border border-blue-500 text-sm font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn hover:bg-blue-50">
                             {t.viewProduct}
                             <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                           </button>
                         </Link>
                         <button
                           onClick={() => handleWhatsAppQuery(item)}
-                          className="w-full py-3 bg-blue-500 text-white text-sm font-bold uppercase flex items-center justify-center gap-2 hover:bg-blue-600 rounded-md transition-all group/btn"
+                          className="w-full py-3 cursor-pointer bg-blue-500 text-white text-sm font-bold uppercase flex items-center justify-center gap-2 hover:bg-blue-600 rounded-md transition-all group/btn"
                         >
                           {t.inquireNow}
                           <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -385,8 +385,8 @@ const ProductDetails: React.FC = () => {
 
         {/* Our Recommendations Section */}
         {recommendedProducts.length > 0 && (
-          <section className="py-16 mb-16 border-y border-black/20">
-            <div className="container mx-auto px-6">
+          <section className="py-16 max-[599px]:py-10 max-[599px]:mb-6 mb-16 border-y border-black/20">
+            <div className="container mx-auto px-6 max-[599px]:px-0">
               <div className="flex justify-between items-center mb-12">
                 <div>
                   <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
@@ -412,11 +412,11 @@ const ProductDetails: React.FC = () => {
                   >
                     <div className="relative h-48 overflow-hidden">
                       <LazyImage
-                        src={item.image}
+                        src={item.image[0]}
                         alt={`${item.title} - ${item.specs}`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                      {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
                       <span className="absolute top-3 left-3 px-2 py-1 bg-black text-white text-xs font-bold uppercase">
                         {getCategoryLabel(item.category)}
                       </span>
@@ -431,7 +431,7 @@ const ProductDetails: React.FC = () => {
                       </p>
                       <div className="flex flex-col gap-2">
                         <Link to={`/product-details/${item.title}`} className="w-full">
-                          <button className="w-full py-2.5 bg-white text-blue-500 border border-blue-500 text-xs font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn hover:bg-blue-50">
+                          <button className="w-full cursor-pointer py-2.5 bg-white text-blue-500 border border-blue-500 text-xs font-bold uppercase flex items-center justify-center gap-2 rounded-md transition-all group/btn hover:bg-blue-50">
                             {t.viewProduct}
                             <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform" />
                           </button>
@@ -455,8 +455,8 @@ const ProductDetails: React.FC = () => {
         )}
 
         {/* Reviews Section */}
-        <section className="py-16 mb-16 border-y border-black/20">
-          <div className="container mx-auto px-6">
+        <section className="py-16 max-[599px]:py-10 max-[599px]:mb-6 mb-16 border-y border-black/20">
+          <div className="container mx-auto px-6 max-[599px]:px-0">
             <div className="text-center mb-12">
               <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
                 {t.clientReviews}
@@ -509,8 +509,8 @@ const ProductDetails: React.FC = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 mb-16 border-y border-black/20">
-          <div className="container mx-auto px-6 max-w-4xl">
+        <section className="py-16 max-[599px]:py-10 max-[599px]:mb-6 mb-16 border-y border-black/20">
+          <div className="container mx-auto px-6 max-[599px]:px-0 max-w-4xl">
             <div className="text-center mb-12">
               <span className="text-blue-500 text-4xl font-bold uppercase mb-4 block">
                 {t.frequentlyAskedQuestions}
@@ -551,7 +551,7 @@ const ProductDetails: React.FC = () => {
         </section>
 
         {/* Additional Information Section */}
-        <div className="mt-16 p-8 bg-black/5 border border-black/10 rounded-lg">
+        <div className="mt-16 max-[599px]:mt-10 p-8 bg-black/5 border border-black/10 rounded-lg">
           <div className="flex items-start gap-4 mb-6">
             <AlertCircle className="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" />
             <div>
@@ -566,14 +566,14 @@ const ProductDetails: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-wrap gap-4">
-            <Link to="/contact">
-              <button className="px-6 py-3 bg-blue-500 text-white text-sm font-bold uppercase hover:bg-blue-600 rounded-md transition-all">
+            <Link className="max-[599px]:w-full" to="/contact">
+              <button className="px-6 max-[599px]:w-full py-3 cursor-pointer bg-blue-500 text-white text-sm font-bold uppercase hover:bg-blue-600 rounded-md transition-all">
                 {t.contactForm}
               </button>
             </Link>
             <button
               onClick={() => handleWhatsAppQuery()}
-              className="px-6 py-3 bg-green-500 text-white text-sm font-bold uppercase hover:bg-green-600 rounded-md transition-all"
+              className="px-6 py-3 max-[599px]:w-full cursor-pointer bg-green-500 text-white text-sm font-bold uppercase hover:bg-green-600 rounded-md transition-all"
             >
               {t.whatsappDirect}
             </button>

@@ -134,12 +134,12 @@ const ProductImageViewer: React.FC<ProductImageViewerProps> = ({
     <>
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Thumbnail Gallery - Vertical on desktop, horizontal on mobile */}
-        <div className="flex lg:flex-col gap-3 order-2 lg:order-1 overflow-x-auto lg:overflow-y-auto lg:max-h-[600px] pb-2 lg:pb-0">
+        <div className="flex lg:flex-col gap-3 order-2 lg:order-1 overflow-x-hidden lg:overflow-y-auto lg:max-h-[600px] pb-2 lg:pb-0">
           {productImages.map((image, index) => (
             <button
               key={index}
               onClick={() => handleThumbnailClick(index)}
-              className={`flex-shrink-0 w-20 h-20 lg:w-24 lg:h-24 rounded-lg border-2 overflow-hidden transition-all duration-300 ${
+              className={`flex-shrink-0 cursor-pointer w-20 h-20 lg:w-24 lg:h-24 rounded-lg border-2 overflow-hidden transition-all duration-300 ${
                 selectedImageIndex === index
                   ? "border-blue-500 shadow-lg scale-105"
                   : "border-black/10 hover:border-blue-300"
@@ -158,7 +158,7 @@ const ProductImageViewer: React.FC<ProductImageViewerProps> = ({
         <div className="flex-1 order-1 lg:order-2 relative group">
           <div
             ref={imageRef}
-            className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg border border-black/10 shadow-2xl bg-black/5 cursor-zoom-in"
+            className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg border border-black/10 shadow-2xl max-[599px]:shadow-md max-[599px]:bg-white cursor-zoom-in"
             onMouseMove={handleMouseMove}
             onMouseLeave={() => setIsZoomed(false)}
             onClick={handleImageClick}
@@ -172,7 +172,7 @@ const ProductImageViewer: React.FC<ProductImageViewerProps> = ({
                 transformOrigin: `${zoomPosition.x}% ${zoomPosition.y}%`,
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div> */}
             <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
               <div className="bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-md text-xs font-semibold uppercase flex items-center gap-2">
                 <ZoomIn className="w-4 h-4" />
@@ -189,7 +189,7 @@ const ProductImageViewer: React.FC<ProductImageViewerProps> = ({
                   e.stopPropagation();
                   handlePrev();
                 }}
-                className="hidden lg:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white text-black p-3 rounded-full shadow-lg transition-all hover:scale-110 opacity-0 group-hover:opacity-100 z-10"
+                className="hidden cursor-pointer lg:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white text-black p-3 rounded-full shadow-lg transition-all hover:scale-110 opacity-0 group-hover:opacity-100 z-10"
                 aria-label="Previous image"
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -199,7 +199,7 @@ const ProductImageViewer: React.FC<ProductImageViewerProps> = ({
                   e.stopPropagation();
                   handleNext();
                 }}
-                className="hidden lg:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white text-black p-3 rounded-full shadow-lg transition-all hover:scale-110 opacity-0 group-hover:opacity-100 z-10"
+                className="hidden cursor-pointer lg:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white text-black p-3 rounded-full shadow-lg transition-all hover:scale-110 opacity-0 group-hover:opacity-100 z-10"
                 aria-label="Next image"
               >
                 <ChevronRight className="w-5 h-5" />
