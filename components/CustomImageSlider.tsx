@@ -54,7 +54,7 @@ const CustomImageSlider = ({ image = {}, className = "" }) => {
       <SwiperSlide>
         <div className="w-full h-full relative overflow-hidden">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCqBr3UA0XPv2BHtEDKKgTySkbZXsQkxw7Eg&s"
+            src="https://res.cloudinary.com/dpy2micpg/image/upload/v1768667831/bulker_ddeb3w.webp"
             className="absolute inset-0 w-full h-full object-cover"
             alt="Mountain"
           />
@@ -63,12 +63,31 @@ const CustomImageSlider = ({ image = {}, className = "" }) => {
       <SwiperSlide>
         <div className="w-full h-full relative overflow-hidden">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mOZGokqWIkQjFX2CkcndpBIttFlDQj8ipQ&s"
+            src="https://res.cloudinary.com/dpy2micpg/image/upload/v1768667846/2-compressor-with-electric-motor_s7glkx.jpg"
             className="absolute inset-0 w-full h-full object-cover"
             alt="Mountain"
           />
         </div>
       </SwiperSlide>
+      <SwiperSlide>
+        <div className="w-full h-full relative overflow-hidden">
+          <img
+            src="https://res.cloudinary.com/dpy2micpg/image/upload/v1768667847/2head_compressor_ox8qmy.jpg"
+            className="absolute inset-0 w-full h-full object-cover"
+            alt="Mountain"
+          />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="w-full h-full relative overflow-hidden">
+          <img
+            src="https://res.cloudinary.com/dpy2micpg/image/upload/v1768667844/-air-compressor-withdiesel-engine-_n3ivdf.jpg"
+            className="absolute inset-0 w-full h-full object-cover"
+            alt="Mountain"
+          />
+        </div>
+      </SwiperSlide>
+
     </Swiper>
   );
 };

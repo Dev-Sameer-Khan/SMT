@@ -195,12 +195,12 @@ const ProductsPage: React.FC = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-all duration-300"
                     />
                     {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>   */}
-                    <span className="absolute top-4 left-4 px-3 py-1 bg-black text-white text-sm font-bold uppercase">
+                    {/* <span className="absolute top-4 left-4 px-3 py-1 bg-black text-white text-sm font-bold uppercase">
                       {getCategoryLabel(product.category)}
                       {product.subcategory
                         ? ` • ${getSubcategoryLabel(product.subcategory)}`
                         : ""}
-                    </span>
+                    </span> */}
                   </div>
                   <div className="p-8">
                     <div className="flex justify-between items-start">
