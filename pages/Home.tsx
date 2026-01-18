@@ -325,14 +325,14 @@ const Home: React.FC = () => {
                 title: "Engine Parts",
                 count: "4,500+ SKUs",
                 img: "/hero-bg2.jpg",
-                desc: "Pistons, liners, valves, and crankshafts for CAT, Cummins, and Komatsu units.",
+                desc: "High-performance pistons, liners, valves, and crankshafts engineered for CAT, Cummins, and Komatsu engines.",
                 link : "/products?category=engine"
               },
               {
                 title: "Compressors",
                 count: "32 Models",
                 img: "/hero-bg1.jpg",
-                desc: "Industrial air power solutions from 5.5kW to 350kW with integrated drying.",
+                desc: "High-efficiency industrial air power solutions from 5.5kW to 350kW featuring advanced integrated drying systems.",
                 link : "/products?category=compressor"
               },
               {
@@ -359,7 +359,6 @@ const Home: React.FC = () => {
               {
                 title: "JCB Spares",
                 count: "1,200+ SKUs",
-                // Fixed: Now describes excavator/backhoe parts
                 desc: "Comprehensive range of wear parts, hydraulics, and transmission spares for JCB and Bobcat equipment.",
                 link : "/products?category=jcb"
               },
