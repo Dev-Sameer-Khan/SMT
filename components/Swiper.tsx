@@ -33,7 +33,8 @@ const Swipers = () => {
       id: "01",
       title: "Compressor",
       description: "High-efficiency industrial air compressors designed for reliable power and continuous operation in demanding environments.",
-      image: "https://5.imimg.com/data5/IOS/Default/2023/8/333180526/IZ/XT/ZN/113044899/product-jpeg.png",
+      image: "/hero-bg1.jpg",
+      imageMobile : "/hero-bg1-mobile.jpg",
       link : "/products?category=compressor",
           specs: "Perkins Genuine Powerpart",
     },
@@ -41,7 +42,8 @@ const Swipers = () => {
       id: "02",
       title: "Engine Parts",
       description: "Durable industrial rubber components and precision-engineered couplings for seamless mechanical power transmission.",
-      image: "https://img.oemoffhighway.com/files/base/acbm/ooh/image/2014/01/perkins-1204fe44ta_11300838.png?auto=format,compress&q=70",
+      image: "/hero-bg2.jpg",
+      imageMobile : "/hero-bg2-mobile.jpg",
       link : "/products?category=engine",
           specs: "Perkins Genuine Powerpart",
     },
@@ -49,7 +51,8 @@ const Swipers = () => {
       id: "03",
       title: "Filters",
       description: "Advanced filtration systems to ensure purity and protect your equipment from contaminants and wear.",
-      image: "https://3.imimg.com/data3/BV/GU/MY-3117832/amw-filters.jpg",
+      image: "/hero-bg3.jpg",
+      imageMobile : "/hero-bg3-mobile.jpg",
       link : "/products?category=filter",
       specs: "Perkins Genuine Powerpart",
     },
@@ -57,7 +60,8 @@ const Swipers = () => {
       id: "04",
       title: "Electric Items",
       description: "Comprehensive range of industrial electrical components, switchgear, and control systems for modern infrastructure.",
-      image: "https://m.media-amazon.com/images/I/71B+8UAMFYL.jpg",
+      image: "/hero-bg4.jpg",
+      imageMobile : "/hero-bg4-mobile.jpg",
       link : "/products?category=electric",
       specs: "Perkins Genuine Powerpart",
     },
@@ -65,8 +69,18 @@ const Swipers = () => {
       id: "05",
       title: "Rubber and Couplings",
       description: "Durable industrial rubber components and precision-engineered couplings for seamless mechanical power transmission.",
-      image: "https://m.media-amazon.com/images/I/41iiqs4kYIL._AC_UF1000,1000_QL80_.jpg",
+      image: "/hero-bg5.jpg",
+      imageMobile : "/hero-bg5-mobile.jpg",
       link : "/products?category=rubberCoulpling",
+          specs: "Perkins Genuine Powerpart",
+    },
+    {
+      id: "06",
+      title: "JCB, Bobcat Spares",
+      description: "Durable industrial rubber components and precision-engineered couplings for seamless mechanical power transmission.",
+      image: "/hero-bg6.jpg",
+      imageMobile : "/hero-bg6-mobile.jpg",
+      link : "/products?category=jcb",
           specs: "Perkins Genuine Powerpart",
     },
   ];
@@ -102,12 +116,17 @@ const Swipers = () => {
           <div className="w-full h-full relative overflow-hidden">
             <img
               src={slide.image}
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover max-[599px]:hidden"
+              alt={slide.title}
+            />
+             <img
+              src={slide.imageMobile}
+              className="absolute inset-0 w-full h-full object-cover hidden max-[599px]:block"
               alt={slide.title}
             />
 
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-blue-900/30 to-transparent"></div>
-            
+            <div className="absolute inset-0 w-1/2 bg-gradient-to-r from-black/80 via-black/30 to-transparent max-[599px]:hidden"></div>
+            <div className="absolute hidden max-[599px]:block inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
             <div className="relative w-[53%] max-[599px]:w-full z-10 h-full flex flex-col justify-center max-[599px]:justify-end max-[599px]:pb-20 items-start px-6 md:px-24 text-left text-white select-none">
               <div className="mb-4 max-[599px]:mb-2 flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/5 backdrop-blur-md animate-fade-in">
                 <span className="relative flex h-2 w-2">
@@ -129,7 +148,7 @@ const Swipers = () => {
 
               <div className="flex flex-wrap gap-4 ">
                 
-                <Link to={slide.link}>
+                <Link className="max-[599px]:w-full" to={slide.link}>
                 <button className="cursor-pointer group max-[599px]:w-full relative bg-blue-500 text-white px-12 md:px-20 py-4 rounded font-bold overflow-hidden transition-all duration-300 hover:bg-blue-600 hover:shadow-md">
                 <span className="relative z-10">View Product</span>
                 </button>
@@ -137,7 +156,7 @@ const Swipers = () => {
 
                 <button
                 onClick={() => handleWhatsAppQuery(slide)}
-                className="cursor-pointer px-12 md:px-20 max-[599px]:w-full py-4 rounded font-bold border border-white/30 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+                className="cursor-pointer bg-white text-black px-12 md:px-20 max-[599px]:w-full py-4 rounded font-bold   hover:bg-blue-500 hover:text-white transition-all duration-300">
                   Buy Now
                 </button>
               </div>

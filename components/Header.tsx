@@ -60,7 +60,9 @@ const Header: React.FC = () => {
     { id: 'filter', label: t.filters, path: '/products?category=filter' },
     { id: 'electric', label: t.electricItem, path: '/products?category=electric' },
     { id: 'rubberCoupling', label: t.rubberCoupling, path: '/products?category=rubberCoupling' },
+    { id: 'jcb', label: t.jcb, path: '/products?category=jcb' },
   ];
+  console.log(t.filters)
 
   const isRTL = lang === 'ar';
 

@@ -324,42 +324,42 @@ const Home: React.FC = () => {
               {
                 title: "Engine Parts",
                 count: "4,500+ SKUs",
-                img: "https://t4.ftcdn.net/jpg/02/58/95/41/360_F_258954135_TAjOL99tceCUQ4of5nAFACAY4u8fiRE1.jpg",
+                img: "/hero-bg2.jpg",
                 desc: "Pistons, liners, valves, and crankshafts for CAT, Cummins, and Komatsu units.",
                 link : "/products?category=engine"
               },
               {
                 title: "Compressors",
                 count: "32 Models",
-                img: "https://3.imimg.com/data3/TE/YU/MY-14849337/rotary-tablet-machine-spare-parts.jpg",
+                img: "/hero-bg1.jpg",
                 desc: "Industrial air power solutions from 5.5kW to 350kW with integrated drying.",
                 link : "/products?category=compressor"
               },
               {
                 title: "Filters",
                 count: "2,800+ SKUs",
-                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUsrxDf6j-LIlLhS00Vd1evRfMxp4W4lMrw&s",
+                img: "/hero-bg3.jpg",
                 desc: "Gasket kits, sealing solutions, and wear parts for earthmoving machinery.",
                 link : "/products?category=filter"
               },
               {
                 title: "Electric Items",
                 count: "1,200+ SKUs",
-                img: "https://unifiedsolution.sa/wp-content/uploads/2025/05/details-of-the-electric-motor-in-the-wooden-case-i-2025-01-07-23-23-02-utc-scaled.jpg",
+                img: "/hero-bg4.jpg",
                 desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
                 link : "/products?category=electric"
               },
               {
                 title: "Rubber & Coupling",
                 count: "1,200+ SKUs",
-                img: "https://1.imimg.com/data/U/V/MY-75347/006_500x500.JPG",
+                img: "/hero-bg5.jpg",
                 desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
                 link : "/products?category=rubber"
               },
               {
                 title: "JCB Spares",
                 count: "1,200+ SKUs",
-                img: "https://cpimg.tistatic.com/7094941/b/4/jcb-cabin-body-spare-parts.jpg",
+                img: "/hero-bg6.jpg",
                 desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
                 link : "/products?category=jcb"
               },

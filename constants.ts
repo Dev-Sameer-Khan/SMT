@@ -45,11 +45,12 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     filters: "FILTERS",
     electricItem: "ELECTRIC ITEM",
     rubberCoupling: "RUBBER & COUPLING",
+    jcb : "JCB & BOBCAT",
     viewProduct: "View Product",
     inquireNow: "Inquire Now",
     cantFindPart: "CAN'T FIND A PART?",
     cantFindPartDesc: "Our database includes 100,000+ unlisted part numbers. Contact engineering support.",
-    requestCustomPart: "REQUEST CUSTOM PART",
+    requestCustomPart: "REQUEST CUSTOM PART", 
     
     // Product Details
     backToProducts: "Back to Products",
@@ -167,7 +168,8 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       compressor: "COMPRESSORS",
       filter: "FILTERS",
       rubberCoupling:  "RUBBER & COUPLING",
-      electric : "ELECTRIC"
+      electric : "ELECTRIC",
+      jcb : "JCB & BOBCAT"
     },
     
     // Product subcategories
@@ -228,6 +230,7 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     engineParts: "قطع المحرك",
     compressors: "الضواغط",
     filters: "المرشحات",
+    jcb : "JCB & BOBCAT",
     electricItem: "كهربائي",
     rubberCoupling: "المطاط والاقتران",
     viewProduct: "عرض المنتج",
@@ -352,6 +355,7 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       filter: "المرشحات",
       rubberCoupling:  "المطاط والاقتران",
       electric : "كهربائي",
+          jcb : "JCB & BOBCAT"
     },
     
     // Product subcategories
