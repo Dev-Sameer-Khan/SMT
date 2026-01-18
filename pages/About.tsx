@@ -229,7 +229,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-6 ">
           <div className="flex flex-col md:flex-row gap-0 md:gap-16 items-center">
             <div className="w-full md:w-1/2 space-y-8 max-[599px]:space-y-2">
-              <span className="text-4xl max-[599px]:text-2xl max-[599px]:-mb-0 -mb-4 font-bold uppercase  text-blue-500 block">
+              <span className="text-4xl max-[599px]:text-2xl max-[599px]:mb-0 mb-2 font-bold uppercase  text-blue-500 block">
                 {t.aboutUs}
               </span>
               <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-6xl font-black text-black tracking-tighter leading-none ">
@@ -237,10 +237,7 @@ const About: React.FC = () => {
               </h2>
               <div className="space-y-6 max-[599px]:space-y-2 text-black/80 text-base sm:text-lg leading-relaxed max-[599px]:leading-tight">
                 <p>
-                  Industrial Precision operates at the intersection of
-                  mechanical legacy and digital logistics. We maintain an
-                  exhaustive inventory of OEM and premium aftermarket components
-                  designed to withstand the harshest industrial environments.
+                  Industrial Precision delivers advanced solutions for logistics and construction industries. Our comprehensive stock covers genuine OEM and high-performance aftermarket parts—engineered for reliability in the world’s most demanding job sites and supply chains.
                 </p>
                 <p className="font-medium text-black">
                   Our commitment to technical support extends beyond the sale,
@@ -275,7 +272,7 @@ const About: React.FC = () => {
               <div className="aspect-[4/5] rounded-md overflow-hidden shadow-2xl w-full max-w-lg sm:max-w-sm md:max-w-full mx-auto">
                 <LazyImage
                   src="/bg.jpeg"
-                  alt="Industrial Engineering - SMT ENgines operations"
+                  alt="Industrial Engineering - SMT Engines manufacturing facility"
                   className="w-full h-full object-cover "
                 />
               </div>
@@ -360,101 +357,101 @@ const About: React.FC = () => {
 
       {/* 11. Quick Contact Section (New) */}
       <section className="py-10 md:py-24 lg:py-32 bg-white border-t border-black/50 relative overflow-hidden">
-        {/* Decorative Grid Line */}
-        {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-white/5 hidden md:block"></div> */}
+          {/* Decorative Grid Line */}
+          {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-white/5 hidden md:block"></div> */}
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          <div className="w-full flex flex-col lg:flex-row items-stretch gap-12 max-[599px]:gap-0 lg:gap-20">
-            {/* Text & Contacts */}
-            <div className="w-full lg:w-1/2 flex flex-col gap-6">
-              <div className="text-left space-t-8">
-                <div>
-                  <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
-                    {t.getInTouch}
-                  </span>
-                  <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
-                    {t.connectWithEngineering}
-                  </h2>
+          <div className="container mx-auto px-4 sm:px-6 relative z-10">
+            <div className="w-full flex flex-col lg:flex-row items-stretch gap-12 max-[599px]:gap-0 lg:gap-20">
+              {/* Text & Contacts */}
+              <div className="w-full lg:w-1/2 flex flex-col gap-6">
+                <div className="text-left space-t-8">
+                  <div>
+                    <span className="text-blue-500 text-4xl max-[599px]:text-2xl font-bold uppercase mb-4 max-[599px]:mb-1 block">
+                      {t.getInTouch}
+                    </span>
+                    <h2 className="text-3xl max-[599px]:text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-black tracking-tighter leading-none">
+                      {t.connectWithEngineering}
+                    </h2>
+                  </div>
+                  <p className="text-black/80 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg pt-4 max-[599px]:pt-2 sm:pt-6">
+                    {t.contactDesc2}
+                  </p>
+                  <div className="pt-6 max-[599px]:pt-2 sm:pt-8 pb-4 max-[599px]:pb-0 sm:pb-6">
+                    <Link
+                      to="/contact"
+                      className="inline-flex items-center gap-3 sm:gap-4 text-black font-bold uppercase text-xs tracking-[0.3em] hover:text-blue-500 transition-colors group"
+                    >
+                      {t.gotoTechnicalDesk}{" "}
+                      <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </Link>
+                  </div>
                 </div>
-                <p className="text-black/80 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg pt-4 max-[599px]:pt-2 sm:pt-6">
-                  {t.contactDesc2}
-                </p>
-                <div className="pt-6 max-[599px]:pt-2 sm:pt-8 pb-4 max-[599px]:pb-0 sm:pb-6">
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-3 sm:gap-4 text-black font-bold uppercase text-xs tracking-[0.3em] hover:text-blue-500 transition-colors group"
-                  >
-                    {t.gotoTechnicalDesk}{" "}
-                    <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                  </Link>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                  {[
+                    {
+                      title: t.technicalSupport,
+                      desc: "mail2smtengines@gmail.com",
+                      icon: Mail,
+                      action: "mailto:mail2smtengines@gmail.com",
+                    },
+                    {
+                      title: t.directHotline,
+                      desc: "+971 0532962420",
+                      icon: Phone,
+                      action: "tel:+971 0532962420",
+                    },
+                    {
+                      title: t.globalHQ,
+                      desc: "SMT Engines, Fatehpur, U.P, India",
+                      icon: Globe,
+                      action: "https://maps.app.goo.gl/ooAsEEdKNCWYCLjy5",
+                    },
+                    {
+                      title: t.europeHub,
+                      desc: "SMT Engines, Jedaah, Saudi Arabia",
+                      icon: MapPin,
+                      action: "https://maps.app.goo.gl/1xDZZpD9KqKRAjCA7",
+                    },
+                  ].map((item, i) => (
+                    <a
+                      key={i}
+                      href={
+                        item.action.startsWith("http") ||
+                        item.action.startsWith("mailto") ||
+                        item.action.startsWith("tel")
+                          ? item.action
+                          : undefined
+                      }
+                      className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 max-[599px]:p-4 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
+                    >
+                      <item.icon className="w-6 h-6 text-blue-500 mb-4 sm:mb-6 group-hover:scale-110 transition-transform" />
+                      <h4 className="text-black font-bold uppercase tracking-widest text-xs mb-1 sm:mb-2">
+                        {item.title}
+                      </h4>
+                      <p className="text-black/60 text-xs sm:text-sm  break-words">
+                        {item.desc}
+                      </p>
+                    </a>
+                  ))}
                 </div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                {[
-                  {
-                    title: t.technicalSupport,
-                    desc: "logistics@iprecision.com",
-                    icon: Mail,
-                    action: "mailto:logistics@iprecision.com",
-                  },
-                  {
-                    title: t.directHotline,
-                    desc: "+971 4 000 0000",
-                    icon: Phone,
-                    action: "tel:+97140000000",
-                  },
-                  {
-                    title: t.globalHQ,
-                    desc: "Dubai Industrial Area 4, UAE",
-                    icon: MapPin,
-                    action: "/contact",
-                  },
-                  {
-                    title: t.europeHub,
-                    desc: "Berlin-Adlershof, DE",
-                    icon: Globe,
-                    action: "/contact",
-                  },
-                ].map((item, i) => (
-                  <a
-                    key={i}
-                    href={
-                      item.action.startsWith("http") ||
-                      item.action.startsWith("mailto") ||
-                      item.action.startsWith("tel")
-                        ? item.action
-                        : undefined
-                    }
-                    className="bg-black/5 shadow-md hover:shadow-xl rounded p-6 max-[599px]:p-4 sm:p-8 border border-white/5 hover:border-blue-500/50 transition-all duration-500 group flex flex-col justify-center"
-                  >
-                    <item.icon className="w-6 h-6 text-blue-500 mb-4 sm:mb-6 group-hover:scale-110 transition-transform" />
-                    <h4 className="text-black font-bold uppercase tracking-widest text-xs mb-1 sm:mb-2">
-                      {item.title}
-                    </h4>
-                    <p className="text-black/60 text-xs sm:text-sm  break-words">
-                      {item.desc}
-                    </p>
-                  </a>
-                ))}
-              </div>
-            </div>
-            {/* Map - hides on mobile below md screens */}
-            <div className="w-full lg:w-1/2 h-64 sm:h-[40vh] lg:h-full mt-8 lg:mt-0">
-              <div className="relative h-full w-full shadow-md rounded-md overflow-hidden aspect-[4/3] md:aspect-auto">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.854678326949!2d39.25990641127877!3d21.434956273620404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cb006b0ff9c5%3A0x37d1ce70f1ae0f86!2sSumou%20Al%20Ebdaa%20Est!5e0!3m2!1sen!2sin!4v1767180371100!5m2!1sen!2sin"
-                  width="900"
-                  height="700"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="location-map"
-                ></iframe>
+              {/* Map - hides on mobile below md screens */}
+              <div className="w-full lg:w-1/2 h-64 sm:h-[40vh] lg:h-full mt-8 lg:mt-0">
+                <div className="relative h-full w-full shadow-md rounded-md overflow-hidden aspect-[4/3] md:aspect-auto">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.8499443237047!2d39.2626841!3d21.435142300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cb4661ba7613%3A0xd485c68acee2b578!2sSMT%20Engines!5e0!3m2!1sen!2sin!4v1768728251260!5m2!1sen!2sin"
+                    width="900"
+                    height="700"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="location-map"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* 10. FAQs */}
       <section className="py-32 max-[599px]:py-10 bg-white relative border-y border-black/50">
