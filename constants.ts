@@ -100,7 +100,7 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     
     // Footer
     footerTagline:
-      "SMT is a Saudi Arabia–based company providing genuine engine spare parts and reliable maintenance and repair services, delivering quality you can trust since 2014.",
+      "SMT Engines is an India and Saudi Arabia–based company providing best OEM and aftermarket parts, along with genuine engine spare parts and reliable maintenance and repair services for global industries. Delivering quality and trust since 2014.",
     navigation: "Navigation",
     divisions: "Divisions",
     engineComponents: "Engine Components",
@@ -127,7 +127,7 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
     technicalSupport: "Technical Support",
     directHotline: "Direct Hotline",
     globalHQ: "Global HQ",
-    europeHub: "Europe Hub",
+    europeHub: "Gulf Branch",
     knowledgeBase: "KNOWLEDGE BASE",
     
     // Testimonials
@@ -169,7 +169,7 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       filter: "FILTERS",
       rubberCoupling:  "RUBBER & COUPLING",
       electric : "ELECTRIC",
-      jcb : "JCB & BOBCAT"
+      // jcb : "JCB & BOBCAT",
     },
     
     // Product subcategories
@@ -179,6 +179,16 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
         { id: "cummins", label: "Cummins" },
         { id: "deutz", label: "Deutz" },
         { id: "perkins", label: "Perkins" },
+        {id: "volvo", label : "Volvo"},
+        {id: "betico", label : "Betico"},
+        {id: "atlas", label : "Atlaa Copco"},
+        {id: "hatz", label : "Hatz Diesel"},
+        {id: "bomag", label : "Bomag"},
+        {id: "jcb", label : "JCB"},
+        {id: "bobcat", label : "Bobcat"},
+        {id: "miller", label : "Miller"},
+        {id: "kubota", label : "Kubota"},
+        {id: "dynapac", label : "Dynapac"}
       ],
       // compressor: [
       //   { id: "screw", label: "Screw Compressors" },
@@ -355,7 +365,7 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
       filter: "المرشحات",
       rubberCoupling:  "المطاط والاقتران",
       electric : "كهربائي",
-          jcb : "JCB & BOBCAT"
+          // jcb : "JCB & BOBCAT",
     },
     
     // Product subcategories
@@ -365,6 +375,16 @@ export const TRANSLATIONS: Record<"en" | "ar", TranslationSet> = {
         { id: "cummins", label: "أسطوانات" },
         { id: "deutz", label: "صمامات" },
         { id: "perkins", label: "رمانات" },
+        {id: "volvo", label : "Volvo"},
+        {id: "betico", label : "Betico"},
+        {id: "atlas", label : "Atlaa Copco"},
+        {id: "hatz", label : "Hatz Diesel"},
+        {id: "bomag", label : "Bomag"},
+        {id: "jcb", label : "JCB"},
+        {id: "bobcat", label : "Bobcat"},
+        {id: "miller", label : "Miller"},
+        {id: "kubota", label : "Kubota"},
+        {id: "dynapac", label : "Dynapac"}
       ],
       // compressor: [
       //   { id: "screw", label: "ضواغط لولبية" },

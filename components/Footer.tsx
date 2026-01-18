@@ -48,10 +48,59 @@ const Footer: React.FC = () => {
           <div className="space-y-6 max-[599px]:space-y-2">
             <h4 className="text-sm font-bold uppercase tracking-widest text-blue-500">{t.divisions}</h4>
             <ul className="space-y-4 max-[599px]:space-y-2 text-black">
-              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">{t.engineComponents}</Link></li>
-              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">{t.industrialFiltration}</Link></li>
-              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">{t.screwCompressors}</Link></li>
-              <li><Link to="/products" className="text-black hover:text-black/60 transition-colors">{t.heavySpares}</Link></li>
+              {[
+                {
+                  id: 'all',
+                  label: t.allComponents,
+                  path: '/products',
+                },
+                {
+                  id: 'engine',
+                  label: t.engineParts,
+                  path: '/products?category=engine',
+                  subcategories: (t.productSubcategories?.engine || []).map(sub => ({
+                    id: sub.id,
+                    label: sub.label,
+                    path: `/products?category=engine&subcategory=${sub.id}`,
+                  })),
+                },
+                {
+                  id: 'compressor',
+                  label: t.compressors,
+                  path: '/products?category=compressor',
+                  // subcategories: (t.productSubcategories?.compressor || []).map(sub => ({
+                  //   id: sub.id,
+                  //   label: sub.label,
+                  //   path: `/products?category=compressor&subcategory=${sub.id}`,
+                  // })),
+                },
+                {
+                  id: 'filter',
+                  label: t.filters,
+                  path: '/products?category=filter',
+                },
+                {
+                  id: 'electric',
+                  label: t.electricItem,
+                  path: '/products?category=electric',
+                },
+                {
+                  id: 'rubberCoupling',
+                  label: t.rubberCoupling,
+                  path: '/products?category=rubberCoupling',
+                },
+                {
+                  id: 'jcb',
+                  label: t.jcb,
+                  path: '/products?category=jcb',
+                },
+              ].map(cat => (
+                <li key={cat.id}>
+                  <Link to={cat.path} className="text-black hover:text-black/60 transition-colors">
+                    {cat.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -61,7 +110,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 max-[599px]:space-y-2">
               <li className="flex gap-3 text-black">
                 <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <a href="https://maps.app.goo.gl/nTAq2daNfWs85L6cA" target="_blank" rel="noopener noreferrer" className="text-sm text-black hover:text-black/60 transition-colors">Al Eid Complex Car Exhi Al Jawhara(Jeddah) - Saudi Arabia</a>
+                <a href="https://maps.app.goo.gl/nTAq2daNfWs85L6cA" target="_blank" rel="noopener noreferrer" className="text-sm text-black hover:text-black/60 transition-colors">Fatehpur, U.P, India</a>
               </li>
               <li className="flex gap-3 text-black">
                 <Phone className="w-5 h-5 text-blue-500 flex-shrink-0" />

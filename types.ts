@@ -166,7 +166,6 @@ export interface TranslationSet {
     filter: string;
     rubberCoupling:  string;
     electric :string;
-    jcb : string;
   };
   
   // Product subcategories (for dynamic access)
@@ -179,7 +178,7 @@ export interface TranslationSet {
 export interface Product {
   id: string;
   title: string;
-  category: 'engine' | 'electric' | 'rubberCoupling' | 'filter' | 'compressor' | 'jcb';
+  category: 'engine' | 'electric' | 'rubberCoupling' | 'filter' | 'compressor' ;
   /**
    * Optional subcategory used for finer filtering (e.g. pistons, screw, rotary, etc.).
    * Matches the ids defined in the engine / compressor subcategory lists.

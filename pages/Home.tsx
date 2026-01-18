@@ -410,10 +410,7 @@ const Home: React.FC = () => {
               </h2>
               <div className="space-y-6 max-[599px]:space-y-2 text-black/80 text-base sm:text-lg leading-relaxed max-[599px]:leading-tight">
                 <p>
-                  Industrial Precision operates at the intersection of
-                  mechanical legacy and digital logistics. We maintain an
-                  exhaustive inventory of OEM and premium aftermarket components
-                  designed to withstand the harshest industrial environments.
+                  Industrial Precision delivers advanced solutions for logistics and construction industries. Our comprehensive stock covers genuine OEM and high-performance aftermarket parts—engineered for reliability in the world’s most demanding job sites and supply chains.
                 </p>
                 <p className="font-medium text-black">
                   Our commitment to technical support extends beyond the sale,
@@ -608,27 +605,27 @@ const Home: React.FC = () => {
                   {[
                     {
                       title: t.technicalSupport,
-                      desc: "logistics..iprecision.com",
+                      desc: "mail2smtengines@gmail.com",
                       icon: Mail,
-                      action: "mailto:logistics..iprecision.com",
+                      action: "mailto:mail2smtengines@gmail.com",
                     },
                     {
                       title: t.directHotline,
-                      desc: "+971 4 000 0000",
+                      desc: "+971 0532962420",
                       icon: Phone,
-                      action: "tel:+97140000000",
+                      action: "tel:+971 0532962420",
                     },
                     {
                       title: t.globalHQ,
-                      desc: "Dubai Industrial Area 4, UAE",
-                      icon: MapPin,
-                      action: "/contact",
+                      desc: "SMT Engines, Fatehpur, U.P, India",
+                      icon: Globe,
+                      action: "https://maps.app.goo.gl/ooAsEEdKNCWYCLjy5",
                     },
                     {
                       title: t.europeHub,
-                      desc: "Berlin-Adlershof, DE",
-                      icon: Globe,
-                      action: "/contact",
+                      desc: "SMT Engines, Jedaah, Saudi Arabia",
+                      icon: MapPin,
+                      action: "https://maps.app.goo.gl/1xDZZpD9KqKRAjCA7",
                     },
                   ].map((item, i) => (
                     <a
@@ -657,7 +654,7 @@ const Home: React.FC = () => {
               <div className="w-full lg:w-1/2 h-64 sm:h-[40vh] lg:h-full mt-8 lg:mt-0">
                 <div className="relative h-full w-full shadow-md rounded-md overflow-hidden aspect-[4/3] md:aspect-auto">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.854678326949!2d39.25990641127877!3d21.434956273620404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cb006b0ff9c5%3A0x37d1ce70f1ae0f86!2sSumou%20Al%20Ebdaa%20Est!5e0!3m2!1sen!2sin!4v1767180371100!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.8499443237047!2d39.2626841!3d21.435142300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cb4661ba7613%3A0xd485c68acee2b578!2sSMT%20Engines!5e0!3m2!1sen!2sin!4v1768728251260!5m2!1sen!2sin"
                     width="900"
                     height="700"
                     allowFullScreen
