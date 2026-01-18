@@ -115,7 +115,7 @@ const Contact: React.FC = () => {
                     {t.location}
                   </h4>
                   <p className="text-black/80 text-lg leading-relaxed">
-                  <a href="https://maps.app.goo.gl/nTAq2daNfWs85L6cA" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">Al Eid Complex Car Exhi Al Jawhara(Jeddah) - Saudi Arabia</a>
+                  <a href="https://maps.app.goo.gl/nTAq2daNfWs85L6cA" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">SMT Engines, Al Jawhara(Jeddah) - Saudi Arabia</a>
                   </p>
                 </div>
               </div>
@@ -142,7 +142,7 @@ const Contact: React.FC = () => {
                     {t.email}
                   </h4>
                   <p className="text-black/80 text-lg leading-relaxed">
-                  <a href="mailto:mail2smtengines.com" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">mail2smtengines.com</a>
+                  <a href="mailto:mail2smtengines.com" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">mail2smtengines@gmail.com</a>
                   </p>
                 </div>
               </div>

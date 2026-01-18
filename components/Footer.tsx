@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-12 max-[599px]:pt-0 max-[599px]:text-center border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-black text-xs font-mono tracking-widest uppercase">
-          <p>© 2024 Sumou Al Ebdaa Est. All Rights Reserved.</p>
+          <p>© 2026 SMT Engines. All Rights Reserved.</p>
           <div className="flex gap-8">
             <Link to="/terms-of-service" className="hover:text-black/60 transition-colors">{t.termsOfService}</Link>
             <Link to="/privacy-policy" className="hover:text-black/60 transition-colors">{t.privacyPolicy}</Link>

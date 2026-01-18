@@ -117,9 +117,9 @@ const App: React.FC = () => {
                   element={
                     <>
                       <SEO
-                        title="Industrial Parts & Engineering Solutions"
-                        description="Sumou Al Ebdaa Est (SMT) - Premium industrial parts supplier providing genuine engine spare parts, compressors, filters, and engineering solutions since 2014."
-                        keywords="industrial parts, engine components, compressors, filters, spare parts, Saudi Arabia, engineering solutions"
+                        title="SMT Engines | Global Industrial Parts & Engineering Solutions"
+                        description="Trusted since 2014, SMT Engines provides genuine OEM and aftermarket engine parts for logistics and construction industries across India and Saudi Arabia. Engineering reliability for the world's most demanding job sites."
+                        keywords="OEM engine parts, aftermarket industrial parts, heavy machinery spares Saudi Arabia, construction equipment parts India, industrial maintenance services, SMT Engines"
                       />
                       <StructuredData type="website" />
                       <StructuredData type="organization" />
@@ -132,9 +132,9 @@ const App: React.FC = () => {
                   element={
                     <>
                       <SEO
-                        title="About Us - Industrial Engineering Excellence"
-                        description="Learn about Sumou Al Ebdaa Est (SMT) - A trusted provider of industrial parts and engineering solutions with ISO 9001:2015 certification."
-                        keywords="about SMT, industrial engineering, company history, ISO certified"
+                        title="Our Heritage & Expertise | SMT Engines Industrial Precision"
+                        description="Delivering quality and trust since 2014. Learn how SMT Engines supports global supply chains with ISO-certified industrial parts and high-performance engineering solutions."
+                        keywords="SMT Engines history, industrial precision solutions, engine spare parts supplier, ISO 9001:2015 engineering"
                       />
                       <StructuredData type="breadcrumb" />
                       <About />
@@ -146,9 +146,9 @@ const App: React.FC = () => {
                   element={
                     <>
                       <SEO
-                        title="Product Catalog - Industrial Parts Inventory"
-                        description="Browse our comprehensive catalog of industrial parts including engine components, compressors, filters, and spare parts. 100,000+ part numbers available."
-                        keywords="product catalog, industrial parts catalog, engine parts, compressor parts, filter parts, spare parts"
+                        title="Industrial Parts Catalog | Genuine OEM & Aftermarket Spares"
+                        description="Explore 100,000+ high-performance parts. From engine components to compressors and filters, we supply precision-engineered parts for logistics and construction machinery."
+                        keywords="engine components, industrial filters, compressor spare parts, heavy duty engine spares, high-performance aftermarket parts"
                       />
                       <StructuredData type="breadcrumb" />
                       <ProductsPage />
@@ -160,9 +160,9 @@ const App: React.FC = () => {
                   element={
                     <>
                       <SEO
-                        title="Contact Us - Get Technical Support"
-                        description="Contact Sumou Al Ebdaa Est (SMT) for technical inquiries, part requests, and engineering support. Available 24/7 for industrial emergencies."
-                        keywords="contact SMT, technical support, part inquiry, engineering consultation"
+                        title="Contact SMT Engines | Technical Support & Parts Inquiry"
+                        description="Get expert engineering support or a quote for industrial spare parts. Our team in India and Saudi Arabia is available 24/7 for your logistics and construction needs."
+                        keywords="contact industrial parts supplier, technical engine support, request a quote, SMT Engines Saudi Arabia office"
                       />
                       <StructuredData type="breadcrumb" />
                       <Contact />
