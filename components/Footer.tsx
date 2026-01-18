@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="space-y-6 max-[599px]:space-y-4">
             <div className="flex items-center gap-2 -mt-6 -mb-2 -ml-6">
-              <LazyImage className="h-32  " src="/logo2.png" alt="Sumou Al Ebdaa Est (SMT) Logo" />
+              <LazyImage className="h-32  " src="/logo2.png" alt="SMT Engines Logo" />
             </div>
             <p className="text-black text-sm leading-relaxed max-w-xs">
               {t.footerTagline}

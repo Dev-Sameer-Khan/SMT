@@ -129,7 +129,7 @@ const ProductDetails: React.FC = () => {
     <>
       <SEO
         title={product.title}
-        description={`${product.desc} - ${product.specs}. Available for immediate inquiry. Premium quality industrial parts from Sumou Al Ebdaa Est (SMT).`}
+        description={`${product.desc} - ${product.specs}. Available for immediate inquiry. Premium quality industrial parts from SMT Engines.`}
         keywords={`${product.title}, ${product.category}, ${product.specs}, industrial parts, ${product.subcategory || ""}`}
         image={product.image}
         type="product"

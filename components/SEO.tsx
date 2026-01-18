@@ -27,8 +27,8 @@ const SEO: React.FC<SEOProps> = ({
   useEffect(() => {
     // Update document title
     const fullTitle = title
-      ? `${title} | Sumou Al Ebdaa Est (SMT)`
-      : "Sumou Al Ebdaa Est (SMT) - Industrial Parts & Engineering Solutions";
+      ? `${title} | SMT Engines`
+      : "SMT Engines - Industrial Parts & Engineering Solutions";
     document.title = fullTitle;
 
     // Update or create meta tags
@@ -61,7 +61,7 @@ const SEO: React.FC<SEOProps> = ({
     updateMetaTag("og:image", `${baseUrl}${image}`, true);
     updateMetaTag("og:url", currentUrl, true);
     updateMetaTag("og:type", type, true);
-    updateMetaTag("og:site_name", "Sumou Al Ebdaa Est (SMT)", true);
+    updateMetaTag("og:site_name", "SMT Engines", true);
     updateMetaTag("og:locale", lang === "ar" ? "ar_SA" : "en_US", true);
 
     // Twitter Card tags

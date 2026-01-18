@@ -73,7 +73,7 @@ const Header: React.FC = () => {
         <div className="container mx-auto lg:pr-6 lg:pl-0 pl-3 pr-6 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 z-50">
-            <img className="h-16 md:h-20 lg:h-28 max-h-[72px] md:max-h-[80px] lg:max-h-[112px] w-auto" src="/logo2.png" alt="Sumou Al Ebdaa Est (SMT) Logo" />
+            <img className="h-16 md:h-20 lg:h-28 max-h-[72px] md:max-h-[80px] lg:max-h-[112px] w-auto" src="/logo2.png" alt="SMT EnginesLogo" />
           </Link>
 
           {/* Navigation */}

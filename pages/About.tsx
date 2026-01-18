@@ -139,7 +139,7 @@ const About: React.FC = () => {
             <div className="relative">
               <LazyImage
                 src="https://picsum.photos/seed/factory/1200/800"
-                alt="Sumou Al Ebdaa Est manufacturing facility and warehouse"
+                alt="SMT Engines manufacturing facility and warehouse"
                 className="w-full grayscale rounded-md border border-gray-200"
               />
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-blue-500/5 -z-10"></div>
@@ -275,7 +275,7 @@ const About: React.FC = () => {
               <div className="aspect-[4/5] rounded-md overflow-hidden shadow-2xl w-full max-w-lg sm:max-w-sm md:max-w-full mx-auto">
                 <LazyImage
                   src="/bg.jpeg"
-                  alt="Industrial Engineering - Sumou Al Ebdaa Est operations"
+                  alt="Industrial Engineering - SMT ENgines operations"
                   className="w-full h-full object-cover "
                 />
               </div>

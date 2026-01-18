@@ -445,7 +445,7 @@ const Home: React.FC = () => {
               <div className="aspect-[4/5] rounded-md overflow-hidden shadow-2xl w-full max-w-lg sm:max-w-sm md:max-w-full mx-auto">
                 <LazyImage
                   src="/bg.jpeg"
-                  alt="Industrial Engineering - Sumou Al Ebdaa Est manufacturing facility"
+                  alt="Industrial Engineering - SMT Engines manufacturing facility"
                   className="w-full h-full object-cover "
                 />
               </div>

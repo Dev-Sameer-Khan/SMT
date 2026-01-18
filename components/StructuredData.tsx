@@ -16,7 +16,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type = "website", produ
         return {
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Sumou Al Ebdaa Est (SMT)",
+          name: "SMT Engines",
           url: baseUrl,
           logo: `${baseUrl}/logo2.png`,
           description:
@@ -52,7 +52,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type = "website", produ
               image: product.image,
               brand: {
                 "@type": "Brand",
-                name: "Sumou Al Ebdaa Est (SMT)",
+                name: "SMT Engines",
               },
               category: product.category,
               offers: {
@@ -98,7 +98,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type = "website", produ
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Sumou Al Ebdaa Est (SMT)",
+          name: "SMT Engines",
           url: baseUrl,
           description:
             "Industrial parts supplier providing genuine engine spare parts, compressors, filters, and engineering solutions.",

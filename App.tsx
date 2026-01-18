@@ -175,7 +175,7 @@ const App: React.FC = () => {
                     <>
                       <SEO
                         title="Privacy Policy"
-                        description="Privacy policy for Sumou Al Ebdaa Est (SMT) - Learn how we protect your data and ensure secure transactions."
+                        description="Privacy policy for SMT Engines - Learn how we protect your data and ensure secure transactions."
                         noindex={true}
                       />
                       <PrivacyPolicy />
@@ -188,7 +188,7 @@ const App: React.FC = () => {
                     <>
                       <SEO
                         title="Terms of Service"
-                        description="Terms of service for Sumou Al Ebdaa Est (SMT) - B2B engagement terms and conditions."
+                        description="Terms of service for SMT Engines - B2B engagement terms and conditions."
                         noindex={true}
                       />
                       <TermsOfService />
