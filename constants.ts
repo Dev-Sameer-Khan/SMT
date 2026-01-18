@@ -520,7 +520,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "12",
-    title: "400 SERIES THERMOSTAT",
+    title: "error",
     category: "engine",
     subcategory: "perkins",
     desc: "The 3.152 Series Water Pump is a direct replacement component used in Perkins D3.152 and 3.1524 diesel engines. Its function is critical for engine cooling, as it circulates coolant through the block and radiator to prevent overheating. These engines are commonly found in industrial, agricultural, and marine equipment.",
@@ -531,7 +531,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "13",
-    title: "900 SERIES THERMOSTAT ASSEMBLY",
+    title: "error",
     category: "engine",
     subcategory: "perkins",
     desc: "he 4.236 Series Water Pump is an engine-driven component for Perkins 4.236, 4.248, and related diesel engines. Its primary function is to circulate fresh water coolant within the engine's closed cooling system, ensuring efficient temperature regulation. These water pumps are vital for engines commonly used in a wide range of industrial, agricultural, and marine applications.",
@@ -640,10 +640,10 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
-    id: "23",
-    title: "Engine Part Kit",
-    category: "engine",
-    subcategory: "caterpiller",
+    id: "22",
+    title: "900 SERIES WATER PUMP",
+    category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
@@ -651,10 +651,10 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
-    id: "24",
-    title: "Piston",
-    category: "engine",
-    subcategory: "caterpiller",
+    id: "22",
+    title: "900 SERIES WATER PUMP",
+    category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
@@ -662,10 +662,10 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
-    id: "25",
-    title: "Piston AS",
-    category: "engine",
-    subcategory: "caterpiller",
+    id: "22",
+    title: "900 SERIES WATER PUMP",
+    category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
@@ -673,10 +673,10 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
-    id: "26",
-    title: "Piston Assembly",
-    category: "engine",
-    subcategory: "caterpiller",
+    id: "22",
+    title: "900 SERIES WATER PUMP",
+    category: "rubberCoupling",
+    subcategory: "perkins",
     desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
@@ -760,7 +760,6 @@ export const PRODUCTS: Product[] = [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667852/gasket_top_vcdgs3.webp",
     ]
   },
-
   {
     id: "34",
     title: "20R-7175: Cat® Reman Auxiliary Sea Water Pump",
