@@ -339,6 +339,7 @@ const Home: React.FC = () => {
                 title: "Filters",
                 count: "2,800+ SKUs",
                 // Fixed: Now describes filtration instead of gaskets/sealing
+                img: "/hero-bg3.jpg",
                 desc: "High-efficiency fuel, oil, and air filtration units designed to protect heavy-duty engines.",
                 link : "/products?category=filter"
               },
@@ -346,12 +347,14 @@ const Home: React.FC = () => {
                 title: "Electric Items",
                 count: "1,200+ SKUs",
                 // Fixed: Now describes electrical components
+                img: "/hero-bg4.jpg",
                 desc: "Alternators, starter motors, sensors, and control units for industrial and marine applications.",
                 link : "/products?category=electric"
               },
               {
                 title: "Rubber & Coupling",
                 count: "1,200+ SKUs",
+                img: "/hero-bg5.jpg",
                 // Fixed: Now describes mechanical power transmission
                 desc: "Heavy-duty engine mounts, flexible couplings, and vibration dampeners for seamless power transmission.",
                 link : "/products?category=rubber"
@@ -359,6 +362,8 @@ const Home: React.FC = () => {
               {
                 title: "JCB Spares",
                 count: "1,200+ SKUs",
+                img: "/hero-bg6.jpg",
+                // Fixed: Now describes excavator/backhoe parts
                 desc: "Comprehensive range of wear parts, hydraulics, and transmission spares for JCB and Bobcat equipment.",
                 link : "/products?category=jcb"
               },
