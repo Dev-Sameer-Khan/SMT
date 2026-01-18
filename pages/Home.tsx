@@ -320,7 +320,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-[599px]:gap-4">
-            {[
+          {[
               {
                 title: "Engine Parts",
                 count: "4,500+ SKUs",
@@ -338,29 +338,29 @@ const Home: React.FC = () => {
               {
                 title: "Filters",
                 count: "2,800+ SKUs",
-                img: "/hero-bg3.jpg",
-                desc: "Gasket kits, sealing solutions, and wear parts for earthmoving machinery.",
+                // Fixed: Now describes filtration instead of gaskets/sealing
+                desc: "High-efficiency fuel, oil, and air filtration units designed to protect heavy-duty engines.",
                 link : "/products?category=filter"
               },
               {
                 title: "Electric Items",
                 count: "1,200+ SKUs",
-                img: "/hero-bg4.jpg",
-                desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
+                // Fixed: Now describes electrical components
+                desc: "Alternators, starter motors, sensors, and control units for industrial and marine applications.",
                 link : "/products?category=electric"
               },
               {
                 title: "Rubber & Coupling",
                 count: "1,200+ SKUs",
-                img: "/hero-bg5.jpg",
-                desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
+                // Fixed: Now describes mechanical power transmission
+                desc: "Heavy-duty engine mounts, flexible couplings, and vibration dampeners for seamless power transmission.",
                 link : "/products?category=rubber"
               },
               {
                 title: "JCB Spares",
                 count: "1,200+ SKUs",
-                img: "/hero-bg6.jpg",
-                desc: "High-pressure fuel, oil, and air filtration units with nanofiber technology.",
+                // Fixed: Now describes excavator/backhoe parts
+                desc: "Comprehensive range of wear parts, hydraulics, and transmission spares for JCB and Bobcat equipment.",
                 link : "/products?category=jcb"
               },
             ].map((cat, i) => (
