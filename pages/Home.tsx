@@ -19,6 +19,7 @@ import {
   ExternalLink,
   Mail,
   Phone,
+  Thermometer,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Testimonials from "../components/Testimonials";
@@ -192,26 +193,28 @@ const Home: React.FC = () => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 pt-6">
                 {[
-                  {
-                    title: "Oil-Free Systems",
-                    desc: "Medical and food-grade air purity standards with patented screw technology.",
-                    icon: Wind,
-                  },
-                  {
-                    title: "Variable Frequency",
-                    desc: "Optimize energy consumption with intelligent load-sensing motor controllers.",
-                    icon: Cog,
-                  },
-                  {
-                    title: "Integrated Cooling",
-                    desc: "Advanced thermal management for continuous operation in high-ambient regions.",
-                    icon: ShieldCheck,
-                  },
-                  {
-                    title: "Integrated Cooling",
-                    desc: "Advanced thermal management for continuous operation in high-ambient regions.",
-                    icon: ShieldCheck,
-                  },
+                  [
+                    {
+                      title: "Oil-Free Precision",
+                      desc: "Achieve medical and food-grade purity standards with 100% contaminant-free patented screw technology.",
+                      icon: Wind,
+                    },
+                    {
+                      title: "Smart VFD Control",
+                      desc: "Maximize energy efficiency by up to 35% with intelligent load-sensing variable frequency motor controllers.",
+                      icon: Zap,
+                    },
+                    {
+                      title: "Pro-Thermal Cooling",
+                      desc: "Advanced multi-stage thermal management for stable, continuous operation in high-ambient environments.",
+                      icon: Thermometer,
+                    },
+                    {
+                      title: "Predictive Monitoring",
+                      desc: "Integrated IoT diagnostics provide real-time system health data and automated maintenance alerts.",
+                      icon: ShieldCheck,
+                    },
+                  ]
                 ].map((item, i) => (
                   <div
                     key={i}
