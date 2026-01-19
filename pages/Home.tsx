@@ -192,28 +192,26 @@ const Home: React.FC = () => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 pt-6">
                 {[
-                  [
-                    {
-                      title: "Oil-Free Precision",
-                      desc: "Achieve medical and food-grade purity standards with 100% contaminant-free patented screw technology.",
-                      icon: "Wind",
-                    },
-                    {
-                      title: "Smart VFD Control",
-                      desc: "Maximize energy efficiency by up to 35% with intelligent load-sensing variable frequency motor controllers.",
-                      icon: "Zap",
-                    },
-                    {
-                      title: "Pro-Thermal Cooling",
-                      desc: "Advanced multi-stage thermal management for stable, continuous operation in high-ambient environments.",
-                      icon: "Fan", 
-                    },
-                    {
-                      title: "Predictive Monitoring",
-                      desc: "Integrated IoT diagnostics provide real-time system health data and automated maintenance alerts.",
-                      icon: "Activity",
-                    },
-                  ]
+                  {
+                    title: "Oil-Free Systems",
+                    desc: "Medical and food-grade air purity standards with patented screw technology.",
+                    icon: Wind,
+                  },
+                  {
+                    title: "Variable Frequency",
+                    desc: "Optimize energy consumption with intelligent load-sensing motor controllers.",
+                    icon: Cog,
+                  },
+                  {
+                    title: "Integrated Cooling",
+                    desc: "Advanced thermal management for continuous operation in high-ambient regions.",
+                    icon: ShieldCheck,
+                  },
+                  {
+                    title: "Integrated Cooling",
+                    desc: "Advanced thermal management for continuous operation in high-ambient regions.",
+                    icon: ShieldCheck,
+                  },
                 ].map((item, i) => (
                   <div
                     key={i}
@@ -448,19 +446,19 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <div className="w-full md:w-1/2 relative mt-10 md:mt-0 flex justify-center">
-              <div className="aspect-[4/3] rounded-md overflow-hidden shadow-2xl w-full max-w-lg sm:max-w-sm md:max-w-full mx-auto">
+              <div className="aspect-[4/5] rounded-md overflow-hidden shadow-2xl w-full max-w-lg sm:max-w-sm md:max-w-full mx-auto">
                 <LazyImage
-                  src="/profile.jpeg"
+                  src="/bg.jpeg"
                   alt="Industrial Engineering - SMT Engines manufacturing facility"
                   className="w-full h-full object-cover "
                 />
               </div>
               {/* Show quote card below image on mobile/tablet, overlay on desktop */}
               <div
-                className="absolute bottom-5 md:-bottom-0 md:-left-0 backdrop-blur-xs rounded px-6 pb-6 max-[599px]:p-6 max-w-xs border border-white/5 mt-6 md:mt-0 w-[90%] md:w-auto
-                  md:block hidden"
+                className="absolute bottom-5 md:-bottom-0 md:-left-0 glass rounded p-6 sm:p-8 md:p-10 max-w-xs border border-white/5 mt-6 md:mt-0 w-[90%] md:w-auto
+                  block"
               >
-                <p className=" text-[10px] sm:text-xs text-black leading-relaxed uppercase tracking-widest">
+                <p className=" text-[10px] sm:text-xs leading-relaxed uppercase tracking-widest">
                   "We don't just supply parts; we supply the peace of mind that
                   your operations will never grind to a halt."
                 </p>
