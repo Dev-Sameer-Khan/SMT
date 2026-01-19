@@ -19,7 +19,6 @@ import {
   ExternalLink,
   Mail,
   Phone,
-  Thermometer,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Testimonials from "../components/Testimonials";
@@ -197,22 +196,22 @@ const Home: React.FC = () => {
                     {
                       title: "Oil-Free Precision",
                       desc: "Achieve medical and food-grade purity standards with 100% contaminant-free patented screw technology.",
-                      icon: Wind,
+                      icon: "Wind",
                     },
                     {
                       title: "Smart VFD Control",
                       desc: "Maximize energy efficiency by up to 35% with intelligent load-sensing variable frequency motor controllers.",
-                      icon: Zap,
+                      icon: "Zap",
                     },
                     {
                       title: "Pro-Thermal Cooling",
                       desc: "Advanced multi-stage thermal management for stable, continuous operation in high-ambient environments.",
-                      icon: Thermometer,
+                      icon: "Fan", 
                     },
                     {
                       title: "Predictive Monitoring",
                       desc: "Integrated IoT diagnostics provide real-time system health data and automated maintenance alerts.",
-                      icon: ShieldCheck,
+                      icon: "Activity",
                     },
                   ]
                 ].map((item, i) => (
