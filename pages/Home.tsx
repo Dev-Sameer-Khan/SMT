@@ -365,7 +365,7 @@ const Home: React.FC = () => {
                 img: "/hero-bg6.jpg",
                 // Fixed: Now describes excavator/backhoe parts
                 desc: "Comprehensive range of wear parts, hydraulics, and transmission spares for JCB and Bobcat equipment.",
-                link : "/products?category=jcb"
+                link : "/products?category=engine&subcategory=jcb"
               },
             ].map((cat, i) => (
               <Link

@@ -80,7 +80,7 @@ const Swipers = () => {
       description: "Premium replacement parts and durable spares for JCB and Bobcat machinery to ensure peak performance on-site.",
       image: "/hero-bg6.jpg",
       imageMobile : "/hero-bg6-mobile.jpg",
-      link : "/products?category=jcb",
+      link : "/products?category=engine&subcategory=jcb",
       specs: "Perkins Genuine Powerpart",
     },
   ];
