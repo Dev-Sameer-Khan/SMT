@@ -1306,10 +1306,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "83",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "R450 Automatic Voltage Regulator (AVR).",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The item is a Leroy Somer R450 Automatic Voltage Regulator (AVR). It is used to maintain the output voltage of an alternator. Designed for alternators with SHUNT, AREP, or PMG excitation systems. Provides voltage regulation of approximately +/- 0.5% at a steady state. Features include 'LAM' (Load Adjustment Module) and 'auto-adaptive LAM' systems to handle load impacts on the engine. Control is managed by transistors, ensuring regulation quality is independent of the applied load. Suitable for high levels of vibration and harsh environments. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667784/avr-r450_qj0huc.jpg",
@@ -1317,21 +1317,21 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "84",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "Electronics generator control module",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Deep Sea Electronics generator control module, specifically the DSE8620 MKII. It is designed for complex load sharing and synchronizing a single generator set with a mains supply. The module features multiple inputs and outputs for AC and DC voltages and currents, communication ports (RS232, RS485, CAN, ECU), and magnetic pickups. It can also be configured to function as a DSE8610 MKII Auto Start Load Sharing & Synchronizing Control Module. The device is made in the UK. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
-      "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667784/sx440_tzoozx.webp",
+      "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667781/DSE86205_mvd2mj.webp",
     ]
   },
   {
     id: "85",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "R448 Automatic Voltage Regulator (AVR)",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Leroy Somer R448 Automatic Voltage Regulator (AVR) for a generator. It is an electronic component that provides closed-loop control of the generator output voltage. The design is based on half-wave phase-controlled rectifier principles. It is typically used for industrial applications and three-phase generators. Features include overload protection and automatic shut-off. Maximum output is DC125V 10A. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667783/R448-_tjzlny.jpg",
@@ -1339,10 +1339,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "86",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "7320 auto start generator controller",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Deep Sea Electronics (DSE) Model 7320 auto start generator controller. It is an Auto Mains Failure (AMF) control module suitable for various single, diesel or gas gen-set applications. The module monitors an extensive number of engine parameters and displays warnings, shutdown, and status information on its backlit LCD screen and illuminated LEDs. It provides real-time monitoring of generator performance, ensuring optimal operation and immediate alerts for maintenance needs. The controller can automatically start and stop the generator, and can also monitor and control it through remote communication. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667782/deepsee_7320_fxs3eu.jpg",
@@ -1350,21 +1350,21 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "87",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "Automatic Voltage Regulator (AVR) SX440",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "It is a half-wave phase-controlled thyristor type AVR. It forms part of the excitation system for a brushless generator. The AVR circuitry includes under-speed and sensing loss protection features. It ensures a reliable supply of electricity by maintaining a steady output voltage regardless of the load. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
-      "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667781/DSE86205_mvd2mj.webp",
+      "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667784/sx440_tzoozx.webp",
     ]
   },
   {
     id: "88",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "24v fuel shutdown solenoid valve",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a 24V diesel engine fuel shutdown solenoid valve with part number RE516083. Function: It is used to cut off the fuel supply to stop a diesel engine. Voltage: The operating voltage is 24 VDC. Compatibility: It is compatible with Cummins engines and John Deere equipment. Part Number: The specific part number is RE516083. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667781/stop-solenoid_b5c33t.png",
@@ -1372,10 +1372,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "89",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "12V fuel shutoff solenoid",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The item pictured is a 12V fuel shutoff solenoid used in diesel engines for construction and agricultural equipment. Function: It controls the flow of fuel, effectively telling the engine when to start and stop. Voltage: It operates on a 12-volt DC electrical system. Part Numbers: Compatible part numbers include 1G577-60010, 1G577-60011, 6689034, and 2536022. Compatibility: This component is commonly used in Kubota V3300 and V3800 engines, as well as various Bobcat skid steer loaders such as the S220, S250, S300, and S330 models. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667779/_69983_pks0dx.jpg",
@@ -1383,10 +1383,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "90",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "12V fuel shut-off solenoid valve",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a 12V diesel engine fuel shut-off solenoid valve. Model: 1503ES-12S5SUC5S Function: Controls the flow of fuel to stop the engine. Voltage: 12V DC Material: Made of high-quality metal with copper wiring for durability and good conduction. Compatibility: Compatible with various engines, including certain Hyundai R-series excavator models and Yanmar engines.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667779/soloniod_lvbzcr.jpg",
@@ -1394,10 +1394,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "91",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "engine water temperature sensor",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a brass engine water temperature sensor. It has a 3/8'' NPT thread size. The alarm temperature threshold is 98°C. It operates within a wide voltage range of 6V to 24V. The measuring range is typically from 38°C to 120°C. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667777/w.t_suzpex.jpg",
@@ -1405,10 +1405,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "92",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "VDO-style oil pressure sensor ",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a universal VDO-style oil pressure sensor or sender. It is used to monitor oil pressure in an engine, often for generators. Function: Monitors and transmits oil pressure data to the engine controller or display for protection and diagnostics. Material: Typically made from aluminum alloy. Pressure Range: Commonly operates in a range of 0 to 10 bars. Connection: Features a 1/8 NPT male thread for connection to pipe fittings. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667777/622-333_bxklju.jpg",
@@ -1416,10 +1416,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "93",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "engine oil pressure sensor",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is an engine oil pressure sensor or switch sender. It is used with a pressure gauge and alarm lamp to sense changes in engine oil pressure. The product has a simple structure, is easy to install, and offers stable and reliable performance. It is commonly used in generators and various engines. The thread fitting is often NPT1/8 or M10x1. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667777/sensor_hw1us7.jpg",
@@ -1427,10 +1427,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "94",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "KUS water temperature sensors",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays KUS water temperature sensors. Made from brass and compatible with most temperature gauges. Used for measuring engine coolant or oil temperature in various vehicles and generators. Available with different thread types, such as 3/8'' NPT. Designed to operate up to a maximum of 120° Celsius. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667776/-water-temperature-sensors_bhjg28.jpg",
@@ -1438,10 +1438,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "95",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "6120 MKIII Auto Mains Failure (AMF) Control Module",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Deep Sea Electronics (DSE) 6120 MKIII Auto Mains Failure (AMF) Control Module. It is designed to automatically manage and monitor single diesel and gas generator sets. The module displays warnings, shutdown, and engine status information on a large, back-lit LCD screen and illuminated LEDs. It is compatible with both electronic (CAN) and non-electronic engines. The unit provides comprehensive monitoring and protection functions for generator sets. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667775/DSE6120-MKII_u73tu4.jpg",
@@ -1449,10 +1449,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "96",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: " VDO 310-012 Cockpit Style Electrical Oil Temperature Gauge and sender kit",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a VDO 310-012 Cockpit Style Electrical Oil Temperature Gauge and sender kit. Brand: VDO Type: Electrical oil temperature gauge and sender unit Measurement Range: 120°F to 300°F Size: 2 1/16 (52mm) diameter Sender Thread: 1/8-27 NPT",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667775/VDO-_kwnjoc.webp",
@@ -1460,10 +1460,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "97",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "DSE4520 MKII Auto Mains Failure (AMF) generator control module",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a DSE4520 MKII Auto Mains Failure (AMF) generator control module. Automatically detects utility power failure and starts the generator. Monitors various parameters including engine speed, oil pressure, and voltage. Features an easy-to-read LCD display for clear alerts and information. Provides complete monitoring and protection for generators. Suitable for both EFI and non-EFI systems using diesel, gas, or gasoline. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667775/s-l400_l9v8z5.jpg",
@@ -1471,10 +1471,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "98",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "Deutz starter motor",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Deutz starter motor. It is an electric motor used to initiate the operation of an engine by rotating the flywheel. The component in the image is a high-power version, possibly a 4.0kW Deutz 913 model. It is designed for high reliability and durability in demanding environments. The starter motor has 9 teeth and operates on 12 volts. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667767/st_likcqx.avif",
@@ -1482,10 +1482,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "99",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "55A OEM Letrika alternator",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a new 55A OEM Letrika alternator compatible with Deutz-Fahr tractors and engines. Rated Voltage: 28 volts.Current Output: 55 amps at full speed (2000 rpm).Ensures optimal performance and durability for the engine's electrical system.Compatible with various Deutz engine models including BF6M1013C, BF4M1013, BF6M1015, TCD2013, BF4L913, BF4L914, FL912W, and F8L413FW.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667767/alntr_k2cr7j.webp",
@@ -1493,406 +1493,406 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "100",
-    title: "248-5513: Engine Water Temperature Reg",
+    title: "Engines starter motor",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Foley Engines starter motor. It is a 9-tooth starter designed for specific Deutz 1011F and 2011 series engines. It comes in both 12-volt (4.0kW) and 24-volt options. The starter replaces several Deutz part numbers, including 01181570, 01182179, 01182388, and 04300287. High quality and durability are essential for reliable engine operation. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667766/IMG_6563-scaled_jdwpdc.jpg",
     ]
   },
   {
-    id: "98",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "101",
+    title: "Common Rail Fuel Pressure Sensor",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The item shown is a Bosch Common Rail Fuel Pressure Sensor, part number 0281002937. Function: It measures the fuel pressure within the fuel rail and sends this data to the engine control module (ECM). Purpose: This information helps the ECM regulate fuel pump speed and optimize fuel injection for smooth engine performance. Compatibility: This specific sensor is compatible with various vehicles, including certain Kobelco excavators and models for JACK vehicles.Type: It is a resistance strain gauge pressure sensor. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667766/common-rail-sensor-_mdcxnf.png",
     ]
   },
   {
-    id: "99",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "102",
+    title: "24V 50 Amp Alternator",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Rareelectrical 24V 50 Amp Alternator. Voltage and Amperage: The unit is a 24-volt, 50-amp alternator. Compatibility: It is compatible with various Caterpillar heavy machinery, including certain track tractors and wheel loaders. Design: The alternator features a bi-directional rotation and an internal regulator. Part Numbers: It replaces several OEM part numbers from AC Delco and Caterpillar. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667765/-amp-alternator_p2tvwp.jpg",
     ]
   },
   {
-    id: "101",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "103",
+    title: "Automatic Voltage Regulator (AVR) module for a generator",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a GAVR-8A Automatic Voltage Regulator (AVR) module for a generator. It is used to maintain a stable voltage output. Input Voltage: Programmable for 110, 220, or 400 VAC.Current: Provides 3A continuous current, with 5A for 10 seconds (non-condensing). Features: Includes under-frequency protection, soft-start voltage ramping, and EMI suppression. Design: Features a rugged, compact design with a built-in 8 Amp fuse for protection against power surges.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667765/8amp_ut7jrm.avif",
     ]
   },
   {
-    id: "102",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "104",
+    title: "R250 Automatic Voltage Regulator (AVR)",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is an R250 Automatic Voltage Regulator (AVR) for a generator.     It is designed for brushless generators with shunt excitation systems.  The module automatically maintains a steady output voltage, which improves generator reliability and performance.  It offers excellent voltage regulation with an accuracy of around \(\pm 0.5\%\) at a steady state.  The device is suitable for high levels of vibration and harsh environments. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667765/r250_ind4j7.jpg",
     ]
   },
   {
-    id: "103",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "105",
+    title: "engine oil pressure sensor",
     category: "electric",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is an engine oil pressure sensor, part number 4921497, used in various vehicles, including certain Dodge Ram trucks and Cummins engines. It is a 3-pin brass sensor designed to detect oil pressure and ensure the normal function of the lubrication system. It is a direct replacement part manufactured to enhance durability and provide stable performance. The sensor helps protect the engine by monitoring oil levels and pressure values. It is compatible with specific Cummins engine models like N14, ISM, and 5.9L ISF/QSF, among others. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667765/sensor._nh237x.jpg",
     ]
   },
   {
-    id: "104",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "106",
+    title: "engine filters and maintenance products",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays a range of Fleetguard engine filters and maintenance products. These are used for air, fuel, hydraulic, and lubrication filtration in diesel engines, transmissions, and industrial applications. Fleetguard is a global leader in designing and manufacturing OEM and aftermarket filtration solutions. The products are designed to provide maximum engine protection and longer filter life, minimizing operating costs. Specific filters visible include the LF3000 lube filter, the FS100 fuel/water separator, and the WF2071 coolant filter. The company provides filtration for heavy-, medium-, and light-duty trucks, as well as equipment for construction, mining, agriculture, and marine applications. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667791/fleetguard-parts_r9suii.jpg",
     ]
   },
   {
-    id: "105",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "107",
+    title: "MANN-FILTER automotive filters",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays a selection of MANN-FILTER brand automotive filters. Premium Quality: MANN-FILTER specializes in original equipment (OE) quality filters for a wide range of applications. Variety of Types: The image includes various types of filters, such as oil, air, and fuel filters. Engine Protection: These filters are designed to protect engines and other machinery from contaminants like dust, dirt, and debris. Extensive Range: The brand offers a vast catalog of filter products for numerous vehicle types and industrial applications. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667790/mann_mbuqip.webp",
     ]
   },
   {
-    id: "106",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "108",
+    title: "variety of heavy-duty Baldwin Filters",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays a variety of heavy-duty Baldwin Filters. Baldwin Filters is a brand of Parker Engine Mobile Aftermarket Division, specializing in filtration products for light, medium, and heavy-duty mobile applications. The product range includes air, lube, fuel, coolant, hydraulic, and transmission filters designed to protect equipment from wear particles and contamination. The filters are engineered using advanced technologies and premium-grade materials to ensure superior filtration efficiency and maximum protection. The brand provides a wide range of filters for various industries, including automotive, construction, industrial, and agriculture. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667789/baldwin-filters_rvjayz.jpg",
     ]
   },
   {
-    id: "107",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "108",
+    title: "Perkins engine filters, including air, oil, and fuel filters",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays a variety of Perkins engine filters, including air, oil, and fuel filters. Perkins filters are engineered to provide optimal filtration, effectively removing contaminants that can cause engine wear and tear. These components are used in Perkins diesel engines found in various machinery, such as generators, agricultural equipment, and construction equipment. The assortment includes different types and sizes, some in branded blue boxes. Genuine and aftermarket parts are available for different engine models. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667789/perkins_filters_nyisob.jpg",
     ]
   },
   {
-    id: "108",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "109",
+    title: "air filter assembly and replacement elements",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Deutz air filter assembly and replacement elements. Provides reliable filtration of combustion air for internal combustion engines.Prevents unfiltered air from passing through the system.Ensures a perfect fit and maximum filter lifetime due to careful material selection.Essential for optimum engine performance and longevity.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667788/deutz_air_cleaner_ysrsei.jpg",
     ]
   },
   {
-    id: "109",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "110",
+    title: " Deutz engine filters",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "These are genuine Deutz engine filters. The filters are used for diesel engines and mechanical systems.Part numbers visible include 01174416 and 01183574. They are available in materials such as aluminum. Proper filtration is crucial for engine performance and lifespan.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667787/deutz-genuine-filters-_hmcfos.webp",
     ]
   },
   {
-    id: "110",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "111",
+    title: "Atlas Copco 2911 0068 00 Air/Oil Separator",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is an Atlas Copco 2911 0068 00 Air/Oil Separator element. It is compatible with various Atlas Copco XAS model air compressors, such as the XAS 97, XAS130, and XAS150. The separator is designed to efficiently remove residual oil from the compressed air stream before it enters the distribution system. It is a heavy-duty replacement part manufactured to meet or exceed OEM specifications. The component is vital for enhancing the efficiency and longevity of air compressor systems. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667786/seprater_hmxte4.jpg",
     ]
   },
   {
-    id: "111",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "112",
+    title: "air oil separator kit for oil-injected screw compressor",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is an air oil separator kit for oil-injected screw compressors. Designed to separate oil vapor from the compressed air stream, ensuring clean air output. Allows the separated oil to return to the compressor system for reuse. Typically includes the separator element and accompanying O-rings/gaskets, as shown in the image. Essential component for compressor operation, contributing to efficiency and longevity. Commonly used in industrial applications and available as replacement parts for various compressor brands like Atlas Copco and Ingersoll Rand. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667786/sep_atlas_tuhzvd.webp",
     ]
   },
   {
-    id: "112",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "113",
+    title: "Caterpillar (Cat) brand engine filters,",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays a variety of Caterpillar (Cat) brand engine filters, including fuel and oil filters. These industrial-strength filters are designed to protect engine components. Key specifications and features include: Brand: Caterpillar (Cat) Function: Filters remove contaminants, particles, and water from fuel, oil, and air systems to ensure optimal engine performance. Material: Typical materials include steel housing and cellulose filter media. Design: Engineered to provide maximum filtration efficiency and consistent quality for specific Cat equipment. Models: Specific models visible include the 1R-1808 oil filter and 1R-0739 fuel filter. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667785/filter_cat_lnbiev.png",
     ]
   },
   {
-    id: "113",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "114",
+    title: "Kubota maintenance filters",
     category: "filter",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays a set of genuine Kubota maintenance filters, likely part of a service kit for utility vehicles like the RTV-X1110 or F3060/F3680 mowers. The kit includes filters for oil (W21ES01600), fuel, air (TC020-16324), and hydraulics (W21TSH6600). Genuine Kubota parts are engineered to exact specifications to maintain top performance and ensure the engine remains emission certified. The filters are designed for robust construction and a larger filtration area to provide a high level of protection for the engine's systems. Specific kit numbers for compatible models include W21TK00550 for the RTV-X1110 and W21TK00485 for the F3060/F3680 series. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667785/kubota_filters_ezumjh.jpg",
     ]
   },
   {
-    id: "114",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "115",
+    title: "engine cooling fan blade",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Perkins engine cooling fan blade, likely part number 2485C555 or 2485C557, used in diesel engines such as the Perkins 1106 model. It is a 7-blade plastic radiator fan. It is designed to hold its shape under pressure for improved performance. The fan is compatible with various Perkins engine models, including 1106C-E60TA and 1106D-E66TA. It is an engine part for earthmoving and other heavy machinery. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673828/2485C557_jgwwbs.jpg",
     ]
   },
   {
-    id: "115",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "116",
+    title: "gear coupling sleeves",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "These are E-FLEX gear coupling sleeves. They are a type of flexible coupling used to transmit torque while absorbing shock loads and dampening vibrations between two shafts. The sleeves are constructed from nitrile rubber, which offers resistance to oils and acids. They are commonly used as replacement parts for various air compressors, including Atlas Copco models. The text on the parts includes'GEAR BAPPLEEVE-FLEX' and '0718-8J 20220'.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673882/zvrxqqsz7t6m2yomcxmc_sjwotr.jpg",
     ]
   },
   {
-    id: "116",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "117",
+    title: "05614069 drive coupling",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a Bomag 05614069 drive coupling used in various smooth drum rollers. It is a genuine or aftermarket replacement part for Bomag models, including the BW211D-40, BW177 D-3, and CC122. It is a crucial component for power transmission in heavy machinery. The part features a splined inner bore and external gear teeth. It has three bolt holes on the face for mounting. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673880/ytwctgpj7d18kgped30v_tbshwp.jpg",
     ]
   },
   {
-    id: "117",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "118",
+    title: "rubber anti-vibration mounts",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "These are rubber anti-vibration mounts. They are designed to absorb shock and isolate vibrations in machinery, protecting equipment from damage. hey are typically used in automotive, marine, and industrial applications, such as engine and transmission mountings. The mounts use rubber in shear and compression to provide protection in multiple axes. The metal parts are typically steel, with the rubber material often being natural rubber. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673878/yi9koaxg3hyfki4wnaff_usbigv.jpg",
     ]
   },
   {
-    id: "118",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "119",
+    title: "rubber anti-vibration mount or damper",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is an industrial rubber anti-vibration mount or damper. It is used to absorb shock and vibration in heavy machinery. Acts as a vibration isolator and shock absorber for industrial machines.Protects more expensive components from wear and tear caused by vibration.Used in various applications, including road rollers and compactors. Features a bolted design for secure mounting.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673877/wjglhfwzubmlgjyzdihz_jeaoap.jpg",
     ]
   },
   {
-    id: "119",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "120",
+    title: "anti-vibration rubber mounts and pads",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays various types of industrial anti-vibration rubber mounts and pads. These components are designed to dampen vibrations and absorb shocks generated by moving parts in machinery. They are commonly used in road construction machinery such as soil compactors, tandem rollers, and vibratory plates. The mounts help protect more expensive components from wear and tear caused by excessive vibration. They are available in various shapes and sizes, including square-plated, round, and cylindrical designs, to suit different applications. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673875/v9pcxkohnrgz0uuiwtev_tdf9nm.jpg",
     ]
   },
   {
-    id: "120",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "121",
+    title: "nylon hydraulic pump flange",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a nylon hydraulic pump flange, commonly an aftermarket part compatible with Caterpillar (CAT) heavy machinery. Made from durable nylon material for resistance to wear and tear. Functions as a drive coupling or connection plate in a hydraulic system. Specific part numbers often associated include 102-1733 and 141-7562. Features an internal spline (teeth) and external bolt holes for mounting. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673874/pcuhgqprhhfw0jonvwzp_gewaop.jpg",
     ]
   },
   {
-    id: "121",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "122",
+    title: "flexible rubber coupling",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a flexible rubber coupling, compatible with part numbers 48HE D48407, D-48407, 1604076100, and 1604-0761-00. It is designed as a replacement for Centa Bowex, Atlas Copco, and KTR RHEINE air compressors. The coupling is made from high-quality materials to ensure reliable performance. It is typically used in various Atlas Copco models, such as the XAS series of portable compressors. The product has stable characteristics and high reliability for industrial applications. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673872/oxbmyliaygrfjf43bsol_gz5mgg.jpg",
     ]
   },
   {
-    id: "122",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "123",
+    title: "air compressor flexible coupling element",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is an air compressor flexible coupling element, a component used to connect motor and compressor shafts. Function: It transmits torque while accommodating minor misalignments, absorbing shocks and vibrations to protect connected machinery. Material: Typically made from a durable elastic material, such as rubber. Part Numbers: Similar items are associated with part numbers like 1604-0761-00, 46492955, and 22509699. Compatibility: They are compatible with various brands of air compressors, including Atlas Copco, Ingersoll Rand, and Kaeser. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673872/ltiq1emwbz7uesyxufmm_xyzxf2.jpg",
     ]
   },
   {
-    id: "123",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "124",
+    title: "fan blade for an air compressor",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a fan blade for an air compressor, likely an Atlas Copco model. Usage: Used in industrial screw air compressors for cooling. Blades: Features 9 blades. Material/Color: The blades are typically made of plastic and are white or off-white in color. Compatibility: Specific part numbers fit various models, such as 1613745400 or 1613674900 for Atlas Copco air compressors. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673870/fan_afhypq.jpg",
     ]
   },
   {
-    id: "124",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "125",
+    title: "excavator coupling plate rubber",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is an excavator coupling plate rubber, also known as a rubber coupling or flexible clutch. Function: It is used in excavators to connect the engine to the hydraulic pump, allowing for flexibility and absorbing shock. Material: Made from premium, impact-resistant rubber. Compatibility: This specific style (likely 45H or 7Y-0460) fits various Hitachi and Caterpillar excavator models. Durability: Designed for high performance and a long working life. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673868/excavtor_ejwfzu.jpg",
     ]
   },
   {
-    id: "125",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "126",
+    title: " flexible rubber hydraulic pump coupling",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a flexible rubber hydraulic pump coupling, commonly used in excavators and heavy machinery. It is designed to transmit torque and protect hydraulic pump components by absorbing shocks and dampening vibration. The component is made from durable, flexible rubber resistant to impact and wear. It is compatible with various excavator brands, including Komatsu, Hitachi, and Kobelco. Specific part numbers and compatibility models vary (e.g., PC60, 4AS, 30AS, 20T-01-31110). ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673867/Engine-Shaft-Couplings_avif_z1xpgw.jpg",
     ]
   },
   {
-    id: "126",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "127",
+    title: "rubber shock absorber or vibration mount",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a rubber shock absorber or vibration mount used in heavy machinery like road rollers. Designed to damp shocks and vibrations in both vertical and lateral directions.Used in industrial applications for crushers and road compactors.Provides protection against metal-to-metal bottoming.Compatible with various brands, including Dynapac, CAT, and Sakai.",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673839/dynapac_x21vpt.jpg",
     ]
   },
   {
-    id: "127",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "128",
+    title: "road roller coupling",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a road roller coupling. It is used in road roller machines. It is typically made from durable materials like ABS plastic. The coupling wheel helps absorb shocks and isolate vibrations, protecting engine and transmission systems. This specific model appears to be a BoWex FLE-PA style coupling. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673837/d440_zns9sd.jpg",
     ]
   },
   {
-    id: "128",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "129",
+    title: "engine cooling fan blade",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is an engine cooling fan blade. Made from durable plastic materials designed to handle vibration and heat cycles. Moves air efficiently to maintain optimal engine operating temperature and prevent overheating. Specific part numbers (e.g., VOE3827491, 2485C521) vary depending on the engine or machinery it is compatible with, such as certain Volvo or Perkins models. Features multiple blades for effective air circulation. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673835/cat_fan_kbo0ff.jpg",
     ]
   },
   {
-    id: "129",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "130",
+    title: "replacement coupling element",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays a replacement coupling element, part number LCD-0075-47-C. It is compatible with Sullair 185 and Ingersoll Rand P185 air compressors. The inner diameter is typically 35mm. The coupling connects the motor or engine shaft to the compressor's shaft to transfer rotational motion and torque. It is designed for smooth torque transfer, precise alignment, and vibration reduction. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673836/Coupling-O_agvufv.jpg",
     ]
   },
   {
-    id: "130",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "131",
+    title: "anti-vibration rubber mounts",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "The image displays a variety of anti-vibration rubber mounts, also known as vibration isolators or shock mounts, used to reduce or isolate vibrations in machinery, equipment, and structures. They are key components in reducing noise and vibration in heavy machinery and equipment. The mounts permit relative movement of suspended mass to the ground and isolate the effects of noise, vibration, and shock. Different types, such as bobbin mounts and pedestal mounts, are designed for various industrial applications and load types. The effectiveness of isolation depends on the specific design and the type of rubber used. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673832/Anti-Vibration_upfbvg.jpg",
     ]
   },
   {
-    id: "131",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "132",
+    title: "plastic flywheel coupling",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a plastic flywheel coupling used in heavy machinery. It has 42 teeth on the inner diameter. It is designed to connect a hydraulic pump to an engine. It is used in concrete transit mixers and excavators. It is available as an aftermarket or replacement part from various suppliers. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673833/cat_coup_httypb.jpg",
     ]
   },
   {
-    id: "131",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "133",
+    title: "metal-cased anti-vibration rubber mounts",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "These are metal-cased anti-vibration rubber mounts used as shock absorbers for machinery. They are designed to absorb vibrations and reduce noise generated by machines. The mounts feature a fail-safe design and are constructed with specially engineered, oil-resistant rubber and metal components. They are commonly used in applications such as generators, engines, pumps, and compressors. The numbers stamped on the mounts (e.g., 200, 400, 600, 1000) likely indicate their load capacity in kilograms. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673831/anti-vib_tx7nij.jpg",
     ]
   },
   {
-    id: "131",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "134",
+    title: "anti-vibration engine mounts",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "These are anti-vibration engine mounts used for isolating vibrations in machinery and engines. They are designed to reduce noise and vibration for smoother operation of equipment like marine engines, generators, pumps, and compressors. The mounts typically feature a rubber element bonded to metal components to provide dampening. The design with an overload stop makes them failsafe and suitable for marine propulsion engines, as they can accommodate thrust. They help protect the engine from externally generated shock loads during operation. ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673830/antivib_zxlnsz.jpg",
     ]
   },
   {
-    id: "131",
-    title: "248-5513: Engine Water Temperature Reg",
+    id: "135",
+    title: "rubber vibration dampening mount",
     category: "rubberCoupling",
     // subcategory: "deutz",
-    desc: "Industrial-grade water pump for Perkins 900 series engines, optimized for high-efficiency cooling in heavy machinery and power generation.",
+    desc: "This is a rubber vibration dampening mount, also known as a rubber buffer or shock absorber. It is used as a dynamic buffer between moving components and structural frameworks to absorb and dissipate harmful vibrations generated by heavy-duty machinery. Function: Reduces stress transmission, absorbs impact, and minimizes noise in machinery. Material: Made from natural rubber and typically includes iron plates or threaded inserts for mounting. Application: Commonly used in construction and road-making machinery like road rollers, compactors, and excavators. Specific Models: Similar mounts are available for brands such as Dynapac and Caterpillar (part number 227-0172). ",
     specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768673830/Absorber-Buffer_g49ahc.jpg",

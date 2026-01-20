@@ -48,7 +48,7 @@ const ProductsPage: React.FC = () => {
     { id: "filter", label: t.filters },
     { id: "electric", label: t.electricItem },
     { id: "rubberCoupling", label: t.rubberCoupling },
-    { id: "jcb", label: t.jcb },
+    // { id: "jcb", label: t.jcb },
   ];
 
   // Show subcategories if "engine" or "compressor" category is active
