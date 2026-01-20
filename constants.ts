@@ -403,7 +403,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "Primary fuel pump to move the fuel from the tank into the engine fuel system. Designed to ensure the correct level of flow and pressure into the fuel system, correct flow rate and pressure are critical to prevent the issues of cavitation and vaporization that can lead to implosion and damage to surfaces. Perkins fuel pumps are carefully selected during our engine design to provide the pressure and flow required for the whole fuel system and tested for many thousands of running hours to ensure smooth running and maximum performance and power. Uses high-performance seals to ensure long life, and deliver correct pressure whatever the conditions.",
-    specs: "Perkins Genuine Powerpart",
+    specs: "Genuine Perkins pump | Optimized flow & pressure | High-performance seals | Thousands of hours tested",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667821/ULPK0002_lzkqnu.jpg",
     ]
@@ -414,7 +414,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "An overhaul will extend your engine’s life many years to come by returning performance to like-new conditions. It is a substantially better return on investment than trading in your old engine for a brand-new one",
-    specs: "1000 and 4.236 gear",
+    specs: "Comprehensive kit for major engine rebuild | Restores original engine performance | Components for 1000 & 4.236 gear engines",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667831/overhaul-kit-_iuzjkg.jpg",
     ]
@@ -425,7 +425,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory : "perkins",
     desc: "diesel engines (Perkins, Deutz, Lister, Lombardini, Isuzu, Cummins) – agricultural tractors (Massey Ferguson,Ford New Holland, Fiat, Universal / Romanian, Belarus, John Deere and Zetor)– commercial vehicles (Bedford J6, BMC Leyland, Mercedes, Scania, Volvo, Caterpillar, Iveco and JCB).",
-    specs: "1000 and 1100 case",
+    specs: "Fits Perkins, Deutz, Lister & more | For tractors, engines & commercial vehicles | Assorted parts for key systems",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667830/perkins_parts_wq2ivw.jpg",
     ]
@@ -436,7 +436,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "The collection includes air, oil, and fuel filters designed for Perkins diesel engines. These genuine parts are engineered to capture harmful contaminants and ensure engine longevity. The filters feature the 'ecoplus' branding,indicating a specific range of components. A starter motor assembly is also visible among the filters. ",
-    specs: "High-Grade Forged Steel | Induction Hardened Lobes | Precision Ground",
+    specs: "Air, oil & fuel filter set | Advanced contaminant filtration | 'Ecoplus' series genuine Perkins parts",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667829/Perkins-Spares-White_u6outz.jpg",
     ]
@@ -447,7 +447,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "Function: Creates a seal between the piston and the cylinder wall, preventing gas from escaping and regulating oil consumption. Components: Typically includes the top compression ring, intermediate compression ring, and oil control ring. Material: Made from durable, high-quality materials to withstand high temperatures and pressures. ",
-    specs: "Includes Pistons, Rings, Liners & Gasket Set | OEM Quality | Heavy-Duty Construction",
+    specs: "Includes piston, top/intermediate/oil rings | Premium steel material | For high-temp & high-pressure operation",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667829/piston_perkins_tmseej.avif",
     ]
@@ -457,7 +457,8 @@ export const PRODUCTS: Product[] = [
     title: "Perkins/Caterpillar engine piston",
     category: "engine",
     subcategory: "perkins",
-    desc: "Diameter: 100mm STD, Rings: 3.5T x 2.5 x 4, Pin: 38mm x 83mm, Total Height: 108mm, Compression Height: 70.00mm",    specs: "Main & Con-Rod Bearings | Full Engine Gasket Kit | High-Tensile Fasteners",
+    desc: "Diameter: 100mm STD, Rings: 3.5T x 2.5 x 4, Pin: 38mm x 83mm, Total Height: 108mm, Compression Height: 70.00mm",
+    specs: "Diameter: 100mm STD | Rings: 3.5T x 2.5 x 4 | Pin: 38mm x 83mm | Total height: 108mm | Compression height: 70mm",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667829/Perkins-1004_sxpze3.webp",
     ]
@@ -468,7 +469,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "Designed for various Perkins diesel engines, including models 404c-22 and 404D-22. The kit includes the piston and a set of piston rings. Piston rings create a seal between the piston and cylinder wall, minimizing gas loss and regulating oil consumption. The part is used in industrial, agricultural, construction, material handling, marine, and power generation markets",
-    specs: "Anodized Piston Crown | Phosphate Coated | Includes Pins & Clips",
+    specs: "Kit for Perkins 404c-22/404D-22 | Complete piston w/ rings set | For industrial/tractor/marine engines",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667828/115017491_jd0ltb.jpg",
     ]
@@ -479,7 +480,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "It is made from a durable aluminum alloy. It is compatible with various Perkins engine models, including the 1103, 1104, and 1106 series. The component manages the engine's cooling system temperature by controlling the flow of coolant. It is also used in some Massey Ferguson tractors. ",
-    specs: "Multi-Piece Ring Set | Heat-Resistant Alloy | Reduced Friction Profile",
+    specs: "Aluminum alloy body | Controls coolant flow in Perkins 1103/1104/1106 | For precise engine temp management",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667827/thermostat_i2i3os.jpg",
     ]
@@ -490,7 +491,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "Includes all necessary gaskets and seals for a complete engine overhaul, covering both upper and lower engine components. Designed to meet or exceed original equipment (OE) standards for a precise fit and lasting performance.Essential for major engine work or a full rebuild. The specific part number for this set is T403322 or U5LC1106D. ",
-    specs: "Wax-element Type | Precision Temperature Response",
+    specs: "Complete upper & lower gasket set | OE fit & performance | For overhaul/full rebuild | PN: T403322/U5LC1106D",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667826/Full-Set-Gasket-C6-6_muds0m.avif",
     ]
@@ -501,7 +502,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "It has an external diameter of 96 mm. It has a length of 130.9 mm. It is designed to capture contaminants and reduce wear and tear on Perkins engine components. ",
-    specs: "Corrosion Resistant | Secure Seal Fitting",
+    specs: "Diameter: 96mm | Length: 130.9mm | High contaminant holding capacity | OE for Perkins 2654403",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667825/filter_mkaltp.jpg",
     ]
@@ -512,7 +513,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "Brand: FG Wilson Engine: Powered by a fuel-efficient Perkins engine Application: Suitable for both standby and prime power applications Features: Engineered for dependable performance, durability, and low emissions Power Range: Available in various power outputs ranging from 7.5 kVA up to 220 kVA and beyond, depending on the specific model ",
-    specs: "Heavy-duty Housing | Pre-calibrated Spring",
+    specs: "FG Wilson gen-set, Perkins engine | Power range: 7.5–220 kVA+ | Designed for standby/prime use | Low emissions",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667825/genrator_kxfpxo.jpg",
     ]
@@ -523,7 +524,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "Function: They create a seal between the piston and the cylinder walls, preventing gas from escaping and egulating oil consumption. Components: The set typically includes a top compression ring, an intermediate compression ring, and an oil control ring. Material: Made from materials like cast iron or steel designed to resist wear, heat, and pressure. Usage: They are used in various Perkins diesel engines for industrial, agricultural, and power generation applications. ",
-    specs: "Assorted Sizes | Chemical Resistant",
+    specs: "Incl. compression & oil rings | Fits Perkins engines | Wear/heat/pressure-resistant cast iron/steel",
     image: [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667823/ring01_gy5pyp.jpg",
     ]
@@ -534,7 +535,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "Perkins engines are known for their durability and reliability, powering various industrial and construction applications. The 1204E-E44TA model features a 4.4-liter displacement, 4 cylinders, and a maximum torque of 560 Nm. The engine is designed to meet various emissions standards, including EU Stage IIIB/U.S. EPA Tier 4 Interim equivalents.Electronically controlled engines in this series deliver precise fuel injection based on the load applied. ",
-    specs: "Equivalent to U5MW0106 | Shaft diameter typically 19mm (or 0.750\")",
+    specs: "Model: 1204E-E44TA | 4.4L, 4-cyl | Max torque: 560Nm | Meets EU Stage IIIB/US Tier 4i | Electronically controlled",
     image: [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667823/engine_perkins_eti7uj.jpg",
     ]
@@ -545,7 +546,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "Material: Forged aluminum alloy with heat-treated crown Diameter: OEM standard bore size for the Perkins C4.4 engine Piston Pin: Included; floating type with circlips Ring Grooves: Pre-machined with hardened steel ring inserts",
-    specs: "Ceramic Cartridge Seals | Sealed Precision Bearings | Cast Iron Housing | Equivalent to U45011020",
+    specs: "Forged aluminum piston | Heat-treated crown | OEM C4.4 bore | Includes pin & circlips, steel ring grooves",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667823/piston_62_ujmnay.jpg",
     ]
@@ -556,7 +557,7 @@ export const PRODUCTS: Product[] = [
   category: "engine",
   subcategory: "perkins",
   desc: "It is compatible with a range of engines, including certain Perkins and John Deere models. The pump is designed to resist fuel corrosion with a premium cast aluminum housing and quality diaphragm materials. It is a direct-fit replacement part designed for easy bolt-on installation. A mounting gasket is included for proper sealing and a hassle-free installation",
-  specs: "Includes O-Rings & Gaskets | High-Strength Impeller | Ceramic Face Seals | Corrosion Resistant Finish",
+  specs: "Cast aluminum body | Fuel-resistant diaphragm | Direct-fit, includes gasket | For Perkins & John Deere",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667822/fuel_lift_pump_02_yiblxx.jpg",
     ]
@@ -567,7 +568,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "The water pump is a critical component for engine cooling systems. The included gasket has the OEM number 3682A011. These parts are compatible with Perkins 1100 Series engines, specifically models like the 1103 and 1104. The gasket ensures a secure seal to prevent coolant leaks. ",
-    specs: "Full Gasket Set Included | High-Flow Design | OEM Standard Bearings",
+    specs: "High-flow water pump | OEM gasket 3682A011 included | For Perkins 1100 Series (1103/1104)",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667820/water_pump_bqvybm.jpg",
     ]
@@ -578,7 +579,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "The components are designed for heavy-duty applications in trucks, buses, agricultural tractors, and power generators. ATS International supplies premium quality diesel engine and agricultural tractor parts to Original quipment Manufacturers and aftermarket distributors globally. Key features include high durability, precision engineering, and performance under pressure. The parts are engineered to meet OE (Original Equipment) quality standards. ",
-    specs: "Cast Iron Housing | Precision Bearings | Leak-Proof Seals",
+    specs: "OE-quality parts | Heavy-duty design | Precision engineering | Engineered for trucks, tractors, generators",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667819/Copy_of_perkins_parts_gvkrjn.jpg",
     ]
@@ -589,7 +590,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "perkins",
     desc: "Part Numbers: U45010062, 145010060, 145010070, and 145010061. Function: Circulates coolant to regulate engine temperature. Compatibility: Fits Perkins engine models 403D-15, 403D-15T, 404D-15, 404D-22, 404D-22T, 404D-22TA, 403D-17, and 404C-22T. Contents: Includes the pump assembly and a gasket for installation. Material: Constructed with high-quality, durable materials designed to withstand high temperatures and pressure. ",
-    specs: "High-Flow Impeller | Corrosion Resistant | OEM Fitment",
+    specs: "Pump+gasket | For Perkins 400 Series (403D/404D) | High-temp materials | PN: U45010062, 145010060/70/61",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667819/water_pump_404_faypgc.jpg",
     ]
@@ -600,7 +601,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "caterpiller",
     desc: "The kit includes essential components for rebuilding a diesel engine, such as pistons, cylinder liners, valves, and gaskets. It is designed for various Caterpillar engine models, including the 3306. The components are made from durable materials like aluminum alloy and cast iron to withstand high pressure and thermal loads. Overhaul kits help restore engine performance, efficiency, and longevity. ",
-    specs: "Compact Design | Low-Noise Operation | Heat-Treated Shaft",
+    specs: "Complete CAT engine overhaul set | Incl. pistons, liners, valves, gaskets | Fits 3306 & others | Heavy-duty materials",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667803/cat_oh_mpmfnx.avif",
     ]
@@ -611,7 +612,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "caterpiller",
     desc: "Part Number: 329-4510 Engine Type: Suitable for Caterpillar C18 diesel engines and generator sets Material: Forged from premium aerospace-grade aluminum and features proprietary coatings Features: Optimized for high-flow cylinder heads and camshafts, designed for improved thermal stability ",
-    specs: "Includes Gasket | Heavy-Duty Internal Seal | Direct Bolt-on",
+    specs: "Set for CAT C18 | Forged aerospace aluminum | Proprietary coatings | PN: 329-4510 | High-flow, thermally stable",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667802/-329-4510_tmddfn.webp",
     ]
@@ -622,7 +623,7 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "caterpiller",
     desc: "The kit includes the piston body, a piston pin (also called a wrist pin), and two circlips. Piston kits are designed to create a seal, compress the air-fuel mixture, and transfer force to the crankshaft. The parts in the image appear to be new aftermarket or replacement parts designed to meet or exceed OEM specifications. Specific part numbers can vary depending on the exact engine model (e.g., C4.4T/Ta, C7.1, 3406). These parts are crucial for smooth and powerful engine operation. ",
-    specs: "Reinforced Housing | Specialized Bearing Kit | Anti-Corrosive Coating",
+    specs: "Piston, pin, circlips kit | For CAT C4.4T, C7.1, 3406 | Aftermarket/OEM spec | Compression seal & durability",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667802/c9_mjl27z.jpg",
     ]
@@ -633,51 +634,51 @@ export const PRODUCTS: Product[] = [
     category: "engine",
     subcategory: "caterpiller",
     desc: "It is a direct replacement part. Compatible OEM part numbers include 352-0211, 10R0484, and 161-5719. It circulates coolant to prevent the engine from overheating. The pump comes complete with an impeller drive gear and companying gaskets/O-rings. ",
-    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    specs: "Water pump w/ impeller drive gear | Includes gaskets/O-rings | For CAT 352-0211, 10R0484, 161-5719",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667801/water_pumpc15_jnrcqh.jpg",
     ]
   },
   {
-    id: "22",
+    id: "23",
     title: "Caterpiller diesel engine pistons",
     category: "rubberCoupling",
     subcategory: "perkins",
     desc: "The pistons are standard size and made of high-quality, high-strength alloy to withstand extreme temperatures and pressures. They feature a standard design with grooves for piston rings and a central bore for a piston pin. The surface has a polished finish. These parts are designed for use in various applications, including excavators, generators, and tractors. ",
-    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    specs: "Standard size | High-strength alloy | Includes ring grooves & pin bore | Polished finish | For industrial/agri use",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667801/3406_crtqdg.jpg",
     ]
   },
   {
-    id: "22",
+    id: "24",
     title: "Caterpillar engine parts kit",
     category: "rubberCoupling",
     subcategory: "perkins",
     desc: "Brand: Caterpillar (CAT) Usage: Used in diesel engines for applications such as generators, industrial machinery, and construction equipment Components: The image displays various parts, including cylinder liners, pistons, piston rings, and pins Packaging: Components are packaged in distinctive yellow and black Caterpillar-branded boxes and plastic sleeves ",
-    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    specs: "Kit incl. liners, pistons, rings, pins | Genuine CAT packaging | For diesel engine overhaul | Industrial/constr. use",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667800/CAT-Engine-Spare-Parts_bbdpuk.jpg",
     ]
   },
   {
-    id: "22",
+    id: "25",
     title: "3306 and 3304 SERIES WATER PUMP",
     category: "rubberCoupling",
     subcategory: "perkins",
     desc: "It is compatible with various heavy-duty machinery, including loaders and excavators. It circulates coolant to maintain optimal engine operating temperature. It is designed as a direct replacement for OEM part numbers like 2P0661, 172-7767, and 2W8001. The pump features a helical cut gear with 33 cogs. ",
-    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    specs: "Direct-fit pump | Fits loaders/excavators | 33-cog helical gear | For CAT 2P0661, 172-7767, 2W8001",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667800/waterpump3406_tgb4jh.avif",
     ]
   },
   {
-    id: "22",
+    id: "26",
     title: "diesel engine fuel injectors",
     category: "rubberCoupling",
     subcategory: "perkins",
     desc: "Function: They are responsible for delivering a precise amount of atomized fuel into the engine's combustion hamber at the appropriate time. Types: The image shows examples including Unit Injectors (UI) and Common Rail Injectors. Benefits: High-pressure injection systems improve fuel efficiency, reduce emissions, and enhance engine performance. Compatibility: Specific part numbers such as 127-8209, 7E6408, and 111-3718 are compatible with different CAT engine models like the 3116, 3508, 3512, and 3516. System: Some operate using mechanical actuation, while others, like Hydraulic Electronic Unit Injectors (HUEI), use high-pressure engine oil to fire the injector. ",
-    specs: "Hardened Steel Shaft | Multi-Lip Seal | Dynamic Balanced Impeller",
+    specs: "High-pressure injectors (UI, CR) | Fits CAT 3116, 3508, 3512, 3516 | Atomized fuel delivery | OEM PNs: 127-8209+",
     image : [
       "https://res.cloudinary.com/dpy2micpg/image/upload/v1768667800/inject_o0vh5a.avif",
     ]
