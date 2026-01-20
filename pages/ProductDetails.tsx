@@ -156,9 +156,9 @@ const ProductDetails: React.FC = () => {
             {product.title}
           </h1>
           <p className="text-2xl text-blue-500 font-semibold mb-4">{product.specs}</p>
-          <p className="text-black/70 text-lg max-w-3xl font-light leading-relaxed">
+          {/* <p className="text-black/70 text-lg max-w-3xl font-light leading-relaxed">
             {product.desc}
-          </p>
+          </p> */}
         </div>
       </section>
 
