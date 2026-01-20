@@ -89,14 +89,9 @@ const Footer: React.FC = () => {
                   label: t.rubberCoupling,
                   path: '/products?category=rubberCoupling',
                 },
-                {
-                  id: 'jcb',
-                  label: t.jcb,
-                  path: '/products?category=jcb',
-                },
               ].map(cat => (
                 <li key={cat.id}>
-                  <Link to={cat.path} className="text-black hover:text-black/60 transition-colors">
+                  <Link to={cat.path} className="text-black  hover:text-black/60 transition-colors">
                     {cat.label}
                   </Link>
                 </li>

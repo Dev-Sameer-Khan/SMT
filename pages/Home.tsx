@@ -208,8 +208,8 @@ const Home: React.FC = () => {
                     icon: ShieldCheck,
                   },
                   {
-                    title: "Integrated Cooling",
-                    desc: "Advanced thermal management for continuous operation in high-ambient regions.",
+                    title: "Smart Diagnostics",
+                    desc: "Built-in system analytics for predictive maintenance and reduced downtime.",
                     icon: ShieldCheck,
                   },
                 ].map((item, i) => (
