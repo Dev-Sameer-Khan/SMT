@@ -194,7 +194,7 @@ const Contact: React.FC = () => {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Full Name"
-                        className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all placeholder:text-black"
+                        className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all placeholder:text-black/60"
                       />
                     </div>
                     <ValidationError
@@ -213,7 +213,7 @@ const Contact: React.FC = () => {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="email@company.com"
-                        className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all placeholder:text-black"
+                        className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all placeholder:text-black/60"
                       />
                     </div>
                     <ValidationError
@@ -235,7 +235,7 @@ const Contact: React.FC = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder="+00 000 000 000"
-                        className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all placeholder:text-black"
+                        className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all placeholder:text-black/60"
                       />
                     </div>
                     <div className="space-y-3 max-[599px]:space-y-1">
@@ -249,7 +249,7 @@ const Contact: React.FC = () => {
                         value={formData.organization}
                         onChange={handleChange}
                         placeholder="LLC / Ltd / Corp"
-                        className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all placeholder:text-black"
+                        className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all placeholder:text-black/60"
                       />
                     </div>
                   </div>
@@ -265,7 +265,7 @@ const Contact: React.FC = () => {
                       onChange={handleChange}
                       rows={5}
                       placeholder="Include machine model and part numbers..."
-                      className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all resize-none placeholder:text-black"
+                      className="w-full bg-transparent border-b-2 border-black/20 py-3 text-black focus:border-blue-500 outline-none transition-all resize-none placeholder:text-black/60"
                     ></textarea>
                     <ValidationError
                       prefix="Message"
@@ -277,7 +277,7 @@ const Contact: React.FC = () => {
                   <button
                     disabled={state.submitting}
                     type="submit"
-                    className="w-full py-6 max-[599px]:py-4 bg-blue-500 text-white font-bold uppercase text-lg max-[599px]:text-sm tracking-widest hover:bg-blue-600 transition-all flex items-center justify-center gap-3 disabled:bg-gray-400 shadow-xl shadow-blue-500/20"
+                    className="w-full cursor-pointer py-6 max-[599px]:py-4 bg-blue-500 text-white font-bold uppercase text-lg max-[599px]:text-sm tracking-widest hover:bg-blue-600 transition-all flex items-center justify-center gap-3 disabled:bg-gray-400 shadow-xl shadow-blue-500/20"
                   >
                     {state.submitting ? (
                       <Loader2 className="w-6 h-6 animate-spin" />
