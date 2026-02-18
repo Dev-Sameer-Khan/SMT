@@ -128,8 +128,8 @@ const Contact: React.FC = () => {
                     {t.phoneNumber}
                   </h4>
                   <p className="text-black/80 text-lg leading-relaxed flex gap-4">
-                  <a href="tel:+971 0532962420" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">+966 0532962420</a>
-                  <a href="tel:+971 0568331257" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">+971 0568331257</a>
+                  <a href="tel:+966 0532962420" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">+966 0532962420</a>
+                  <a href="tel:+966 0568331257" target="_blank" rel="noopener noreferrer" className="text-md text-black/80 hover:text-black transition-colors">+966 0568331257</a>
                   </p>
                 </div>
               </div>

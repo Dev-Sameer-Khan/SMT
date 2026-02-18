@@ -117,7 +117,7 @@ const App: React.FC = () => {
                   element={
                     <>
                       <SEO
-                        title="SMT Engines | Global Industrial Parts & Engineering Solutions"
+                        title="SMT Engines | Global Industrial & OEM Parts | Air Compressors"
                         description="Trusted since 2014, SMT Engines provides genuine OEM and aftermarket engine parts for logistics and construction industries across India and Saudi Arabia. Engineering reliability for the world's most demanding job sites."
                         keywords="OEM engine parts, aftermarket industrial parts, heavy machinery spares Saudi Arabia, construction equipment parts India, industrial maintenance services, SMT Engines"
                       />

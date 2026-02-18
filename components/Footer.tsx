@@ -109,12 +109,12 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex gap-3 text-black">
                 <Phone className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <a href="tel:+971 0532962420" target="_blank" rel="noopener noreferrer" className="text-sm text-black hover:text-black/60 transition-colors">+971 0532962420</a>
-                <a href="tel:+971 0568331257" target="_blank" rel="noopener noreferrer" className="text-sm text-black hover:text-black/60 transition-colors">+971 0568331257</a>
+                <a href="tel:+966 0532962420" target="_blank" rel="noopener noreferrer" className="text-sm text-black hover:text-black/60 transition-colors">+966 0532962420</a>
+                <a href="tel:+966 0568331257" target="_blank" rel="noopener noreferrer" className="text-sm text-black hover:text-black/60 transition-colors">+966 0568331257</a>
               </li>
               <li className="flex gap-3 text-black">
                 <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <a href="mailto:khanshahbaz993@yahoo.com" target="_blank" rel="noopener noreferrer" className="text-sm text-black hover:text-black/60 transition-colors">mail2smtengines@gmail.com</a>
+                <a href="mailto:mail2smtengines.com" target="_blank" rel="noopener noreferrer" className="text-sm text-black hover:text-black/60 transition-colors">mail2smtengines@gmail.com</a>
               </li>
             </ul>
           </div>
