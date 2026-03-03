@@ -70,10 +70,10 @@ const Header: React.FC = () => {
       <header
         className={`fixed top-0 left-0 w-full z-[60] transition-all duration-500 will-change-[background,padding] py-0 bg-white shadow-md`}
       >
-        <div className="container mx-auto lg:pr-6 lg:pl-0 pl-3 pr-6 flex items-center justify-between">
+        <div className="container mx-auto lg:pr-6 lg:pl-0 pl-6 pr-6 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 z-50">
-            <img className="h-16 md:h-20 lg:h-28 max-h-[72px] md:max-h-[80px] lg:max-h-[112px] w-auto" src="/logo2.png" alt="SMT EnginesLogo" />
+            <img className="h-16 scale-[2.2] md:h-20 lg:h-26 max-h-[72px] md:max-h-[80px] lg:max-h-[112px] w-auto" src="/logo4.png" alt="SMT EnginesLogo" />
           </Link>
 
           {/* Navigation */}

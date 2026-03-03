@@ -18,7 +18,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type = "website", produ
           "@type": "Organization",
           name: "SMT Engines",
           url: baseUrl,
-          logo: `${baseUrl}/logo2.png`,
+          logo: `${baseUrl}/logo4.png`,
           description:
             "SMT is a Saudi Arabia–based company providing genuine engine spare parts and reliable maintenance and repair services, delivering quality you can trust since 2014.",
           address: {

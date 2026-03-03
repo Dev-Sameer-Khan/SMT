@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-[599px]:gap-6 mb-20 max-[599px]:mb-10">
           {/* Brand */}
           <div className="space-y-6 max-[599px]:space-y-4">
-            <div className="flex items-center gap-2 -mt-6 -mb-2 -ml-6">
-              <LazyImage className="h-32  " src="/logo2.png" alt="SMT Engines Logo" />
+            <div className="flex items-center gap-2 -mt-6 -mb-2 ml-1">
+              <LazyImage className="h-32  scale-[1.4]" src="/logo4.png" alt="SMT Engines Logo" />
             </div>
             <p className="text-black text-sm leading-relaxed max-w-xs">
               {t.footerTagline}

@@ -9,7 +9,7 @@ const PerformanceOptimizer: React.FC = () => {
     const preloadLink = document.createElement("link");
     preloadLink.rel = "preload";
     preloadLink.as = "image";
-    preloadLink.href = "/logo2.png";
+    preloadLink.href = "/logo4.png";
     document.head.appendChild(preloadLink);
 
     // Add resource hints for external domains

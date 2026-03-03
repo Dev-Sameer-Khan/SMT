@@ -15,7 +15,7 @@ const SEO: React.FC<SEOProps> = ({
   title,
   description,
   keywords,
-  image = "/logo2.png",
+  image = "/logo4.png",
   type = "website",
   noindex = false,
 }) => {
